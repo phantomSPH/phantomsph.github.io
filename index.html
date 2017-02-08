@@ -1,1 +1,199 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Daniel Price" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,600italic' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<link rel="stylesheet" href="style.css">
+                <link rel="shortcut icon" type="image/png" href="image/phantom-favicon.png" />
+		<title>PHANTOM: A smoothed particle hydrodynamics and magnetohydrodynamics code for astrophysics</title>
+	</head>
+	<body>
+		<header>
+			<div class="wrap">
+				<nav>
+					<ul id="top-menu">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#download">Download</a></li>
+						<li><a href="#documentation">Docs</a></li>
+						<li><a href="#contact">Subscribe</a></li>
+						<li><a href="#contrib">Contribute</a></li>
+						<li><a href="#team">Who we are</a></li>
+					</ul>
+					<div id="pull">
+				        <span class="btn">Menu</span>
+				    </div>
+				</nav>
+			</div>
+		</header>
+		<section id="home">
+			<img src="image/logo.png" alt="Phantom logo" />
+			<h1>PHANTOM: A smoothed particle hydrodynamics and magnetohydrodynamics code for astrophysics</h1>
+		</section>
+		<section id="about">
+			<div class="wrap">
+				<h2>About</h2>
+				<p>Phantom is a fast, parallel, modular and low-memory smoothed particle hydrodynamics and magnetohydrodynamics code developed over the last decade for astrophysical applications in three dimensions. The code has been developed with a focus on stellar, galactic, planetary and high energy astrophysics and has already been used widely for studies of accretion discs and turbulence, from the birth of planets to how black holes accrete.
+                                </p>
+			</div>
+		</section>
+		<section id="values">
+			<div class="wrap">
+				<h2>Core values</h2>
+				<div class="col3 first">
+					<h3>Open</h3>
+					<p>Phantom is free to use, download and redistribute under the terms of the GPLv3 license. We also welcome contributions to the code via the <a href="http://bitbucket.org/danielprice/phantom">bitbucket repo</a>. Just <a href="mailto:daniel,price@monash.edu">get in touch!</a></p>
+				</div>
+				<div class="col3">
+					<h3>Modular</h3>
+					<p>Phantom is built in small, re-usable modules, making it is easy to add new physics to the code.</p>
+				</div>
+                                <div class="clearfix"></div>
+
+                                <div class="col3 first">
+                                 <h3>Modern</h3>
+                                 <p>All modules are written in modern Fortran and we enforce strict adherence to the very latest Fortran standards.</p>
+                                </div>
+                                <div class="col3">
+                                 <h3>Lean</h3>
+                                 <p>We strive for a low memory, high performance code with as few options as possible. It should "just work". Phantom is not a <a href="http://users.monash.edu.au/~dprice/ndspmhd/">code for testing algorithms</a>, it is a "take the best and make it run fast" production code for astrophysical simulations.</p>
+                                </div>
+                                
+
+                                <div class="clearfix"></div>
+                                <div class="col3 first">
+                                 <h3>Tested</h3>
+                                 <p>Phantom contains a comprehensive testsuite that runs <a href="http://bitbucket.org/danielprice/phantom/wiki/nightly">nightly</a>. We strive to continually increase the scope of the tests to cover every aspect of the code.</p>
+                                </div>
+                                
+                                <div class="col3">
+                                 <h3>Re-useable</h3>
+                                 <p>We aim to <a href="https://en.wikipedia.org/wiki/Don't_repeat_yourself">never repeat code</a>.</p>
+                                </div>
+
+			</div>
+		</section>
+
+
+                <section id="download">
+			<div class="wrap">
+				<h2>Download</h2>
+				<p>Phantom is free and open source, and may be obtained either by <a href="releases/">downloading a stable release tarball</a>, or by cloning the <a href="http://bitbucket.org/danielprice/phantom">development version</a>.
+                                All we ask is that you <strong>cite the Phantom paper and other relevant methods papers</strong> in scientific publications and do not <a href="gizmo">misrepresent the code as your own</a>. We also welcome and encourage contributions</a> to the code.</p>
+
+			<div class="clearfix"></div>
+				<h3>Stable code releases</h2>
+				<table>
+                                <tr><td>Date</td><td>File</td><td>Size</td><td>checksum</td><td>git sha</td></tr>
+                                <tr><td>8/2/2016</td><td><a href="releases/phantom-v1.0.tar.gz">phantom-v1.0.tar.gz</a></td><td>1Mb</td><td>f2323f</td><td>asf3ev</td><td><a href="releases/releasenotes.txt">release notes</a></td></tr>
+                                </table>
+			</div>
+
+                        </div>
+                </section>
+
+                <section id="documentation">
+			<div class="wrap">
+				<h2>Documentation</h2>
+                                <p>Documentation is maintained on the <a href="http://bitbucket.org/danielprice/phantom/wiki">wiki</a></p>
+                        </div>
+                </section>
+
+		<section id="contact">
+			<div class="wrap">
+				<h2>Subscribe</h2>
+<div class="col2 first">
+<p>Phantom-announce is a low traffic read-only list for release announcements:
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <tr><td style="padding-left: 5px">
+  <strong>Subscribe to Phantom announcements</strong>
+  </td></tr>
+  <form class="contactform" action="http://groups.google.com/group/phantomsph-announce/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  <label class="col1 first" for="email">Email: </label>
+  <input type="text" name="email" id="email" class="col2">
+  <div class="clearfix"></div>
+  <input type="submit" name="sub" value="Subscribe" class="button clearfix">
+  </td></tr>
+</form>
+<tr><td align="right">
+  <a href="http://groups.google.com/group/phantomsph-announce">Visit this group</a>
+</td></tr>
+</table>
+</p>
+</div>
+
+<div class="col4">
+<p>Phantom-users is the user forum (you can also <a href="mailto:daniel.price@monash.edu">email directly</a>, but I will in general cc. my responses to the users list for posterity):
+<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
+  <tr><td style="padding-left: 5px">
+  <strong>Subscribe to Phantom users list</strong>
+  </td></tr>
+  <form class="contactform" action="http://groups.google.com/group/phantomsph-users/boxsubscribe">
+  <tr><td style="padding-left: 5px;">
+  <label class="col1 first" for="email">Email: </label>
+  <input type="text" name="email" id="email" class="col2">
+  <div class="clearfix"></div>
+  <input type="submit" name="sub" value="Subscribe" class="button clearfix">
+  </td></tr>
+  </form>
+<tr><td align="right">
+  <a href="http://groups.google.com/group/phantomsph-users">Visit this group</a>
+</td></tr>
+</table>
+</div>
+
+
+			</div>
+		</section>
+
+                <section id="contrib">
+			<div class="wrap">
+				<h2>Contribute</h2>
+                                <p>We welcome and encourage contributions to Phantom development. Just <a href="mailto:daniel.price@monash.edu">get in touch</a>.
+  
+                         </div>
+                
+                </section>
+
+
+		<section id="team">
+			<div class="wrap">
+				<h2>Meet the team</h2>
+				<div class="col2 first">
+					<!--img src="image/team1.png" alt="Team member" /-->
+					<p class="name">Lead Developer</p>
+					<p class="title">Daniel Price</p>
+				</div>
+				<div class="col2">
+					<!--img src="image/team2.png" alt="Team member" /-->
+					<p class="name">Phantom area leads</p>
+					<p class="title">MHD &mdash; Terrence Tricco</p>
+					<p class="title">Non-ideal MHD &mdash; James Wurster</p>
+					<!--p class="title">Mark Hutchison - dust</p-->
+					<p class="title">ISM chemistry, cooling &mdash; Alex Pettitt</p>
+				</div>
+				<div class="col2">
+					<!--img src="image/team3.png" alt="Team member" /-->
+					<p class="name">Phantom council</p>
+					<p class="title">Daniel Price</p>
+					<p class="title">Giuseppe Lodato</p>
+					<p class="title">Guillaume Laibe</p>
+					<p class="title">Chris Nixon</p>
+					<p class="title">Clare Dobbs</p>
+				</div>
+			</div>
+		</section>
+                
+		<footer>
+                        Copyright (c) 2017 Daniel Price and Phantom developers
+			<br/>Template design by Veselka Dobreva for <a href="http://andreasviklund.com" target="_blank">andreasviklund.com</a>
+		</footer>
+	</body>
+</html>

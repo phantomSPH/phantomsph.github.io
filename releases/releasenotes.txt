@@ -1,0 +1,13 @@
+v1.0
+
+This is the first public release of Phantom. Contains:
+- hydro
+- sink particles
+- self-gravity
+- MHD
+- dust (two fluid and one fluid)
+- ISM chemistry and cooling
+- physical viscosity
+- non-ideal MHD
+- external forces including corotating frame, Lense-Thirring precession, P-R
+drag, fixed binary
