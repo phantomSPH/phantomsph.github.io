@@ -1,6 +1,6 @@
-v1.0
+v0.9
 
-This is the first public release of Phantom. Contains:
+This is the first public release of Phantom, alongside arXiv paper. Contains:
 - hydro
 - sink particles
 - self-gravity
