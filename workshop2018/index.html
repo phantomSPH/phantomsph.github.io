@@ -7,152 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-  body {
-      font: 400 15px/1.8 Lato, sans-serif;
-      color: #777;
-  }
-  h3, h4 {
-      margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
-      font-size: 20px;
-      color: #111;
-  }
-  .container {
-      padding: 80px 120px;
-  }
-  .person {
-      border: 10px solid transparent;
-      margin-bottom: 25px;
-      width: 80%;
-      height: 80%;
-      opacity: 0.7;
-  }
-  .person:hover {
-      border-color: #f1f1f1;
-  }
-  .carousel-inner img {
-      -webkit-filter: grayscale(90%);
-      filter: grayscale(90%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
-    }
-  }
-  .bg-1 {
-      background: #2d2d30;
-      color: #bdbdbd;
-  }
-  .bg-2 {
-      background: #fff;
-      color: #333;
-  }
-  .bg-1 h3 {color: #fff;}
-  .bg-1 p {font-style: italic;}
-  .list-group-item:first-child {
-      border-top-right-radius: 0;
-      border-top-left-radius: 0;
-  }
-  .list-group-item:last-child {
-      border-bottom-right-radius: 0;
-      border-bottom-left-radius: 0;
-  }
-  .thumbnail {
-      padding: 0 0 15px 0;
-      border: none;
-      border-radius: 0;
-  }
-  .thumbnail p {
-      margin-top: 15px;
-      color: #555;
-  }
-  .btn {
-      padding: 10px 20px;
-      background-color: #333;
-      color: #f1f1f1;
-      border-radius: 0;
-      transition: .2s;
-  }
-  .btn:hover, .btn:focus {
-      border: 1px solid #333;
-      background-color: #fff;
-      color: #000;
-  }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
-      text-align: center;
-      font-size: 30px;
-  }
-  .modal-header, .modal-body {
-      padding: 40px 50px;
-  }
-  .nav-tabs li a {
-      color: #777;
-  }
-  #googleMap {
-      width: 100%;
-      height: 400px;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-  }  
-  .navbar {
-      font-family: Montserrat, sans-serif;
-      margin-bottom: 0;
-      background-color: #2d2d30;
-      border: 0;
-      font-size: 11px !important;
-      letter-spacing: 4px;
-      opacity: 0.9;
-  }
-  .navbar li a, .navbar .navbar-brand { 
-      color: #d5d5d5 !important;
-  }
-  .navbar-nav li a:hover {
-      color: #fff !important;
-  }
-  .navbar-nav li.active a {
-      color: #fff !important;
-      background-color: #29292c !important;
-  }
-  .navbar-default .navbar-toggle {
-      border-color: transparent;
-  }
-  .open .dropdown-toggle {
-      color: #fff;
-      background-color: #555 !important;
-  }
-  .dropdown-menu li a {
-      color: #000 !important;
-  }
-  .dropdown-menu li a:hover {
-      background-color: red !important;
-  }
-  footer {
-      background-color: #2d2d30;
-      color: #f5f5f5;
-      padding: 32px;
-  }
-  footer a {
-      color: #f5f5f5;
-  }
-  footer a:hover {
-      color: #777;
-      text-decoration: none;
-  }  
-  .form-control {
-      border-radius: 0;
-  }
-  textarea {
-      resize: none;
-  }
-  </style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
@@ -162,7 +17,7 @@
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
+        <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#home"><img src="logo.png" width="100"/></a>
     </div>
@@ -196,23 +51,23 @@
         <div class="carousel-caption">
           <h3>1st Phantom Users Workshop</h3>
           <p>19th-23rd Feb 2018, Monash University (Clayton Campus), Melbourne, Australia</p>
-        </div>      
+        </div>
       </div>
- 
+
       <div class="item">
         <img src="phantom-example-ns.png" alt="Phantom simulation of neutron star merger" width="1200" height="700">
         <div class="carousel-caption">
           <h3>1st Phantom Users Workshop</h3>
           <p>It's been a year since Phantom was released into the wild...</p>
-        </div>      
+        </div>
       </div>
-    
+
       <div class="item">
         <img src="phantom-example-bh.png" alt="Phantom simulation of black hole accretion disc" width="1200" height="700">
         <div class="carousel-caption">
           <h3>1st Phantom Users Workshop</h3>
           <p>So it's time to gather the user community together, solve some problems and set some goals</p>
-        </div>      
+        </div>
       </div>
     </div>
 
@@ -238,28 +93,151 @@
 
 <div id="program" class="bg-1">
   <div class="container">
-    <h3 class="text-center">PROGRAM</h3>    
-    
-    <p class="text-center">Program outline:</p>
-    
-    <ul class="list-group">
-      <li class="list-group-item">Monday 19/2/2018 &mdash; Intro to programming in Fortran (10am - 4pm)</li>
-      <li class="list-group-item">Tuesday 20/2/2018 &mdash; Introduction to Smoothed Particle Hydrodynamics (10am - 4pm)</li>
-      <li class="list-group-item">Wednesday 21/2/2018 &mdash; Phantom users workshop (9am-5pm)</li>
-      <li class="list-group-item">Thursday 22/2/2018 &mdash; Phantom users workshop (9am-5pm)</li>
-      <li class="list-group-item">Friday 23/2/2018 &mdash; Phantom users workshop (9am-3pm)</li>
-    </ul>  
+    <h3 class="text-center">PROGRAM</h3>
 
-    <p class="text-center">Confirmed invited speakers:<br/>
-    <br/>Joe Monaghan (Monash University) &mdash; An introduction to smoothed particle hydrodynamics
-    <br/>Daniel Price (Monash University) &mdash; Overview of SPH and Phantom
-    <br/>James Wurster (University of Exeter, UK) &mdash; Phantom overview
-    <br/>Terrence Tricco (CITA, University of Toronto, Canada) &mdash; Magnetic fields in SPH
-    <br/>Christophe Pinte (Monash University and CNRS, Grenoble, France) &mdash; Radiative transfer with Phantom-MCFOST
-    <br/>Conrad Chan (Monash University/ADACS) &mdash; MPI in Phantom
-    </p>
-
-
+    <table class="container">
+      <tr class="header">
+        <td class="header">Monday 19 Feb 2018 </td>
+      </tr>
+      <tr>
+      	<td>
+          <table class="inside">
+            <tr>
+              <td class="time-date">9.00 &ndash; 9.30</td>
+              <td class="event">Registration</td>
+            </tr>
+            <tr>
+              <td class="time-date">9.30 &ndash; 10.30</td>
+              <td class="event">Joe Monaghan: Introduction to SPH Part I</td>
+            </tr>
+            <tr>
+              <td class="time-date">10.30 &ndash; 11.00</td>
+              <td class="event">Coffe break</td>
+            </tr>
+            <tr>
+              <td class="time-date">11.00 &ndash; 12.00</td>
+              <td class="event">Joe Monaghan: Introduction to SPH Part II</td>
+            </tr>
+            <tr>
+              <td class="time-date">12.00 &ndash; 13.00</td>
+              <td class="event">CAVE2 Visualisation Tour</td>
+            </tr>
+            <tr>
+              <td class="time-date">13.00 &ndash; 14.00</td>
+              <td class="event">Lunch</td>
+            </tr>
+            <tr>
+              <td class="time-date">14.00 &ndash; 17.00</td>
+              <td class="event">Introduction to Programming with Phantom</td>
+            </tr>
+            <tr>
+              <td class="time-date">17.00</td>
+              <td class="event">Welcome Evening</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="header">
+        <td class="header">Tuesday 20 Feb 2018 </td>
+      </tr>
+      <tr>
+      	<td>
+          <table class="inside">
+            <tr>
+              <td class="time-date">9.00 &ndash; 10.00</td>
+              <td class="event">Daniel Price: Dust and Gas in SPH</td>
+            </tr>
+            <tr>
+              <td class="time-date">10.00 &ndash; 11.00</td>
+              <td class="event">James Wurster: Non-Ideal MHD</td>
+            </tr>
+            <tr>
+              <td class="time-date">11.00 &ndash; 12.00</td>
+              <td class="event">Terry Tricco: Magnetic Fields</td>
+            </tr>
+            <tr>
+              <td class="time-date">12.00 &ndash; 13.00</td>
+              <td class="event">Christophe Pinte: Monte Carlo Radiative Transfer</td>
+            </tr>
+            <tr>
+              <td class="time-date">13.00 &ndash; 14.00</td>
+              <td class="event">Lunch</td>
+            </tr>
+            <tr>
+              <td class="time-date">14.00 &ndash; 15.00</td>
+              <td class="event">Daniel Price: Phantom Code and Usage</td>
+            </tr>
+            <tr>
+              <td class="time-date">15.00 &ndash; 16.00</td>
+              <td class="event">Conrad Chan: MPI & OMP</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="header">
+        <td class="header">Wednesday 21 Feb 2018 </td>
+      </tr>
+      <tr>
+        <td>
+          <table class="inside">
+            <tr>
+              <td class="time-date">9.00 &ndash; 13.00</td>
+              <td class="event">Presentations (15min Talk + 5min Questions)</td>
+            </tr>
+            <tr>
+              <td class="time-date">13.00 &ndash; 14.00</td>
+              <td class="event">Lunch</td>
+            </tr>
+            <tr>
+              <td class="time-date">15.00 &ndash; 17.00</td>
+              <td class="event">Phantom Workshop/Hackathon</td>
+            </tr>
+            <tr>
+              <td class="time-date">17.00</td>
+              <td class="event">Dinner in the City</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="header">
+        <td class="header">Thursday 22 Feb 2018</td>
+      </tr>
+      <tr>
+        <td>
+          <table class="inside">
+            <tr>
+              <td class="time-date">9.00 &ndash; 13.00</td>
+              <td class="event">Presentations (15min Talk + 5min Questions)</td>
+            </tr>
+            <tr>
+              <td class="time-date">13.00 &ndash; 14.00</td>
+              <td class="event">Lunch</td>
+            </tr>
+            <tr>
+              <td class="time-date">15.00 &ndash; 17.00</td>
+              <td class="event">Phantom Workshop/Hackathon</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr class="header">
+        <td class="header">Friday 23 Feb 2018</td>
+      </tr>
+      <tr>
+        <td>
+          <table class="inside">
+            <tr>
+              <td class="time-date">9.00 &ndash; 13.00</td>
+              <td class="event">Presentations (15min Talk + 5min Questions)</td>
+            </tr>
+            <tr>
+              <td class="time-date">13.00 &ndash; 14.00</td>
+              <td class="event">Lunch</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
   </div>
 </div>
 
@@ -286,7 +264,7 @@ Clayton, Victoria, Australia.
 details.</p>
 <p class="text-center">The fastest way to get here is in a taxi, but it will cost you around $120.</p>
 
-<p class="text-center">Our recommmended accommodation option is <a href="http://www.mannix.monash.edu/external-guests/">Mannix college</a>. 
+<p class="text-center">Our recommmended accommodation option is <a href="http://www.mannix.monash.edu/external-guests/">Mannix college</a>.
 Otherwise you can check <a href="https://www.booking.com/searchresults.en-gb.html?sb=1&src=index&src_elem=sb&ss=Monash+University+-+Clayton+Campus%2C+Clayton+North%2C+Victoria%2C+Australia&checkin_monthday=18&checkin_month=2&checkin_year=2018&checkout_monthday=23&checkout_month=2&checkout_year=2018&group_adults=1&group_children=0&no_rooms=1&from_sf=1&ss_raw=monash+university&ac_position=0&ac_langcode=en&dest_id=900067662&dest_type=landmark&place_id_lat=-37.91304&place_id_lon=145.13218&search_selected=true&ac_suggestion_list_length=2&ac_suggestion_theme_list_length=0&airport_sel=0&map=1">hotels close to campus</a>. Staying
 <a href="https://www.booking.com/searchresults.en-gb.html?checkin_month=2;checkin_monthday=18;checkin_year=2018;checkout_month=2;checkout_monthday=23;checkout_year=2018;class_interval=1;dest_id=1592;dest_type=district;dtdisc=0;fe_new_tab=1;genius_rate=1;group_adults=1;group_children=0;inac=0;index_postcard=0;label_click=undef;no_rooms=1;offset=0;oos_flag=0;order=price;postcard=0;qrhpp=6dabe04ac337a50f78c98aaaa2bf1be5-district-0;room1=A;sb_price_type=total;search_selected=0;src=searchresults;src_elem=sb;ss=south+Yarra;ss_all=0;ssb=empty;sshis=0;srpos=1;origin=search">somewhere
 in South Yarra</a> is another option which is on the train line to Monash (30 mins to campus) but in a lively area closer to the centre of Melbourne.</p>
@@ -338,14 +316,14 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
   <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p> 
+  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
 </footer>
 
 <script>
 $(document).ready(function(){
   // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip(); 
-  
+  $('[data-toggle="tooltip"]').tooltip();
+
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#home']").on('click', function(event) {
 
@@ -363,7 +341,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
