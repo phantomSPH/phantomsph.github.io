@@ -1,5 +1,32 @@
-v0.9
+-------------------
+v1.0 - 13 Mar 2018
+-------------------
+Physics:
+- working MPI implementation (Chan)
+- more robust algorithm for one fluid dust (Ballabio+ 2018)
+- dust algorithm (one fluid/two fluid) chosen at runtime not compile time
+- particle waking with individual timesteps re-implemented (Wurster)
+- universal disc setup routine (Mentiplay)
+- setup added for flyby simulations (Mentiplay, Cuello)
+- CO cooling implemented (Glover)
+- magnetic field evolves B/rho rather than B (Tricco, Price)
+- stellar wind routine works out-of-the-box (Toupin)
+- improvemements to Galactic Centre winds and cooling (Russell, Price)
+- NICIL updated to v1.2.3 (Wurster)
 
+Bugs:
+- updates/bug fixes to MESA Equation of state tabulation
+- bug fix with energy conservation with softened sink particles
+- bug fix with self-gravity + multiple particle types
+
+Tests:
+- nightly checks for non-ideal MHD added
+- self gravity checked for all particle types
+- testsuite checked nightly with MPI
+
+-------------------
+v0.9 - 14 Feb 2017
+-------------------
 This is the first public release of Phantom, alongside arXiv paper. Contains:
 - hydro
 - sink particles
