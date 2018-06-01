@@ -1,4 +1,28 @@
 -------------------
+v1.1 - 5 Apr 2018
+-------------------
+Physics:
+- Helmholtz equation of state implemented (Tricco)
+- preliminary work on dust growth (Vericel)
+
+Bugs:
+- bug fix with magnetic fields on boundary particles
+- bug fix with incorrect fatal error on centre of mass non-conservation
+- angular momentum now conserved during sink particle accretion (#17, Wurster)
+- issues with git-lfs fixed
+- bug fix with write of B-field to small dump files
+
+Tests:
+- setupbot: Nightly checks that phantomsetup does not require unspecified user input
+
+Setup:
+- better defaults in several setups so we pass setupbot checks
+- set_slab utility routine added for 2D-in-3D setups
+
+Build:
+- SYSTEM=raijin added
+
+-------------------
 v1.0 - 13 Mar 2018
 -------------------
 Physics:

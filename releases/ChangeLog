@@ -1,9 +1,167 @@
+f91ca0a Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+f094504 BUG FIX with testsuite run if git-lfs not installed; now store helm_data.tab on server rather than via git-lfs
+f1b94b8 give dustprop the same columns for both full and small dumps
+10227d1 BUG FIX with test failure in initialisation of Helmholtz EOS
+8adb6c9 (helmholtz eos) better error handling for table read
+734a72f (helmholtz eos) removed warning about filename length
+e382f55 bugs fixed
+727e2fe [indent-bot] standardised indentation
+5de0647 [space-bot] whitespace at end of lines removed
+28848b4 [header-bot] updated file headers
+a507ec2 [tab-bot] tabs removed
+fb2b61e (dustgrowth) implementation of dust growth
+065ced0 [author-bot] updated AUTHORS file
+5f031bf interpolate dv only for dust particle i
+4d37cb2 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+7965f5e edit .mailmap
+980378e [indent-bot] standardised indentation
+cafd177 [author-bot] updated AUTHORS file
+912c536 [tab-bot] tabs removed
+03f9a37 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+812a83b interpolation of dv2 with the drag terms
+2105afb (energies) prevent unlikely division by zero
+da4cd47 (initial) removed unused subroutine import
+ffcf5b7 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+41b80d6 (setupbot) release the hounds!
+66178df (dustgrowth) deleted dv2 affectation to dustprop
+ac4f18c [indent-bot] standardised indentation
+bb45a85 [author-bot] updated AUTHORS file
+803899b [header-bot] updated file headers
+a025004 [tab-bot] tabs removed
+1a0bfcf (conservation laws) removed centre of mass as a conservation check
+7942a68 (dustgrowth) initialisation details
+e57f939 dustybox fail fix
+f10cfe1 git merge
+fd50bc8 removed unused variables
+4d0f187 (set_slab) added set_slab routine to simplify 2D-done-in-3D problem setups
+ea2d998 (write_smalldump) BUG FIX with write of Bx,By,Bz to small dump files
+27d6091 (test_cooling) test added to print out cooling function as a table (turned off by default)
+b5c53cc build test fail fix (except for dustybox)
+9526e8c [indent-bot] standardised indentation
+c8c94eb [space-bot] whitespace at end of lines removed
+409aaab [header-bot] updated file headers
+79bf55b [tab-bot] tabs removed
+fba55e9 (setup_sphere) readded default of requiring gravity; option 1 modified to prevent setupfail
+75e83c3 (dustgrowth) implementation of dust size update
+ec1b54e deleted unused variables
+1b8acd3 Initial Bitbucket Deployments configuration
+027bd15 updated .mailmap
+0bdb64e git merge
+a7185b5 (mhdblast) use nx=64 by default to avoid setupfail; compiler warning fixed
+5bdd627 (test_ptmass) loosened tolerance on eccentric disc test slightly
+7152cff (setup_spheres) setupfail in neutronstar setup fixed
+9a17c51 (polytrope) default number of particles not a strange number
+eb734eb (setup_spheres) setup failure fixed in default setup; also allow polytrope with either isothermal or non-isothermal
+3080d8a (galcen) use find_phantom_datafile to avoid setup failures
+e56960e (set_disc) seg fault in set_disc fixed if large number of particles used
+69f272e restructuration of get_vrelonvfrag
+22826ef (dustgrowth) update grain size in step_leapfrog
+c491593 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+25f3701 another unused variable deleted
+7dd2a3c Initial Bitbucket Deployments configuration
+0b1bfb9 (helmholtz eos) added eosinfo
+a84103c (helmholtz eos) added element abundances table
+43cab14 [author-bot] updated AUTHORS file
+8166dfc [header-bot] updated file headers
+3582fbd (initial) changed indentation for consistency
+31d0e3f Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+b161da9 deleted unused variables in initial.F90
+8b6986b removed unused variables in multiple routines to prevent compiler warnings
+e01a7be deleted non-existing email
+4159ebd Merge branch 'master' of https://bitbucket.org/danielprice/phantom
+4babe42 add dustprop, ddustprop to derivs call in utils phantom2div
+17b3749 (mcfost) Fixing syntax issues with gfortran
+571af7a (setupfail) seg fault in setup_galaxies fixed
+c1076f5 (setup) setup should not require input other than enter
+b0ebbb9 (growth) build failures in phantom2divv and phantom2divb fixed
+9e18b3f [author-bot] updated AUTHORS file
+6a80672 [space-bot] whitespace at end of lines removed
+3892b07 [header-bot] updated file headers
+194e0cd build failure fix
+a903290 (test eos) Added initial code for testing Helmholtz eos, not currently activated
+dbc6868 (test eos) skip Helmholtz init test if table datafile not present
+40faac7 (test eos) modularised the code for this test
+bd54d1c (helmholtz eos) tidied up code
+68fe95c (helmholtz eos) updated table limits, set during init
+d58357b [indent-bot] standardised indentation
+410003e [author-bot] updated AUTHORS file
+f161e77 [space-bot] whitespace at end of lines removed
+e7dfb63 [header-bot] updated file headers
+522a478 [tab-bot] tabs removed
+a9eaa41 (dustgrowth) get T with spsound
+483b131 (dustgrowth) structuration of growth routines
+c9c0ffd print growth info only when .not.use_dustfrac
+9b2b342 fixed wrong initialisation
+6339288 Merge branch 'master' into dustgrowth
+bcc1612 (pipelines) added deploy to staging area workflow
+aac05d2 Merge branch 'master' into dustgrowth
+1857868 merge conflicts fix
+985e09c (ptmass) angular momentum is now conserved during particle accretion; issue (#17) resolved
+660bc7a (step) removed unused variables
+663e346 (phantom2divb) fix to work with derivs call change from e48b060
+a88db94 Merge branch 'master' into dustgrowth
+bb91443 fixed crash when dustgrowth=yes
+a1cab70 [indent-bot] standardised indentation
+38ab5f9 [space-bot] whitespace at end of lines removed
+d46a19e (galaxies) removed data files from LFS
+a3cc923 (helmholtz eos) init now returns an error instead of calling fatal if datafile not found
+f5cefa0 Fix disc_RadMass and common_envelope analysis and phantom2divv to work with equationofstate call change from e48b060
+65e4b05 (helmholtz eos) removed double precision specifier off constants
+31c5c01 (helmholtz eos) fixed Newton-Raphson iterations to not always do max number of iterations
+77f275b (helmholtz eos) fix maybe uninitialized variables
+f245847 (helmholtz eos) removed unused variables
+94ea63e [indent-bot] standardised indentation
+225d5d9 [format-bot] end if -> endif; end do -> enddo
+46a4b74 [space-bot] whitespace at end of lines removed
+db33aa0 [header-bot] updated file headers
+fe8f6ba [format-bot] obsolete .gt. .lt. .ge. .le. .eq. .ne. replaced
+f11a70e (galaxies) adding high res galaxy merger to LFS
+bdfec9e (galaxies) adding low res galaxy merger to LFS
+a7dbe20 (helmholtz eos) rename eosflag to relaxflag
+8e905aa (helmholtz eos) Added table datafile
+a2e8eb0 (setup_spheres) Added white dwarf setup using Helmholtz eos to setup_spheres
+1d4fd51 (dumps) write pressure if using Helmholtz eos
+0ec9e01 (eos) Added Helmholtz free energy eos
+db8a6f6 (physcon) added Avogadro's number
+e48b060 (eos) vxyzu is now inout in equationofstate call, and optional temp argument added
+3da120c (dumps) Added read/write of temperature to dumpfiles
+0e01953 (part) Added storage array for temperature
+d992421 [author-bot] updated AUTHORS file
+fc6f8f5 (evolve) Turn off angular momentum check if iexternalforce is > 1
+c5e8d5e (dustywave) updated default setup for one fluid version (dtg=1 by default)
+b01bb32 Merge branch 'master' into dustgrowth
+5a0b869 Structuration of growth subroutine
+916fa12 (mcfost) Adding test on Voronoi limits file
+29d304a (ptmass) added comment to warn about error in spin calculation [skip ci]
+de2dbaa (ptmass) particles with a sink within thier radkern*h will be woken on the next step
+5ee17b5 (ptmass) formatting change only: reordered subroutines and aligned some variables
+a094de2 (step_leapfrog) clarified comment
+a240cee (test_nonideal) test failure fixed
+38c5521 [header-bot] updated file headers
+b2b1f22 (test_sedov) bug fix to prevent crashing with CoM conseravation laws in place
+bd6a6e4 (conservation:CoM) the error check is always absolute and not relative
+1d45a12 (conservation:CoM) modified centre of mass conservation to allow CoM to drift 1% of the maximum particle separation before crashing
+8dae697 (setup_sphereinbox) will reset to centre of mass before the calculation begins
+6804cd2 (setup_wave) removed unused function
+d72ce0f (boundary particles) bug fix so that Bxyz will be defined on boundaries
+89b4c34 [indent-bot] standardised indentation
+bcfc79b [space-bot] whitespace at end of lines removed
+607fe5e (setup_shock) readded shock name to setup file removed in 997386d; still backwards compatible if shockname not listed
+c92a92e (raijin) added -mcmodel=medium and -shared-intel so can exceed 2Gb limit
+005f08a git merge
+71d87b5 (kdtree) increased stacksize for KNL scaling
+3691be1 use vectorizer flags for raijin
+997386d (setup_shock) do not read/write name from .setup file; avoids problems with backwards compatibility of .setup files. Also removed default MAXP=large so shock tuebes run out-of-the-box on OS/X
+cda527a (test_derivs) unnecessary ifdefs removed
+8f9fb5e added script for generating phantom releases
 1fbca20 updated ChangeLog and docs for v1.0
 c0631f3 (release) updated version to v1.0
 4c5ff86 (cooling) updated default C, O, Si abundances to match Sembach+ 2000
 24a3975 (test_derivs) compiler warning fixed
 6b04a59 (force) build failure in testgrav fixed, plus fixed a few more compiler warnings
 9e3b5b2 Update comments to give more accurate reference details
+c86eaf4 some tabulation corrections
+88e0651 Restructuration of growth subroutine + minor setup changes
 e5c4f41 (mpi) build failure from previous commits fixed
 daa5b84 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
 52f2555 (make) compiler warnings fixed
@@ -17,6 +175,7 @@ b6862f2 [header-bot] updated file headers
 c82d4fd (check errors) bug fix for checking conservation of centre of mass
 5eb3d57 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
 41e5859 [space-bot] whitespace at end of lines removed
+da6c698 New module <growth.F90> + modified disc setup
 fc2cbd0 (test_ptmass) removed redundant initialisations
 ad997e4 (test_ptmass) initialised Bevol
 8735337 (force: B/rho) only defining Bxi,Byi,Bzi if mhd=true
@@ -29,7 +188,11 @@ d15f217 (test) clean up doggie doos in build dir after sedov test
 6743ea1 (initial) moved a few initialisation commands for cleanliness only
 e46778d (initial) bug fix: dtmax can again be optionally decreased when a given density is reached
 f39793f (dust) revert f0a1825 due to test failures
+9dadbee build fail fix
+95a4e02 dustprop in code units and added vrel/vfrag into dumps when DUSTGROWTH=yes
 2cdef90 (moddump) build failure fix
+dbf1775 init dustprop = 0 for gas particles
+ed59ad7 grainsize and graindens added in dump files for DUSTGROWTH=yes
 14f5f4a [indent-bot] standardised indentation
 a03b12c [author-bot] updated AUTHORS file
 78fa9d5 [space-bot] whitespace at end of lines removed
@@ -75,6 +238,8 @@ c2f7f0a Merge branch 'master' of https://bitbucket.org/danielprice/phantom
 e461bba (mcfost) Adding Voronoi domain limits to the interface
 278d239 (forcing) now lfs pointer
 6f6b4c1 (analysis_dustydisc) removed redundant if use_dustfrac
+7b14d63 Merge branch 'dustgrowth' of https://bitbucket.org/danielprice/phantom into dustgrowth
+30574d4 modified disc_setup for dustgrowth [pre-flight]
 629916b [indent-bot] standardised indentation
 75f3221 [author-bot] updated AUTHORS file
 0c814f9 [space-bot] whitespace at end of lines removed
@@ -86,13 +251,17 @@ a2410d0 (nonideal MHD) updated value to prevent test failure
 ea6426f Updated the SYSTEM setting for the Lyon cluster
 4dc5c17 (eos) Updating the MESA EoS code portions
 3614c63 (setup_sphereinbox) set default number of particles in sphere; default is one of three options based upon maxp
+7fa0e6c Merge branch 'master' into dustgrowth
 788ed9f (mcfost) Removing libcurl dependency
 a40b4f1 [author-bot] updated AUTHORS file
 02ea414 (git-lfs) use git-lfs automatically for anything ending in .dat
 d40c2c4 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
 ebebc91 (sedov) uses individual timesteps by default
+6e24f18 fixed conflict
+8de094f merge
 cfc5e5f (mpi) enabled particle waking in MPI
 0bb086c (mpi) fix hang when determing when to write ev
+4e0eae3 added dustprop when use_dustgrowth is active
 7805bc3 (mpi) bugfix missing openmp statements
 c916078 [indent-bot] standardised indentation
 ca8dc6d [author-bot] updated AUTHORS file
@@ -100,9 +269,12 @@ ca8dc6d [author-bot] updated AUTHORS file
 da54e1a [header-bot] updated file headers
 f489468 (evwrite) bug fix from commit  f0db843 where data was printed to log rather than .ev
 8d28380 (setup_mhdblast) plasma beta is now an input parameter
+ed4ef94 Fixed error
+2e93aae Merge branch 'master' into dustgrowth
 f0db843 (debug) modified default gfortran flags for debug=yes; fixed test failures triggered with new flags
 7a2260f (ptmass) corrected typo in comment
 6f88a0c (setup_shock) modified default shock if MHD=yes
+d49402f Modified messages about grain size and density for dust growth
 5db2c61 Merge remote-tracking branch 'origin/master'
 6701be7 (mpi) another divide-by-zero bugfix in verbose mode
 5b0af97 (mpi) bugfix divide-by-zero in verbose mode
@@ -177,6 +349,7 @@ a5473cd [author-bot] updated AUTHORS file
 4b8ec06 (Makefile) added comment to SYSTEM=gstar
 be88b29 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
 2aab912 (SYSTEM=raijin) minor changes to configuration; works on knights landing architecture
+a6e6f7d (SYSTEM=raijin) minor changes to configuration; works on knights landing architecture
 26867f1 setting spsoundj=0 if usej=F to compute the correct tstop
 db90d06 (build) change -qopenmp to -openmp by default for ifort to avoid issues with older ifort versions
 1d4a649 Merge branch 'master' of https://bitbucket.org/danielprice/phantom
