@@ -210,7 +210,6 @@ tr.event-break td.time{
 }
 tr.event-break td.presentor{
   font-weight: normal;
-  border: 1px solid black;
   border-right: none;
 }
 
