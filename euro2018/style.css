@@ -144,46 +144,51 @@ footer a:hover {
 textarea {
     resize: none;
 }
+
 /* TABLE */
-table.subevent{
-  width: 100%;
-}
 table.container{
   background-color: white;
   color: #2d2d30;
   width: 65%;
 }
-table.inside{
+table.day-schedule{
   width: 100%;
 }
+table.day-schedule tr:nth-child(odd) td{
+}
+table.day-schedule tr:nth-child(even) td{
+  background-color: #2d2d301A;
+}
+
 /*  TD */
 td {
   padding: 5px;
 }
-td.time-date{
+td.header{
+  padding-left: 20%;
+}
+td.time{
   text-align: right;
   border-right: 1px solid black;
   width: 20%;
   padding-right: 10px;
-  min-width: 80px;
+  min-width: 100px;
+}
+td.presentor{
+  text-align: left;
+  padding-left: 30px;
+  min-width: 140px;
+  width: 25%;
+  font-weight: bold;
+  font-style: normal;
 }
 td.event{
   text-align: left;
   padding-left: 30px;
   min-width: 280px;
+  width: 70%;
 }
-td.event-short{
-  text-align: left;
-  padding-left: 20px;
-}
-td.header{
-  padding-left: 20%;
-}
-td.subevent{
-  padding-top: 0px;
-  padding-left: 30px;
-  padding-bottom: 20px;
-}
+
 /* TR */
 tr.header{
   border-top: 1px solid black;
@@ -192,52 +197,33 @@ tr.header{
   font-weight: bold;
   font-size: 17px;
 }
+/* tr.event-break{
+  background-color: #2d2d3012;
+} */
 tr.event-break{
-  background-color: #2d2d3012;
+  border: 1px solid black;
+  border-right: none;
 }
-tr.subevent-break{
-  background-color: #2d2d3012;
-  border-left: 1px solid gray;
-  border-bottom: 1px solid gray;
+tr.event-break td.time{
+  border: 1px solid black;
+  border-right: none;
 }
-tr.subevent-regular{
-  border-left: 1px solid gray;
-  border-bottom: 1px solid gray;
+tr.event-break td.presentor{
+  font-weight: normal;
+  border: 1px solid black;
+  border-right: none;
 }
+
+/* P */
 p.presentor-name{
   font-weight: bold;
   font-style: normal;
   display: inline;
 }
 
-.subevent-regular td.time-date{
-  text-align: right;
-  padding-right: 10px;
-  width: 10%;
-  border-right: none;
-  min-width: 50px;
-}
-.subevent-break td.time-date{
-  text-align: right;
-  padding-right: 10px;
-  width: 5%;
-  border-right: none;
-  min-width: 50px;
-}
-.subevent-regular td.presentor-name{
-  font-weight: bold;
-  font-size: 14px;
-  padding-left: 20px;
-  width: 25%;
-  min-width: 110px;
-}
-.subevent-regular td.subject{
-  min-width: 210px;
-  padding-left: 20px;
-}
-#program {
+#program{
   min-width: 510px;
 }
-#home {
+#home{
   min-width: 510px;
 }
