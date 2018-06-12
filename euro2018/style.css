@@ -8,10 +8,6 @@ h3, h4 {
     font-size: 20px;
     color: #111;
 }
-div.container {
-    padding: 80px 10px;
-    min-width: 500px;
-}
 .person {
     border: 10px solid transparent;
     margin-bottom: 25px;
@@ -145,6 +141,22 @@ textarea {
     resize: none;
 }
 
+/* BODY */
+body {
+  width: 100%;
+  min-width: 760px;
+}
+/* DIV */
+div.container {
+  padding: 80px 10px;
+  min-width: 500px;
+}
+div.participants-block {
+  width: 30%;
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
 /* TABLE */
 table.container{
   background-color: white;
@@ -172,12 +184,12 @@ td.time{
   border-right: 1px solid black;
   width: 20%;
   padding-right: 10px;
-  min-width: 100px;
+  min-width: 120px;
 }
 td.presentor{
   text-align: left;
   padding-left: 30px;
-  min-width: 140px;
+  min-width: 170px;
   width: 25%;
   font-weight: bold;
   font-style: normal;
@@ -185,7 +197,7 @@ td.presentor{
 td.event{
   text-align: left;
   padding-left: 30px;
-  min-width: 280px;
+  min-width: 400px;
   width: 70%;
 }
 

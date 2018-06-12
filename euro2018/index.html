@@ -9,455 +9,383 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#home"><img src="../image/logo.png" width="100"/></a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#home"><img src="../image/logo.png" width="100"/></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#program">PROGRAM</a></li>
+          <li><a href="#register">REGISTER</a></li>
+          <li><a href="#local">LOCAL INFO</a></li>
+          <li><a href="#participants">PARTICIPANTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+      </div>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#program">PROGRAM</a></li>
-        <li><a href="#register">REGISTER</a></li>
-        <li><a href="#local">LOCAL INFO</a></li>
-        <li><a href="#participants">PARTICIPANTS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
-      </ul>
+  </nav>
+  <div id="home" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#home" data-slide-to="0" class="active"></li>
+        <li data-target="#home" data-slide-to="1"></li>
+        <li data-target="#home" data-slide-to="2"></li>
+        <li data-target="#home" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="phantom-example-hd.png" alt="AGB wind with Phantom" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>1st Phantom European Users Workshop</h3>
+            <p class="presentor-name">18th-20th June 2018, University Degli Studi di Milano, Milan, Italy</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="flp13-brokendisc.png" alt="Broken circumbinary disc" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>1st Phantom European Users Workshop</h3>
+            <p class="presentor-name">We had so much fun in the 1st Phantom users workshop...</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="phantom-example-ns.png" alt="Phantom simulation of neutron star merger" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>1st Phantom European Users Workshop</h3>
+            <p class="presentor-name">That we thought we'd run another one, this time in Europe...</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="hd142527.png" alt="Phantom simulation of HD142527" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3>1st Phantom European Users Workshop</h3>
+            <p class="presentor-name">So get ready to solve some problems...</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#home" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#home" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+  </div>
+
+  <div id="aims" class="container">
+      <h3 class="text-center">AIMS</h3>
+      <p class="text-center">1. To consolidate development efforts</p>
+      <p class="text-center">2. To set a roadmap for future development priorities</p>
+      <p class="text-center">3. To grow the user community, and especially to encourage sideways interaction between users</p>
+      <p class="text-center"><em>We will set aside each afternoon of the workshop as a
+      hackfest, to collaboratively implement new features and tests</em></p>
+  </div>
+
+  <div id="program" class="bg-1">
+    <div class="container">
+      <h3 class="text-center">PROGRAM</h3>
+      <table class="container">
+        <tr class="header">
+          <td class="header">Monday 18 June 2018</td>
+        </tr>
+        <tr>
+          <td>
+            <table class="day-schedule">
+              <tr>
+                <td class="time">9.00 &ndash; 9.20</td>
+                <td class="presentor">Daniel Price</td>
+                <td class="event">Introduction to Phantom: Scientific motivation</td>
+              </tr>
+              <tr>
+                <td class="time">9.20 &ndash; 10.10</td>
+                <td class="presentor">Guillaume Laibe</td>
+                <td class="event">Lecture: Dust and gas in SPH</td>
+              </tr>
+              <tr>
+                <td class="time">10.10 &ndash; 10.30</td>
+                <td class="presentor">Rebecca Nealon</td>
+                <td class="event">Discs warped by misaligned planets</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">10.30 &ndash; 11.00</td>
+                <td class="presentor" style="font-weight: normal;">Coffee Break</td>
+                <td class="event"></td>
+              </tr>
+              <tr>
+                <td class="time">11.00 &ndash; 11.20</td>
+                <td class="presentor">Andrea Sacchi</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">11.20 &ndash; 11.40</td>
+                <td class="presentor">Guillaume Laibe</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">11.40 &ndash; 12.00</td>
+                <td class="presentor">Daniel Mentiplay</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">12.00 &ndash; 12.20</td>
+                <td class="presentor">J-F Gonzalez</td>
+                <td class="event">Back-reaction of dust on gas in protoplanetary discs: crucial, yet often overlooked</td>
+              </tr>
+              <tr>
+                <td class="time">12.20 &ndash; 12.40</td>
+                <td class="presentor">Hossam Aly</td>
+                <td class="event">Disc Orbital Precession Around Eccentric Binaries: Application to the GG Tau A System</td>
+              </tr>
+              <tr>
+                <td class="time">12.40 &ndash; 13.00</td>
+                <td class="presentor">João Rocha</td>
+                <td class="event">Numerical study of tidal disruption events with different penetration parameters</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">13.00 &ndash; 14.00</td>
+                <td class="presentor"  style="font-weight: normal;">Lunch</td>
+                <td class="event"></td>
+              </tr>
+              <tr class="event">
+                <td class="time">14.00 &ndash; 17.00</td>
+                <td class="presentor"></td>
+                <td class="event">Phantom Workshop/Hackathon</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="header">
+          <td class="header">Tuesday 19 June 2018 </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="day-schedule">
+              <tr>
+                <td class="time">9.00 &ndash; 9.50</td>
+                <td class="presentor">Giovanni Dipierro</td>
+                <td class="event">Lecture: Planet-disc interactions</td>
+              </tr>
+              <tr>
+                <td class="time">9.50 &ndash; 10.10</td>
+                <td class="presentor">Mark Hutchison</td>
+                <td class="event">MULTIGRAIN SPH: a healthier alternative</td>
+              </tr>
+              <tr>
+                <td class="time">10.10 &ndash; 10.30</td>
+                <td class="presentor">Sergei Biriukov</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">10.30 &ndash; 11.00</td>
+                <td class="presentor" style="font-weight: normal">Coffee Break</td>
+                <td class="event"></td>
+              </tr>
+              <tr>
+                <td class="time">11.00 &ndash; 11.20</td>
+                <td class="presentor">James Wurster</td>
+                <td class="event">Magnetised dust in star formation: A proposal</td>
+              </tr>
+              <tr>
+                <td class="time">11.20 &ndash; 11.40</td>
+                <td class="presentor">Giulia Ballabio</td>
+                <td class="event">Modelling of the observed structure in HL Tau: Simulating dust in SPH</td>
+              </tr>
+              <tr>
+                <td class="time">11.40 &ndash; 12.00</td>
+                <td class="presentor">Arnaud Vericel</td>
+                <td class="event">Dust growth in Phantom</td>
+              </tr>
+              <tr>
+                <td class="time">12.00 &ndash; 12.20</td>
+                <td class="presentor">Kieran Hirsh</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">12.20 &ndash; 12.40</td>
+                <td class="presentor">Esther Taillifet</td>
+                <td class="event">Fortree: A new tool to visualise code structure</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">12.40 &ndash; 14.00</td>
+                <td class="presentor">Lunch</td>
+                <td class="event"></td>
+              </tr>
+              <tr class="event">
+                <td class="time">14.00 &ndash; 17.00</td>
+                <td class="presentor"></td>
+                <td class="event">Phantom Workshop/Hackathon</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr class="header">
+          <td class="header">Wednesday 20 June 2018 </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="day-schedule">
+              <tr>
+                <td class="time">9.00 &ndash; 9.50</td>
+                <td class="presentor">David Liptai</td>
+                <td class="event">General relativity and its SPH discretisation</td>
+              </tr>
+              <tr>
+                <td class="time">9.50 &ndash; 10.10</td>
+                <td class="presentor">Martina Toscani</td>
+                <td class="event">Gravitational waves from Papaloizou-Pringle instabilities in tidal disruption events</td>
+              </tr>
+              <tr>
+                <td class="time">10.10 &ndash; 10.30</td>
+                <td class="presentor">Elen Golightly</td>
+                <td class="event">Tidal disruption events: the role of stellar spin</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">10.30 &ndash; 11.00</td>
+                <td class="presentor">Coffee Break</td>
+                <td class="event"></td>
+              </tr>
+              <tr>
+                <td class="time">11.00 &ndash; 11.20</td>
+                <td class="presentor">Giovanni Dipierro</td>
+                <td class="event">Dust gap opening in protoplanetary discs with PHANTOM</td>
+              </tr>
+              <tr>
+                <td class="time">11.20 &ndash; 11.40</td>
+                <td class="presentor">Daniel Price</td>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">11.40 &ndash; 12.00</td>
+                <td class="presentor">Giuseppe Lodato<br>
+                <td class="event">TBC</td>
+              </tr>
+              <tr>
+                <td class="time">12.00 &ndash; 12.30</td>
+                <td class="presentor"></td>
+                <td class="event">Discussion</td>
+              </tr>
+              <tr class="event-break">
+                <td class="time">12.30 &ndash; 13.30</td>
+                <td class="presentor">Lunch</td>
+                <td class="event"></td>
+              </tr>
+              <tr>
+                <td class="time">13.30 &ndash; 17.00</td>
+                <td class="presentor"></td>
+                <td class="event">Discussion</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <p class="text-center"> Participants are welcome to stay on at the University of Milano into Thursday for continued collaboration</p>
     </div>
   </div>
-</nav>
 
-
-<div id="home" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#home" data-slide-to="0" class="active"></li>
-      <li data-target="#home" data-slide-to="1"></li>
-      <li data-target="#home" data-slide-to="2"></li>
-      <li data-target="#home" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="phantom-example-hd.png" alt="AGB wind with Phantom" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>1st Phantom European Users Workshop</h3>
-          <p class="presentor-name">18th-20th June 2018, University Degli Studi di Milano, Milan, Italy</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="flp13-brokendisc.png" alt="Broken circumbinary disc" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>1st Phantom European Users Workshop</h3>
-          <p class="presentor-name">We had so much fun in the 1st Phantom users workshop...</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="phantom-example-ns.png" alt="Phantom simulation of neutron star merger" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>1st Phantom European Users Workshop</h3>
-          <p class="presentor-name">That we thought we'd run another one, this time in Europe...</p>
-        </div>
-      </div>
-
-      <div class="item">
-        <img src="hd142527.png" alt="Phantom simulation of HD142527" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>1st Phantom European Users Workshop</h3>
-          <p class="presentor-name">So get ready to solve some problems...</p>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#home" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#home" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<div id="aims" class="container">
-    <h3 class="text-center">AIMS</h3>
-    <p class="text-center">1. To consolidate development efforts</p>
-    <p class="text-center">2. To set a roadmap for future development priorities</p>
-    <p class="text-center">3. To grow the user community, and especially to encourage sideways interaction between users</p>
-    <p class="text-center"><em>We will set aside each afternoon of the workshop as a
-    hackfest, to collaboratively implement new features and tests</em></p>
-</div>
-
-<div id="program" class="bg-1">
-  <div class="container">
-    <h3 class="text-center">PROGRAM</h3>
-
-<!--td class="event"><p class="presentor-name">Giovanni Dipierro (Leicester)</p> Dust gap opening in protoplanetary discs with PHANTOM</td>
-<td class="event"><p class="presentor-name">James Wurster (Exeter)</p> Magnetised dust in star formation: A proposal</td>
-<td class="event"><p class="presentor-name">Giulia Ballabio (Leicester)</p>Modelling of the observed structure in HL Tau: Simulating dust in SPH</td>
-<td class="event"><p class="presentor-name">Elen Golightly (Leicester)</p>Tidal disruption events: the role of stellar spin</td>
-<td class="event"><p class="presentor-name">Mark Hutchison (Bern)</p>MULTIGRAIN SPH: a healthier alternative</td>
-<td class="event"><p class="presentor-name">Hossam Aly (Milano)</p>Disc Orbital Precession Around Eccentric Binaries: Application to the GG Tau A System</td>
-<td class="event"><p class="presentor-name">Esther Taillifet (Lyon)</p>Fortree: A new tool to visualise code structure</td>
-<td class="event"><p class="presentor-name">Arnaud Vericel (Lyon)</p>Dust growth in Phantom</td>
-<td class="event"><p class="presentor-name">Rebecca Nealon (Leicester)</p>Discs warped by misaligned planets</td>
-<td class="event"><p class="presentor-name">J-F Gonzalez (Lyon)</p>Back-reaction of dust on gas in protoplanetary discs: crucial, yet often overlooked</td>
-<td class="event"><p class="presentor-name">João Rocha (UEvora)</p>Numerical study of tidal disruption events with different penetration parameters</td>
-<td class="event"><p class="presentor-name">Martina Toscani (Milano)</p>Gravitational waves from Papaloizou-Pringle instabilities in tidal disruption events</td>
-<td class="event"><p class="presentor-name">Andrea Sacchi (Milano)</p>TBC</td>
-<td class="event"><p class="presentor-name">David Liptai (Monash)</p>TBC</td>
-<td class="event"><p class="presentor-name">Daniel Mentiplay (Monash)</p>TBC</td>
-<td class="event"><p class="presentor-name">Sergei Biriukov (Monash)</p>TBC</td>
-<td class="event"><p class="presentor-name">Kieran Hirsh (Monash)</p>TBC</td>
-<td class="event"><p class="presentor-name">Giuseppe Lodato (Milano)</p>TBC</td>
-<td class="event"><p class="presentor-name">Daniel Price (Monash)</p>TBC</td-->
-
-    <table class="container">
-      <!-- <tr class="header">
-        <td class="header">Monday 18 June 2018</td>
-      </tr>
-      <tr>
-        <td>
-          <table class="day-schedule">
-            <tr>
-              <td class="time">9.00 &ndash; 9.20</td>
-              <td class="event"><p class="presentor-name">Daniel Price</p><br>
-                Introduction to Phantom: Scientific motivation</td>
-            </tr>
-            <tr>
-              <td class="time">9.20 &ndash; 10.10</td>
-              <td class="event"><p class="presentor-name">Guillaume Laibe</p><br>
-                Lecture: Dust and gas in SPH</td>
-            </tr>
-            <tr>
-              <td class="time">10.10 &ndash; 10.30</td>
-              <td class="event"><p class="presentor-name">Rebecca Nealon</p><br>
-                Discs warped by misaligned planets</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">10.30 &ndash; 11.00</td>
-              <td class="event">Coffee Break</td>
-            </tr>
-            <tr>
-              <td class="time">11.00 &ndash; 11.20</td>
-              <td class="event"><p class="presentor-name">Andrea Sacchi</p><br>
-                TBC</td>
-            </tr>
-            <tr>
-              <td class="time">11.20 &ndash; 11.40</td>
-              <td class="event"><p class="presentor-name">Guillaume Laibe</p><br>
-                TBC</td>
-            </tr>
-            <tr>
-              <td class="time">11.40 &ndash; 12.00</td>
-              <td class="event"><p class="presentor-name">Daniel Mentiplay</p><br>
-                TBC</td>
-            </tr>
-            <tr>
-              <td class="time">12.00 &ndash; 12.20</td>
-              <td class="event"><p class="presentor-name">J-F Gonzalez</p><br>
-                Back-reaction of dust on gas in protoplanetary discs: crucial, yet often overlooked</td>
-            </tr>
-            <tr>
-              <td class="time">12.20 &ndash; 12.40</td>
-              <td class="event"><p class="presentor-name">Hossam Aly</p><br>
-                Disc Orbital Precession Around Eccentric Binaries: Application to the GG Tau A System</td>
-            </tr>
-            <tr>
-              <td class="time">12.40 &ndash; 13.00</td>
-              <td class="event"><p class="presentor-name">João Rocha</p><br>
-                Numerical study of tidal disruption events with different penetration parameters</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">13.00</td>
-              <td class="event">Lunch</td>
-            </tr>
-          </table>
-        </td>
-      </tr> -->
-      <tr class="header">
-        <td class="header">Monday 18 June 2018</td>
-      </tr>
-      <tr>
-        <td>
-          <table class="day-schedule">
-            <tr>
-              <td class="time">9.00 &ndash; 9.20</td>
-              <td class="presentor">Daniel Price</td>
-              <td class="event">Introduction to Phantom: Scientific motivation</td>
-            </tr>
-            <tr>
-              <td class="time">9.20 &ndash; 10.10</td>
-              <td class="presentor">Guillaume Laibe</td>
-              <td class="event">Lecture: Dust and gas in SPH</td>
-            </tr>
-            <tr>
-              <td class="time">10.10 &ndash; 10.30</td>
-              <td class="presentor">Rebecca Nealon</td>
-              <td class="event">Discs warped by misaligned planets</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">10.30 &ndash; 11.00</td>
-              <td class="presentor" style="font-weight: normal;">Coffee Break</td>
-              <td class="event"></td>
-            </tr>
-            <tr>
-              <td class="time">11.00 &ndash; 11.20</td>
-              <td class="presentor">Andrea Sacchi</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">11.20 &ndash; 11.40</td>
-              <td class="presentor">Guillaume Laibe</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">11.40 &ndash; 12.00</td>
-              <td class="presentor">Daniel Mentiplay</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">12.00 &ndash; 12.20</td>
-              <td class="presentor">J-F Gonzalez</td>
-              <td class="event">Back-reaction of dust on gas in protoplanetary discs: crucial, yet often overlooked</td>
-            </tr>
-            <tr>
-              <td class="time">12.20 &ndash; 12.40</td>
-              <td class="presentor">Hossam Aly</td>
-              <td class="event">Disc Orbital Precession Around Eccentric Binaries: Application to the GG Tau A System</td>
-            </tr>
-            <tr>
-              <td class="time">12.40 &ndash; 13.00</td>
-              <td class="presentor">João Rocha</td>
-              <td class="event">Numerical study of tidal disruption events with different penetration parameters</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">13.00</td>
-              <td class="presentor"  style="font-weight: normal;">Lunch</td>
-              <td class="event"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr class="header">
-        <td class="header">Tuesday 19 June 2018 </td>
-      </tr>
-      <tr>
-        <td>
-          <table class="day-schedule">
-            <tr>
-              <td class="time">9.00 &ndash; 9.50</td>
-              <td class="presentor">Giovanni Dipierro</td>
-              <td class="event">Lecture: Planet-disc interactions</td>
-            </tr>
-            <tr>
-              <td class="time">9.50 &ndash; 10.10</td>
-              <td class="presentor">Mark Hutchison</td>
-              <td class="event">MULTIGRAIN SPH: a healthier alternative</td>
-            </tr>
-            <tr>
-              <td class="time">10.10 &ndash; 10.30</td>
-              <td class="presentor">Sergei Biriukov</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">10.30 &ndash; 11.00</td>
-              <td class="presentor" style="font-weight: normal">Coffee Break</td>
-              <td class="event"></td>
-            </tr>
-            <tr>
-              <td class="time">11.00 &ndash; 11.20</td>
-              <td class="presentor">James Wurster</td>
-              <td class="event">Magnetised dust in star formation: A proposal</td>
-            </tr>
-            <tr>
-              <td class="time">11.20 &ndash; 11.40</td>
-              <td class="presentor">Giulia Ballabio</td>
-              <td class="event">Modelling of the observed structure in HL Tau: Simulating dust in SPH</td>
-            </tr>
-            <tr>
-              <td class="time">11.40 &ndash; 12.00</td>
-              <td class="presentor">Arnaud Vericel</td>
-              <td class="event">Dust growth in Phantom</td>
-            </tr>
-            <tr>
-              <td class="time">12.00 &ndash; 12.20</td>
-              <td class="presentor">Kieran Hirsh</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">12.20 &ndash; 12.40</td>
-              <td class="presentor">Esther Taillifet</td>
-              <td class="event">Fortree: A new tool to visualise code structure</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">12.40</td>
-              <td class="presentor">Lunch</td>
-              <td class="event"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-
-      <tr class="header">
-        <td class="header">Wednesday 20 June 2018 </td>
-      </tr>
-      <tr>
-        <td>
-          <table class="day-schedule">
-            <tr>
-              <td class="time">9.00 &ndash; 9.50</td>
-              <td class="presentor">David Liptai</td>
-              <td class="event">General relativity and its SPH discretisation</td>
-            </tr>
-            <tr>
-              <td class="time">9.50 &ndash; 10.10</td>
-              <td class="presentor">Martina Toscani</td>
-              <td class="event">Gravitational waves from Papaloizou-Pringle instabilities in tidal disruption events</td>
-            </tr>
-            <tr>
-              <td class="time">10.10 &ndash; 10.30</td>
-              <td class="presentor">Elen Golightly</td>
-              <td class="event">Tidal disruption events: the role of stellar spin</td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">10.30 &ndash; 11.00</td>
-              <td class="presentor">Coffee Break</td>
-              <td class="event"></td>
-            </tr>
-            <tr>
-              <td class="time">11.00 &ndash; 11.20</td>
-              <td class="presentor">Giovanni Dipierro</td>
-              <td class="event">Dust gap opening in protoplanetary discs with PHANTOM</td>
-            </tr>
-            <tr>
-              <td class="time">11.20 &ndash; 11.40</td>
-              <td class="presentor">Daniel Price</td>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">11.40 &ndash; 12.00</td>
-              <td class="presentor">Giuseppe Lodato<br>
-              <td class="event">TBC</td>
-            </tr>
-            <tr>
-              <td class="time">12.00 &ndash; 12.30</td>
-              <td class="presentor">Discussion</td>
-              <td class="event"></td>
-            </tr>
-            <tr class="event-break">
-              <td class="time">12.30</td>
-              <td class="presentor">Lunch</td>
-              <td class="event"></td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </table>
-    <p class="text-center"> Participants are welcome to stay on at the University of Milano into Thursday for continued collaboration</p>
+  <!-- Registration -->
+  <div id="register" class="container text-center">
+      <h3>REGISTER</h3>
+    <p class="presentor-name"><a href="https://shop.monash.edu/registration-for-phantom-european-users-workshop-2018.html">Click here to register</a>. Be quick! Early bird closes 31/5/18 and numbers are limited.</p>
+    <p>If you do not wish to give a talk or poster, just enter "none" for the title and abstract.</p>
   </div>
-</div>
 
-<!-- Registration -->
-<div id="register" class="container text-center">
-    <h3>REGISTER</h3>
-  <p class="presentor-name"><a href="https://shop.monash.edu/registration-for-phantom-european-users-workshop-2018.html">Click here to register</a>. Be quick! Early bird closes 31/5/18 and numbers are limited.</p>
-  <p>If you do not wish to give a talk or poster, just enter "none" for the title and abstract.</p>
-</div>
+  <!-- Add Google Maps -->
+  <div id="local" class="bg-1">
+    <div class="container text-center">
+      <h3 class="text-center">LOCAL INFORMATION</h3>
+      <p class="text-center">The workshop will be held in "Aula Polvani", close to the main entrance of the Physics Department in via Celoria 16, 20133, Milano. Below or <a href="https://www.google.com/maps/place/Via+Giovanni+Celoria,+16,+20133+Milano+MI,+Italy/@45.476731,9.230593,15z/data=!4m5!3m4!1s0x4786c6f5003585d1:0x91edc21820e19f64!8m2!3d45.4765077!4d9.230825?hl=en-US
+      ">by clicking here</a> you will find a map of the area.
+      </p>
+      <p class="text-center">How to reach the department
+      from Airports:
+      <br/>LINATE: Bus 73 at the airport toward the city centre, then bus n. 93. A taxi ride from the airport to the department costs around  20 €.
+      <br/>BERGAMO-ORIO: Shuttle to the central train station, then metro green line (linea M2) up to the stop Piola, then ten minutes walking. A taxi ride to the department costs around 100 €.
+      <br/>MALPENSA: Shuttle to the central train station, then metro green line (linea M2) up to the stop Piola, then ten minutes walking. A taxi ride to the department costs around 100 €.
 
-<!-- Add Google Maps -->
-<div id="local" class="bg-1">
-<div class="container text-center">
-<h3 class="text-center">LOCAL INFORMATION</h3>
-<p class="text-center">The workshop will be held in "Aula Polvani", close to the main entrance of the Physics Department in via Celoria 16, 20133, Milano. Below or <a href="https://www.google.com/maps/place/Via+Giovanni+Celoria,+16,+20133+Milano+MI,+Italy/@45.476731,9.230593,15z/data=!4m5!3m4!1s0x4786c6f5003585d1:0x91edc21820e19f64!8m2!3d45.4765077!4d9.230825?hl=en-US
-">by clicking here</a> you will find a map of the area.
-</p>
-<p class="text-center">How to reach the department
-from Airports:
-<br/>LINATE: Bus 73 at the airport toward the city centre, then bus n. 93. A taxi ride from the airport to the department costs around  20 €.
-<br/>BERGAMO-ORIO: Shuttle to the central train station, then metro green line (linea M2) up to the stop Piola, then ten minutes walking. A taxi ride to the department costs around 100 €.
-<br/>MALPENSA: Shuttle to the central train station, then metro green line (linea M2) up to the stop Piola, then ten minutes walking. A taxi ride to the department costs around 100 €.
+      <p class="text-center">Most of you will have already sorted out your accommodation, but if you are looking for a hotel, here is a list of nearby ones:
+        <br/><a href="http://www.hoteldieci.it/">Hotel Dieci</a> &mdash; A good nearby 4-star hotel
+        <br/><a href="http://hotelgammamilano.it/en/">Hotel Gamma</a> &mdash; A 3-star hotel
+        <br/><a href="http://luganohotel.net/en/index.asp">Hotel Lugano</a> &mdash; A 3-star hotel
+      </p>
+    </div>
+    <div id="googleMap">
+      <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(45.476731,9.230593);
+          var mapProp = {center:myCenter, zoom:14, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
+    </div>
+  </div>
 
-<p class="text-center">Most of you will have already sorted out your accommodation, but if you are looking for a hotel, here is a list of nearby ones:
-<br/><a href="http://www.hoteldieci.it/">Hotel Dieci</a> &mdash; A good nearby 4-star hotel
-<br/><a href="http://hotelgammamilano.it/en/">Hotel Gamma</a> &mdash; A 3-star hotel
-<br/><a href="http://luganohotel.net/en/index.asp">Hotel Lugano</a> &mdash; A 3-star hotel
-</p>
+  <div id="participants" class="container">
+    <div class="container text-center">
+      <h3 class="text-center">Participants</h3>
+      <div class="participants-block">
+        <br/>Daniel Price (Monash)
+        <br/>Giuseppe Lodato (Milan)
+        <br/>James Wurster (Exeter)
+        <br/>Giovanni Dipierro (Leicester)
+        <br/>Hauke Wörpel (Potsdam)
+        <br/>Martina Toscani (Milan)
+        <br/>João Rocha (UEvora)
+        <br/>Mark Fletcher (Leicester)
+        <br/>Hossam Aly (Milan)
+      </div>
+      <div class="participants-block">
+        <br/>Mark Hutchison (Bern/Zurich)
+        <br/>Cassandra Hall (Leicester)
+        <br/>Giulia Ballabio (Leicester)
+        <br/>Elen Golightly (Leicester)
+        <br/>Alessia Franchini (Las Vegas)
+        <br/>Arnaud Vericel (Lyon)
+        <br/>Rebecca Nealon (Leicester)
+        <br/>Benedetta Veronesi (Milan)
+        <br/>J-F Gonzalez (Lyon)
+      </div>
+      <div class="participants-block">
+        <br/>Esther Taillifet (Lyon)
+        <br/>Daniel Mentiplay* (Monash)
+        <br/>Sergei Biriukov* (Monash)
+        <br/>Kieran Hirsh* (Monash)
+        <br/>David Liptai* (Monash)
+        <br/>Andrea Sacchi* (Milan)
+        <br/>Guillaume Laibe* (ENS-Lyon)
+        <br/>Enrico Ragusa* (Milan)
+      </div>
+    </div>
+  </div>
 
-
-</div>
-<div id="googleMap">
-<script>
-function myMap() {
-var myCenter = new google.maps.LatLng(45.476731,9.230593);
-var mapProp = {center:myCenter, zoom:14, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-var marker = new google.maps.Marker({position:myCenter});
-marker.setMap(map);
-}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
-<!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
-</div>
-</div>
-
-<div id="participants" class="container">
-<div class="container text-center">
-     <h3 class="text-center">Participants</h3>
-     <br/>Daniel Price (Monash)
-     <br/>Giuseppe Lodato (Milan)
-     <br/>James Wurster (Exeter)
-     <br/>Giovanni Dipierro (Leicester)
-     <br/>Hauke Wörpel (Potsdam)
-     <br/>Mark Hutchison (Bern/Zurich)
-     <br/>Cassandra Hall (Leicester)
-     <br/>Giulia Ballabio (Leicester)
-     <br/>Elen Golightly (Leicester)
-     <br/>Alessia Franchini (Las Vegas)
-     <br/>Esther Taillifet (Lyon)
-     <br/>Arnaud Vericel (Lyon)
-     <br/>Rebecca Nealon (Leicester)
-     <br/>Benedetta Veronesi (Milan)
-     <br/>J-F Gonzalez (Lyon)
-     <br/>Martina Toscani (Milan)
-     <br/>João Rocha (UEvora)
-     <br/>Mark Fletcher (Leicester)
-     <br/>Hossam Aly (Milan)
-     <br/>David Liptai* (Monash)
-     <br/>Daniel Mentiplay* (Monash)
-     <br/>Sergei Biriukov* (Monash)
-     <br/>Kieran Hirsh* (Monash)
-     <br/>Guillaume Laibe* (ENS-Lyon)
-     <br/>Enrico Ragusa* (Milan)
-     <br/>Andrea Sacchi* (Milan)
-     <br/>*=not yet registered
-</div>
-</div>
-
-
-<div id="contact" class="bg-1">
-<div class="container text-center">
-  <h3 class="text-center">Contact</h3>
-  <p class="text-center"><em>giuseppe.lodato@unimi.it</em></p>
+  <div id="contact" class="bg-1">
+    <div class="container text-center">
+      <h3 class="text-center">Contact</h3>
+      <p class="text-center"><em>giuseppe.lodato@unimi.it</em></p>
       <div class="row text-center">
-      <div class="col-sm-6">
+        <div class="col-sm-6">
           <p class="presentor-name"><strong>Local organising committee</strong></p>
           <br/>Giuseppe Lodato
           <br/>Benedetta Veronesi
@@ -466,56 +394,58 @@ Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
           <br/>David Liptai
           <br/>Sergei Biriukov
           <br/>Kieran Hirsh
+        </div>
       </div>
       <div class="row text-center">
-      <div class="col-sm-6">
+        <div class="col-sm-6">
           <p class="presentor-name"><strong>Scientific organising committee</strong></p>
           <br/>Giuseppe Lodato
           <br/>Daniel Price
           <br/>Giovanni Dipierro
           <br/>Guillaume Laibe
+        </div>
       </div>
-</div>
-</div>
+    </div>
+  </div>
 
-<!-- Footer -->
-<footer class="text-center">
-  <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a><br><br>
-  <p class="presentor-name">Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+  <!-- Footer -->
+  <footer class="text-center">
+    <a class="up-arrow" href="#home" data-toggle="tooltip" title="TO TOP">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a><br><br>
+    <p class="presentor-name">Bootstrap Theme Made By <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+  </footer>
 
-<script>
-$(document).ready(function(){
-  // Initialize Tooltip
-  $('[data-toggle="tooltip"]').tooltip();
+  <script>
+    $(document).ready(function(){
+      // Initialize Tooltip
+      $('[data-toggle="tooltip"]').tooltip();
 
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#home']").on('click', function(event) {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#home']").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+          // Prevent default anchor click behavior
+          event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+          // Store hash
+          var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
       });
-    } // End if
-  });
-})
-</script>
+    })
+  </script>
 
 </body>
 </html>
