@@ -240,8 +240,8 @@ p.presentor-name{
 }
 
 iframe{
-  width: 300;
-  height: 200;
+  width: 280px;
+  height: 280px;
   allowfullscreen;
   webkitallowfullscreen;
 }
