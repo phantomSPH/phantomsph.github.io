@@ -238,3 +238,10 @@ p.presentor-name{
 #home{
   min-width: 510px;
 }
+
+iframe{
+  width: 300;
+  height: 200;
+  allowfullscreen;
+  webkitallowfullscreen;
+}
