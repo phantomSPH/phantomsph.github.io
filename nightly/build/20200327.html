@@ -1,70 +1,71 @@
 <h2>Changesets tested since last build</h2>
 <table>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/6efc323">6efc323</a></td><td>[author-bot] updated AUTHORS file</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/8931e61">8931e61</a></td><td>[space-bot] whitespace at end of lines removed</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/78ea6cd">78ea6cd</a></td><td>[header-bot] updated file headers</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/bdcefe5">bdcefe5</a></td><td>(nimhd) minor cleanup of test routine; allow sub-testing; use get_derivs_global subroutine</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/8821940">8821940</a></td><td>(set_unifdis) BUG FIX introduced by c116fca; centred lattice OFF by default, not on; fixes nimhd test failure</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/64e4ccf">64e4ccf</a></td><td>(GR) pipelines failure fixed, increased tolerance slightly on metric derivs test</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/523a6ef">523a6ef</a></td><td>Merge branch 'master' of https://bitbucket.org/danielprice/phantom</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/40c93c1">40c93c1</a></td><td>(GR) added unit test for metric derivatives</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/56a195c">56a195c</a></td><td>(GR) TESTFAIL FIX - Kerr metric now regular at x=y=0 with z=r (but not yet derivs or contravariant); also general cleanup of test_gr module</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/11b8cf8">11b8cf8</a></td><td>(utils_testsuite) seg fault in checkvalbuf_int fixed if optional argument not present</td></tr>
-<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/077db77">077db77</a></td><td>fortran.rst edited online with Bitbucket [skip ci]</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/400d35e">400d35e</a></td><td>[space-bot] whitespace at end of lines removed</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/2aa8867">2aa8867</a></td><td>[header-bot] updated file headers</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/785e2db">785e2db</a></td><td>(pipelines) bug fix (properly)</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/480ac09">480ac09</a></td><td>(pipelines) bug fix with gr pipeline</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/2a03e44">2a03e44</a></td><td>(checksetup) use new G_is_unity routine</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/8bd547e">8bd547e</a></td><td>(kdtree; memory) minor cleanups; deleted unused sort_old routine</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/c116fca">c116fca</a></td><td>(star) EXACTLY centre star on the origin; needed to get very steep stellar profiles correct</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/e29a193">e29a193</a></td><td>(memory) subsequent call to allocate will allocate kdtree arrays if they were not allocated on the first call</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/7684d74">7684d74</a></td><td>(combinedustdumps) build failure fixed + added to nightly build checks</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/2c627a6">2c627a6</a></td><td>(nightly) testgr added to nightly test suite + pipelines</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/67f275c">67f275c</a></td><td>(externGR) cleanup; use c_is_unity and G_is_unity functions</td></tr>
+<tr><td><a href="https://bitbucket.org/danielprice/phantom/changeset/c1926f7">c1926f7</a></td><td>(extern) use new G_is_unity and c_is_unity functions to check unit settings, compiler warning fixed</td></tr>
 </table>
 <h2>Checking Phantom testsuite, SYSTEM=msg</h2>
-Test suite checked: Wed Apr 1 14:01:59 AEDT 2020
+Test suite checked: Fri Mar 27 14:01:47 AEDT 2020
 <table>
 <tr><td bgcolor=#009900>test</td>
-<td>PASSED: 136 of 136 100.0%</td><td>completed in   1 min,  21.66 s  ( 15 min,  42.36 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-msg.txt">show details</a></td></tr>
+<td>PASSED: 136 of 136 100.0%</td><td>completed in   1 min,  22.25 s  ( 15 min,  50.75 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testkd</td>
-<td>PASSED: 147 of 147 100.0%</td><td>completed in   1 min,  26.62 s  ( 10 min,  24.80 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-msg.txt">show details</a></td></tr>
+<td>PASSED: 147 of 147 100.0%</td><td>completed in   1 min,  26.50 s  ( 10 min,  27.57 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>test2</td>
-<td>PASSED: 111 of 111 100.0%</td><td>completed in   39.28 s (  8 min,  57.69 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-msg.txt">show details</a></td></tr>
+<td>PASSED: 111 of 111 100.0%</td><td>completed in   39.50 s (  9 min,   5.02 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testcyl</td>
-<td>PASSED: 133 of 133 100.0%</td><td>completed in   58.36 s ( 12 min,  23.39 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-msg.txt">show details</a></td></tr>
+<td>PASSED: 133 of 133 100.0%</td><td>completed in   58.00 s ( 12 min,  16.05 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrav</td>
-<td>PASSED:  35 of  35 100.0%</td><td>completed in   38.34 s ( 10 min,  13.14 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-msg.txt">show details</a></td></tr>
+<td>PASSED:  35 of  35 100.0%</td><td>completed in   37.50 s (  9 min,  59.35 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgr</td>
-<td>PASSED:   6 of   6 100.0%</td><td>completed in    1.23 s (  19.52 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-msg.txt">show details</a></td></tr>
+<td>PASSED:   3 of   3 100.0%</td><td>completed in    1.25 s (  21.94 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testdust</td>
-<td>PASSED:  18 of  18 100.0%</td><td>completed in   41.84 s ( 11 min,   9.14 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-msg.txt">show details</a></td></tr>
-<tr><td bgcolor=#009900>testnimhd</td>
-<td>PASSED:   3 of   3 100.0%</td><td>completed in   38.04 s ( 10 min,   8.53 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-msg.txt">show details</a></td></tr>
+<td>PASSED:  18 of  18 100.0%</td><td>completed in   42.00 s ( 11 min,  12.53 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-msg.txt">show details</a></td></tr>
+<tr><td bgcolor=#FF0000>testnimhd</td>
+<td>FAILED:   1 of   3  33.3%<br/>PASSED:   2 of   3  66.7%</td><td></td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-msg.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrowth</td>
-<td>PASSED:  24 of  24 100.0%</td><td>completed in   1 min,  20.58 s  ( 21 min,  28.96 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-msg.txt">show details</a></td></tr>
+<td>PASSED:  24 of  24 100.0%</td><td>completed in   1 min,  21.50 s  ( 21 min,  42.46 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-msg.txt">show details</a></td></tr>
 </table>
-<p>Performed 9 test runs; <strong>0 failures</strong></p>
+<p>Performed 9 test runs; <strong>1 failures</strong></p>
 <h2>Checking Phantom testsuite, SYSTEM=msg DEBUG=yes</h2>
-Test suite checked: Wed Apr 1 14:21:29 AEDT 2020
+Test suite checked: Fri Mar 27 14:21:46 AEDT 2020
 <table>
 <tr><td bgcolor=#009900>test</td>
-<td>PASSED: 136 of 136 100.0%</td><td>completed in   9 min,   8.78 s  (   1 hr, 43 min,  45.77 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-msg-debug.txt">show details</a></td></tr>
+<td>PASSED: 136 of 136 100.0%</td><td>completed in   9 min,   7.50 s  (   1 hr, 43 min,  36.36 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testkd</td>
-<td>PASSED: 147 of 147 100.0%</td><td>completed in  10 min,  23.95 s  ( 58 min,  13.01 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-msg-debug.txt">show details</a></td></tr>
+<td>PASSED: 147 of 147 100.0%</td><td>completed in  10 min,  31.25 s  ( 58 min,  13.45 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>test2</td>
-<td>PASSED: 111 of 111 100.0%</td><td>completed in   5 min,  24.23 s  (   1 hr,  4 min,  15.54 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-msg-debug.txt">show details</a></td></tr>
+<td>PASSED: 111 of 111 100.0%</td><td>completed in   5 min,  23.75 s  (   1 hr,  4 min,  16.58 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testcyl</td>
-<td>PASSED: 133 of 133 100.0%</td><td>completed in   8 min,  15.59 s  (   1 hr, 19 min,  46.93 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-msg-debug.txt">show details</a></td></tr>
+<td>PASSED: 133 of 133 100.0%</td><td>completed in   8 min,  14.50 s  (   1 hr, 19 min,  44.58 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrav</td>
-<td>PASSED:  35 of  35 100.0%</td><td>completed in   4 min,  30.11 s  (   1 hr, 11 min,  58.61 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-msg-debug.txt">show details</a></td></tr>
+<td>PASSED:  35 of  35 100.0%</td><td>completed in   4 min,  31.25 s  (   1 hr, 12 min,  13.64 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgr</td>
-<td>PASSED:   6 of   6 100.0%</td><td>completed in    3.12 s (  49.92 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-msg-debug.txt">show details</a></td></tr>
+<td>PASSED:   3 of   3 100.0%</td><td>completed in    3.00 s (  48.04 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testdust</td>
-<td>PASSED:  18 of  18 100.0%</td><td>completed in   5 min,  25.56 s  (   1 hr, 26 min,  43.28 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-msg-debug.txt">show details</a></td></tr>
-<tr><td bgcolor=#009900>testnimhd</td>
-<td>PASSED:   3 of   3 100.0%</td><td>completed in   5 min,  48.67 s  (   1 hr, 32 min,  58.15 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-msg-debug.txt">show details</a></td></tr>
+<td>PASSED:  18 of  18 100.0%</td><td>completed in   5 min,  27.00 s  (   1 hr, 27 min,   3.46 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-msg-debug.txt">show details</a></td></tr>
+<tr><td bgcolor=#FF0000>testnimhd</td>
+<td>FAILED:   1 of   3  33.3%<br/>PASSED:   2 of   3  66.7%</td><td></td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-msg-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrowth</td>
-<td>PASSED:  24 of  24 100.0%</td><td>completed in  10 min,  30.19 s  (   2 hr, 47 min,  51.28 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-msg-debug.txt">show details</a></td></tr>
+<td>PASSED:  24 of  24 100.0%</td><td>completed in  10 min,  31.50 s  (   2 hr, 48 min,  11.66 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-msg-debug.txt">show details</a></td></tr>
 </table>
-<p>Performed 9 test runs; <strong>0 failures</strong></p>
+<p>Performed 9 test runs; <strong>1 failures</strong></p>
 <h2>Checking Phantom build, SYSTEM=msg</h2>
-Build checked: Wed Apr 1 15:26:01 AEDT 2020
+Build checked: Fri Mar 27 15:27:15 AEDT 2020
 <table>
 <tr>
-<td bgcolor="#FF6600">empty (phantom)</td>
+<td bgcolor="#009900">empty (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-empty-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">empty (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-empty-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -76,9 +77,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">wddisc (phantom)</td>
+<td bgcolor="#009900">wddisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-wddisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">wddisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-wddisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -90,9 +91,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">asteroidwind (phantom)</td>
+<td bgcolor="#009900">asteroidwind (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-asteroidwind-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">asteroidwind (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-asteroidwind-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -104,9 +105,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">galdisc (phantom)</td>
+<td bgcolor="#009900">galdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-galdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">galdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-galdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -118,9 +119,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">galdiscmhd (phantom)</td>
+<td bgcolor="#009900">galdiscmhd (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-galdiscmhd-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">galdiscmhd (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-galdiscmhd-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -132,9 +133,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">turbdrive (phantom)</td>
+<td bgcolor="#009900">turbdrive (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-turbdrive-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">turbdrive (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-turbdrive-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -146,9 +147,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">taylorgreen (phantom)</td>
+<td bgcolor="#009900">taylorgreen (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-taylorgreen-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">taylorgreen (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-taylorgreen-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -160,9 +161,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">turb (phantom)</td>
+<td bgcolor="#009900">turb (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-turb-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">turb (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-turb-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -174,9 +175,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">wd (phantom)</td>
+<td bgcolor="#009900">wd (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-wd-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">wd (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-wd-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -188,9 +189,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">photoevap (phantom)</td>
+<td bgcolor="#009900">photoevap (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-photoevap-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">photoevap (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-photoevap-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -202,9 +203,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">disc (phantom)</td>
+<td bgcolor="#009900">disc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-disc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">disc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-disc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -216,9 +217,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">grtde (phantom)</td>
+<td bgcolor="#009900">grtde (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-grtde-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">grtde (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-grtde-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -230,9 +231,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">srpolytrope (phantom)</td>
+<td bgcolor="#009900">srpolytrope (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-srpolytrope-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">srpolytrope (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-srpolytrope-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -244,9 +245,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">grdisc (phantom)</td>
+<td bgcolor="#009900">grdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-grdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">grdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-grdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -258,9 +259,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">adiabaticdisc (phantom)</td>
+<td bgcolor="#009900">adiabaticdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-adiabaticdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">adiabaticdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-adiabaticdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -272,9 +273,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">lightcurvedisc (phantom)</td>
+<td bgcolor="#009900">lightcurvedisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-lightcurvedisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">lightcurvedisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-lightcurvedisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -286,9 +287,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">gwdisc (phantom)</td>
+<td bgcolor="#009900">gwdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-gwdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">gwdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-gwdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -300,9 +301,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">nshwdisc (phantom)</td>
+<td bgcolor="#009900">nshwdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-nshwdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">nshwdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-nshwdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -314,9 +315,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">prtest (phantom)</td>
+<td bgcolor="#009900">prtest (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-prtest-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">prtest (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-prtest-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -328,9 +329,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">binarydiscMFlow (phantom)</td>
+<td bgcolor="#009900">binarydiscMFlow (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-binarydiscMFlow-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">binarydiscMFlow (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-binarydiscMFlow-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -342,9 +343,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">planetdisc (phantom)</td>
+<td bgcolor="#009900">planetdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-planetdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">planetdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-planetdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -356,9 +357,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">planetatm (phantom)</td>
+<td bgcolor="#009900">planetatm (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-planetatm-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">planetatm (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-planetatm-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -370,9 +371,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">torus (phantom)</td>
+<td bgcolor="#009900">torus (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-torus-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">torus (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-torus-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -384,9 +385,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">galcen (phantom)</td>
+<td bgcolor="#009900">galcen (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-galcen-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">galcen (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-galcen-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -398,9 +399,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">bondi (phantom)</td>
+<td bgcolor="#009900">bondi (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-bondi-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">bondi (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-bondi-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -412,9 +413,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">grbondi (phantom)</td>
+<td bgcolor="#009900">grbondi (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-grbondi-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">grbondi (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-grbondi-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -426,9 +427,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">grbondi-inject (phantom)</td>
+<td bgcolor="#009900">grbondi-inject (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-grbondi-inject-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">grbondi-inject (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-grbondi-inject-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -440,9 +441,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">quebec (phantom)</td>
+<td bgcolor="#009900">quebec (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-quebec-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">quebec (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-quebec-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -454,9 +455,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">tde (phantom)</td>
+<td bgcolor="#009900">tde (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-tde-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">tde (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-tde-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -468,9 +469,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">polytrope (phantom)</td>
+<td bgcolor="#009900">polytrope (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-polytrope-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">polytrope (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-polytrope-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -482,9 +483,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">neutronstar (phantom)</td>
+<td bgcolor="#009900">neutronstar (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-neutronstar-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">neutronstar (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-neutronstar-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -496,9 +497,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">sphereinbox (phantom)</td>
+<td bgcolor="#009900">sphereinbox (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-sphereinbox-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">sphereinbox (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-sphereinbox-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -510,9 +511,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">shock (phantom)</td>
+<td bgcolor="#009900">shock (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-shock-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">shock (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-shock-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -524,9 +525,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustyshock (phantom)</td>
+<td bgcolor="#009900">dustyshock (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustyshock-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustyshock (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustyshock-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -538,9 +539,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdshock (phantom)</td>
+<td bgcolor="#009900">mhdshock (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdshock-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdshock (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdshock-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -566,9 +567,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">srshock (phantom)</td>
+<td bgcolor="#009900">srshock (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-srshock-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">srshock (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-srshock-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -580,9 +581,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testparticles (phantom)</td>
+<td bgcolor="#009900">testparticles (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testparticles-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testparticles (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testparticles-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -594,9 +595,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">gr_testparticles (phantom)</td>
+<td bgcolor="#009900">gr_testparticles (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-gr_testparticles-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">gr_testparticles (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-gr_testparticles-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -608,9 +609,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustydisc (phantom)</td>
+<td bgcolor="#009900">dustydisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustydisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustydisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustydisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -622,9 +623,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">growingdisc (phantom)</td>
+<td bgcolor="#009900">growingdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-growingdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">growingdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-growingdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -636,9 +637,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">growthtomulti (phantom)</td>
+<td bgcolor="#009900">growthtomulti (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-growthtomulti-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">growthtomulti (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-growthtomulti-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -650,9 +651,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustybox (phantom)</td>
+<td bgcolor="#009900">dustybox (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustybox-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustybox (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustybox-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -664,9 +665,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustysedov (phantom)</td>
+<td bgcolor="#009900">dustysedov (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustysedov-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustysedov (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustysedov-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -678,9 +679,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustywave (phantom)</td>
+<td bgcolor="#009900">dustywave (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustywave-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustywave (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustywave-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -692,9 +693,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">wave (phantom)</td>
+<td bgcolor="#009900">wave (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-wave-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">wave (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-wave-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -720,9 +721,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">sedov (phantom)</td>
+<td bgcolor="#009900">sedov (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-sedov-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">sedov (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-sedov-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -734,9 +735,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">srblast (phantom)</td>
+<td bgcolor="#009900">srblast (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-srblast-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">srblast (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-srblast-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -748,9 +749,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">blob (phantom)</td>
+<td bgcolor="#009900">blob (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-blob-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">blob (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-blob-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -762,9 +763,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">kh (phantom)</td>
+<td bgcolor="#009900">kh (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-kh-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">kh (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-kh-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -776,9 +777,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdrotor (phantom)</td>
+<td bgcolor="#009900">mhdrotor (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdrotor-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdrotor (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdrotor-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -790,9 +791,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">jadvect (phantom)</td>
+<td bgcolor="#009900">jadvect (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-jadvect-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">jadvect (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-jadvect-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -804,9 +805,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">alfven (phantom)</td>
+<td bgcolor="#009900">alfven (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-alfven-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">alfven (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-alfven-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -818,9 +819,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">orstang (phantom)</td>
+<td bgcolor="#009900">orstang (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-orstang-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">orstang (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-orstang-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -832,9 +833,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">balsarakim (phantom)</td>
+<td bgcolor="#009900">balsarakim (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-balsarakim-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">balsarakim (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-balsarakim-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -846,9 +847,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdvortex (phantom)</td>
+<td bgcolor="#009900">mhdvortex (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdvortex-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdvortex (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdvortex-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -860,9 +861,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdsine (phantom)</td>
+<td bgcolor="#009900">mhdsine (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdsine-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdsine (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdsine-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -874,9 +875,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdblast (phantom)</td>
+<td bgcolor="#009900">mhdblast (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdblast-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdblast (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdblast-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -888,9 +889,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">mhdwave (phantom)</td>
+<td bgcolor="#009900">mhdwave (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-mhdwave-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">mhdwave (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-mhdwave-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -902,9 +903,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">cluster (phantom)</td>
+<td bgcolor="#009900">cluster (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-cluster-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">cluster (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-cluster-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -916,9 +917,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">binary (phantom)</td>
+<td bgcolor="#009900">binary (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-binary-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">binary (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-binary-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -930,9 +931,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">common (phantom)</td>
+<td bgcolor="#009900">common (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-common-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">common (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-common-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -944,9 +945,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">star (phantom)</td>
+<td bgcolor="#009900">star (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-star-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">star (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-star-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -958,9 +959,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">isowind (phantom)</td>
+<td bgcolor="#009900">isowind (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-isowind-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">isowind (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-isowind-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -972,9 +973,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">wind (phantom)</td>
+<td bgcolor="#009900">wind (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-wind-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">wind (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-wind-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -986,9 +987,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">bowen (phantom)</td>
+<td bgcolor="#009900">bowen (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-bowen-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">bowen (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-bowen-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1000,9 +1001,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">BHL (phantom)</td>
+<td bgcolor="#009900">BHL (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-BHL-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">BHL (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-BHL-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1014,9 +1015,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">jet (phantom)</td>
+<td bgcolor="#009900">jet (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-jet-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">jet (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-jet-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1042,9 +1043,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">sgdisc (phantom)</td>
+<td bgcolor="#009900">sgdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-sgdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">sgdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-sgdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1056,9 +1057,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustysgdisc (phantom)</td>
+<td bgcolor="#009900">dustysgdisc (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustysgdisc-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustysgdisc (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustysgdisc-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1070,9 +1071,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">dustsettle (phantom)</td>
+<td bgcolor="#009900">dustsettle (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-dustsettle-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">dustsettle (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-dustsettle-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1084,9 +1085,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">test (phantom)</td>
+<td bgcolor="#009900">test (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-test-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">test (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-test-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1098,9 +1099,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">test2 (phantom)</td>
+<td bgcolor="#009900">test2 (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-test2-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">test2 (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-test2-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1112,9 +1113,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testcyl (phantom)</td>
+<td bgcolor="#009900">testcyl (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testcyl-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testcyl (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testcyl-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1126,9 +1127,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testkd (phantom)</td>
+<td bgcolor="#009900">testkd (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testkd-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testkd (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testkd-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1140,9 +1141,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testgrav (phantom)</td>
+<td bgcolor="#009900">testgrav (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testgrav-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testgrav (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testgrav-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1154,9 +1155,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testdust (phantom)</td>
+<td bgcolor="#009900">testdust (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testdust-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testdust (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testdust-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1168,9 +1169,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testgrowth (phantom)</td>
+<td bgcolor="#009900">testgrowth (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testgrowth-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testgrowth (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testgrowth-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1196,9 +1197,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testlum (phantom)</td>
+<td bgcolor="#009900">testlum (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testlum-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testlum (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testlum-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1210,9 +1211,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">testgr (phantom)</td>
+<td bgcolor="#009900">testgr (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-testgr-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">testgr (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-testgr-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1224,9 +1225,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">default (phantom)</td>
+<td bgcolor="#009900">default (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-default-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">default (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-default-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1238,9 +1239,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">galaxies (phantom)</td>
+<td bgcolor="#009900">galaxies (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-galaxies-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">galaxies (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-galaxies-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1252,9 +1253,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">nsmerger (phantom)</td>
+<td bgcolor="#009900">nsmerger (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-nsmerger-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">nsmerger (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-nsmerger-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1266,9 +1267,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">evrard (phantom)</td>
+<td bgcolor="#009900">evrard (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-evrard-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">evrard (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-evrard-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1280,9 +1281,9 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 <tr>
-<td bgcolor="#FF6600">tokamak (phantom)</td>
+<td bgcolor="#009900">tokamak (phantom)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-phantom-errors-tokamak-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 <td bgcolor="#009900">tokamak (setup)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-setup-errors-tokamak-msg.txt">warnings</a></td><td></td>
 <td></td>
@@ -1294,19 +1295,19 @@ Build checked: Wed Apr 1 15:26:01 AEDT 2020
 <td></td>
 </tr>
 </table>
-<p>Checked 352 of 352; <strong>0 failures</strong>, 84 new warnings</p>
+<p>Checked 352 of 352; <strong>0 failures</strong>, 0 new warnings</p>
 <h2>Checking Phantom utils build, SYSTEM=msg</h2>
-Build checked: Wed Apr 1 17:24:41 AEDT 2020
+Build checked: Fri Mar 27 17:33:28 AEDT 2020
 <table>
 <tr>
-<td bgcolor="#FF6600">test (utils)</td>
+<td bgcolor="#009900">test (utils)</td>
 <td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads//make-utils-errors-test-msg.txt">warnings</a></td><td></td>
-<td>NEW WARNINGS:<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>../src/tests/test_nonidealmhd.F90 This variable has not been used.   [STRING]<br/>subroutine test_nonidealmhd(ntests,npass,string)<br/>-----------------------------------------^<br/></td>
+<td></td>
 </tr>
 </table>
-<p>Checked 353 of 353; <strong>0 failures</strong>, 85 new warnings</p>
+<p>Checked 353 of 353; <strong>0 failures</strong>, 0 new warnings</p>
 <h2>Checking Phantom setup runs, creates .setup and .in files with no unspecified user input, SYSTEM=msg</h2>
-Build checked: Wed Apr 1 17:29:26 AEDT 2020
+Build checked: Fri Mar 27 17:38:32 AEDT 2020
 <table>
 <tr>
 <td bgcolor="#FF6600">empty (setup)</td>
@@ -2101,66 +2102,66 @@ Build checked: Wed Apr 1 17:29:26 AEDT 2020
 <td bgcolor="#009900">creates .in file</td>
 </tr>
 </table>
-<p>Checked 793 of 793; <strong>0 failures</strong>, 111 new warnings</p>
+<p>Checked 793 of 793; <strong>0 failures</strong>, 26 new warnings</p>
 <h2>Checking Phantom benchmarks, SYSTEM=msg</h2>
-<p>Benchmarks completed: Wed Apr  1 22:17:12 AEDT 2020
+<p>Benchmarks completed: Fri Mar 27 22:32:16 AEDT 2020
 <br/>monarch-login2
 <br/>OMP_NUM_THREADS=16
 </p><table>
 <tr><td><strong>Benchmark</strong></td><td><strong>Time (s)</strong></td><td><strong>%Change</strong></td><td><strong>RMS error</strong></td></tr>
-<tr><td bgcolor="#009900">growth</td><td>28.38</td><td bgcolor="#009900">0.673998</td><td> 1.4209E-15</td></tr>
-<tr><td bgcolor="#009900">passy</td><td>29.32</td><td bgcolor="#009900">1.4884</td><td> 1.7831E-16</td></tr>
-<tr><td bgcolor="#009900">polar</td><td>39.74</td><td bgcolor="#009900">0.277567</td><td> 1.6551E-16</td></tr>
+<tr><td bgcolor="#009900">growth</td><td>28.50</td><td bgcolor="#009900">0.38746</td><td> 1.4209E-15</td></tr>
+<tr><td bgcolor="#009900">passy</td><td>28.71</td><td bgcolor="#009900">0.807584</td><td> 1.7831E-16</td></tr>
+<tr><td bgcolor="#009900">polar</td><td>40.01</td><td bgcolor="#009900">1.67726</td><td> 1.6551E-16</td></tr>
 </table>
 <p>Completed 3 benchmarks; <strong>0 failures</strong>; <strong>0 slowdowns</strong></p>
 <h2>Checking Phantom testsuite, SYSTEM=gfortran</h2>
-Test suite checked: Wed Apr 1 18:54:10 AEDT 2020
+Test suite checked: Fri Mar 27 19:07:31 AEDT 2020
 <table>
 <tr><td bgcolor=#009900>test</td>
-<td>PASSED: 136 of 136 100.0%</td><td>completed in   1 min,  36.05 s  ( 17 min,  22.42 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-gfortran.txt">show details</a></td></tr>
+<td>PASSED: 136 of 136 100.0%</td><td>completed in   1 min,  36.25 s  ( 17 min,  26.14 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testkd</td>
-<td>PASSED: 147 of 147 100.0%</td><td>completed in   1 min,  47.72 s  ( 10 min,  54.97 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-gfortran.txt">show details</a></td></tr>
+<td>PASSED: 147 of 147 100.0%</td><td>completed in   1 min,  48.25 s  ( 10 min,  53.92 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>test2</td>
-<td>PASSED: 111 of 111 100.0%</td><td>completed in   51.28 s ( 11 min,  20.49 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-gfortran.txt">show details</a></td></tr>
+<td>PASSED: 111 of 111 100.0%</td><td>completed in   51.25 s ( 11 min,  20.38 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testcyl</td>
-<td>PASSED: 133 of 133 100.0%</td><td>completed in   1 min,  14.11 s  ( 14 min,  57.25 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-gfortran.txt">show details</a></td></tr>
+<td>PASSED: 133 of 133 100.0%</td><td>completed in   1 min,  13.50 s  ( 15 min,   2.23 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrav</td>
-<td>PASSED:  35 of  35 100.0%</td><td>completed in   47.61 s ( 12 min,  36.92 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-gfortran.txt">show details</a></td></tr>
+<td>PASSED:  35 of  35 100.0%</td><td>completed in   47.75 s ( 12 min,  38.09 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgr</td>
-<td>PASSED:   6 of   6 100.0%</td><td>completed in    3.27 s (  51.51 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-gfortran.txt">show details</a></td></tr>
+<td>PASSED:   3 of   3 100.0%</td><td>completed in    3.00 s (  47.86 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testdust</td>
-<td>PASSED:  18 of  18 100.0%</td><td>completed in   45.36 s ( 12 min,   1.31 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-gfortran.txt">show details</a></td></tr>
-<tr><td bgcolor=#009900>testnimhd</td>
-<td>PASSED:   3 of   3 100.0%</td><td>completed in   39.28 s ( 10 min,  25.79 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-gfortran.txt">show details</a></td></tr>
+<td>PASSED:  18 of  18 100.0%</td><td>completed in   45.50 s ( 12 min,   5.99 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-gfortran.txt">show details</a></td></tr>
+<tr><td bgcolor=#FF0000>testnimhd</td>
+<td>FAILED:   1 of   3  33.3%<br/>PASSED:   2 of   3  66.7%</td><td></td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-gfortran.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrowth</td>
-<td>PASSED:  24 of  24 100.0%</td><td>completed in   1 min,  30.81 s  ( 23 min,  58.75 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-gfortran.txt">show details</a></td></tr>
+<td>PASSED:  24 of  24 100.0%</td><td>completed in   1 min,  30.50 s  ( 23 min,  56.75 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-gfortran.txt">show details</a></td></tr>
 </table>
-<p>Performed 9 test runs; <strong>0 failures</strong></p>
+<p>Performed 9 test runs; <strong>1 failures</strong></p>
 <h2>Checking Phantom testsuite, SYSTEM=gfortran DEBUG=yes</h2>
-Test suite checked: Wed Apr 1 19:11:44 AEDT 2020
+Test suite checked: Fri Mar 27 19:25:08 AEDT 2020
 <table>
 <tr><td bgcolor=#009900>test</td>
-<td>PASSED: 136 of 136 100.0%</td><td>completed in   3 min,  18.20 s  ( 36 min,  17.37 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED: 136 of 136 100.0%</td><td>completed in   3 min,  19.75 s  ( 36 min,  35.94 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testkd</td>
-<td>PASSED: 147 of 147 100.0%</td><td>completed in   3 min,  32.09 s  ( 19 min,  26.72 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED: 147 of 147 100.0%</td><td>completed in   3 min,  31.75 s  ( 19 min,  24.29 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testkd-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>test2</td>
-<td>PASSED: 111 of 111 100.0%</td><td>completed in   1 min,  42.30 s  ( 21 min,   6.10 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED: 111 of 111 100.0%</td><td>completed in   1 min,  42.75 s  ( 21 min,   9.56 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-test2-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testcyl</td>
-<td>PASSED: 133 of 133 100.0%</td><td>completed in   2 min,  20.47 s  ( 24 min,  38.05 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED: 133 of 133 100.0%</td><td>completed in   2 min,  22.50 s  ( 24 min,  58.61 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testcyl-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrav</td>
-<td>PASSED:  35 of  35 100.0%</td><td>completed in   1 min,  34.98 s  ( 25 min,  16.34 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-gfortran-debug.txt">show details</a></td></tr>
-<tr><td bgcolor=#009900>testgr</td>
-<td>PASSED:   6 of   6 100.0%</td><td>completed in    3.62 s (  57.31 s cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED:  35 of  35 100.0%</td><td>completed in   1 min,  35.25 s  ( 25 min,  19.37 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrav-gfortran-debug.txt">show details</a></td></tr>
+<tr><td bgcolor=#FF6600>testgr</td>
+<td>FAILED TO COMPLETE</td><td></td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgr-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testdust</td>
-<td>PASSED:  18 of  18 100.0%</td><td>completed in   1 min,  51.08 s  ( 29 min,  33.37 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-gfortran-debug.txt">show details</a></td></tr>
-<tr><td bgcolor=#009900>testnimhd</td>
-<td>PASSED:   3 of   3 100.0%</td><td>completed in   1 min,  38.78 s  ( 26 min,  18.05 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED:  18 of  18 100.0%</td><td>completed in   1 min,  51.50 s  ( 29 min,  37.60 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testdust-gfortran-debug.txt">show details</a></td></tr>
+<tr><td bgcolor=#FF0000>testnimhd</td>
+<td>FAILED:   1 of   3  33.3%<br/>PASSED:   2 of   3  66.7%</td><td></td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testnimhd-gfortran-debug.txt">show details</a></td></tr>
 <tr><td bgcolor=#009900>testgrowth</td>
-<td>PASSED:  24 of  24 100.0%</td><td>completed in   3 min,  28.44 s  ( 55 min,   6.38 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-gfortran-debug.txt">show details</a></td></tr>
+<td>PASSED:  24 of  24 100.0%</td><td>completed in   3 min,  29.00 s  ( 55 min,  15.64 s  cpu)</td><td></td><td><a href="https://bitbucket.org/phantomsph/phantomsph.bitbucket.org/downloads/test-results-testgrowth-gfortran-debug.txt">show details</a></td></tr>
 </table>
-<p>Performed 9 test runs; <strong>0 failures</strong></p>
+<p>Performed 9 test runs; <strong>2 failures</strong></p>
 <h2>Checking Phantom build, SYSTEM=gfortran</h2>
-Build checked: Wed Apr 1 19:40:56 AEDT 2020
+Build checked: Fri Mar 27 19:55:00 AEDT 2020
 <table>
 <tr>
 <td bgcolor="#009900">empty (phantom)</td>
@@ -3397,7 +3398,7 @@ Build checked: Wed Apr 1 19:40:56 AEDT 2020
 </table>
 <p>Checked 352 of 352; <strong>0 failures</strong>, 0 new warnings</p>
 <h2>Checking Phantom utils build, SYSTEM=gfortran</h2>
-Build checked: Wed Apr 1 21:04:14 AEDT 2020
+Build checked: Fri Mar 27 21:19:01 AEDT 2020
 <table>
 <tr>
 <td bgcolor="#009900">test (utils)</td>
@@ -3407,7 +3408,7 @@ Build checked: Wed Apr 1 21:04:14 AEDT 2020
 </table>
 <p>Checked 353 of 353; <strong>0 failures</strong>, 0 new warnings</p>
 <h2>Checking Phantom setup runs, creates .setup and .in files with no unspecified user input, SYSTEM=gfortran</h2>
-Build checked: Wed Apr 1 21:08:04 AEDT 2020
+Build checked: Fri Mar 27 21:22:53 AEDT 2020
 <table>
 <tr>
 <td bgcolor="#FF6600">empty (setup)</td>
@@ -4204,13 +4205,13 @@ Build checked: Wed Apr 1 21:08:04 AEDT 2020
 </table>
 <p>Checked 793 of 793; <strong>0 failures</strong>, 26 new warnings</p>
 <h2>Checking Phantom benchmarks, SYSTEM=gfortran</h2>
-<p>Benchmarks completed: Wed Apr  1 22:22:02 AEDT 2020
+<p>Benchmarks completed: Fri Mar 27 22:37:08 AEDT 2020
 <br/>monarch-login2
 <br/>OMP_NUM_THREADS=16
 </p><table>
 <tr><td><strong>Benchmark</strong></td><td><strong>Time (s)</strong></td><td><strong>%Change</strong></td><td><strong>RMS error</strong></td></tr>
-<tr><td bgcolor="#009900">growth</td><td>33.30</td><td bgcolor="#009900">0</td><td> 2.9979E-16</td></tr>
-<tr><td bgcolor="#009900">passy</td><td>28.57</td><td bgcolor="#009900">-1.00485</td><td> 2.2791E-18</td></tr>
-<tr><td bgcolor="#009900">polar</td><td>57.35</td><td bgcolor="#009900">0.47302</td><td> 1.3340E-16</td></tr>
+<tr><td bgcolor="#009900">growth</td><td>33.28</td><td bgcolor="#009900">-0.0600601</td><td> 2.9983E-16</td></tr>
+<tr><td bgcolor="#009900">passy</td><td>28.42</td><td bgcolor="#009900">0.744417</td><td> 2.2791E-18</td></tr>
+<tr><td bgcolor="#009900">polar</td><td>57.71</td><td bgcolor="#009900">2.15967</td><td> 1.3340E-16</td></tr>
 </table>
 <p>Completed 3 benchmarks; <strong>0 failures</strong>; <strong>0 slowdowns</strong></p>

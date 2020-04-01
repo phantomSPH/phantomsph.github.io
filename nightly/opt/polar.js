@@ -7,10 +7,6 @@
       data.addColumn('date', 'Date');
       data.addColumn('number', 'time-gfortran-16');
       data.addColumn('number', 'time-msg-16');
-      data.addColumn('number', 'time-gfortran-16');
-      data.addColumn('number', 'time-msg-16');
-      data.addColumn('number', 'time-gfortran-16');
-      data.addColumn('number', 'time-msg-16');
       data.addRows([
     [new Date(2019,01,22,12,26,26),41.28,38.91],
     [new Date(2019,01,22,13,28,05),41.06,38.60],
@@ -78,6 +74,19 @@
     [new Date(2020,01,28,21,26,51),58.72,42.43],
     [new Date(2020,02,02,21,32,10),58.29,40.68],
     [new Date(2020,02,03,21,30,41),57.38,41.80],
+    [new Date(2020,02,05,21,32,25),58.67,42.51],
+    [new Date(2020,02,06,21,28,19),59.03,42.65],
+    [new Date(2020,02,07,21,30,40),60.19,42.80],
+    [new Date(2020,02,12,20,58,27),55.44,39.40],
+    [new Date(2020,02,17,20,58,24),53.71,39.67],
+    [new Date(2020,02,18,20,58,00),55.78,39.43],
+    [new Date(2020,02,20,21,49,15),55.46,40.00],
+    [new Date(2020,02,24,20,30,51),55.41],
+    [new Date(2020,02,25,22,04,56),56.87,40.13],
+    [new Date(2020,02,26,22,08,03),56.49,39.35],
+    [new Date(2020,02,27,22,26,24),57.71,40.01],
+    [new Date(2020,02,31,22,17,47),57.08,39.63],
+    [new Date(2020,03,01,22,11,32),57.35,39.74],
       ]);
 
       var options = {
