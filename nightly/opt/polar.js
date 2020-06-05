@@ -9,6 +9,7 @@
       data.addColumn('number', 'time-msg-16');
       data.addRows([
     [new Date(2020,05,04,22,21,14),57.63,41.61],
+    [new Date(2020,05,05,22,30,45),56.57,41.76],
       ]);
 
       var options = {
