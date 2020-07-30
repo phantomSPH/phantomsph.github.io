@@ -5,6 +5,8 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('date', 'Date');
+      data.addColumn('number', 'time-gfortran-16');
+      data.addColumn('number', 'time-msg-16');
       data.addRows([
     [new Date(2020,02,02,21,32,10),33.92,28.37],
     [new Date(2020,02,03,21,30,41),34.08,28.48],
@@ -77,6 +79,7 @@
     [new Date(2020,06,23,04,03,19),34.44,31.85],
     [new Date(2020,06,24,04,03,04),34.48,31.84],
     [new Date(2020,06,25,06,14,37),43.31,31.78],
+    [new Date(2020,06,31,03,57,08),34.47,32.05],
       ]);
 
       var options = {
