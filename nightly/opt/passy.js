@@ -106,6 +106,7 @@
     [new Date(2020,08,19,04,53,09),12.45,12.61],
     [new Date(2020,08,30,05,12,17),12.59./run-benchmarks.sh:,line,110:,22636,Segmentation,fault,(core,dumped),$codebinary,$infile,&>$codelog],
     [new Date(2020,09,02,04,50,35),12.60,12.46],
+    [new Date(2020,09,03,08,02,22),12.46,12.50],
       ]);
 
       var options = {
