@@ -115,12 +115,13 @@
     [new Date(2020,10,04,05,09,13),28.87,29.08],
     [new Date(2020,10,10,05,13,46),28.30,29.29],
     [new Date(2020,10,11,05,13,42),28.86,29.68],
+    [new Date(2020,10,24,05,40,06),28.57,29.18],
       ]);
 
       var options = {
        chart: {
          title: 'Benchmark timings for passy test',
-         subtitle: 'Performed on monarch-login2'
+         subtitle: 'Performed on monarch-login2-old'
         },
         width: 900,
         height: 500

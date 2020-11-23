@@ -179,12 +179,13 @@
     [new Date(2020,10,04,05,09,13),48.73,40.83],
     [new Date(2020,10,10,05,13,46),49.13,41.05],
     [new Date(2020,10,11,05,13,42),49.11,40.28],
+    [new Date(2020,10,24,05,40,06),49.01,43.74],
       ]);
 
       var options = {
        chart: {
          title: 'Benchmark timings for polar test',
-         subtitle: 'Performed on monarch-login2'
+         subtitle: 'Performed on monarch-login2-old'
         },
         width: 900,
         height: 500

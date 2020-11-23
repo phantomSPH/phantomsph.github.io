@@ -113,12 +113,13 @@
     [new Date(2020,10,04,05,09,13),28.96,29.43],
     [new Date(2020,10,10,05,13,46),29.16,29.72],
     [new Date(2020,10,11,05,13,42),29.02,29.80],
+    [new Date(2020,10,24,05,40,06),29.14,29.83],
       ]);
 
       var options = {
        chart: {
          title: 'Benchmark timings for growth test',
-         subtitle: 'Performed on monarch-login2'
+         subtitle: 'Performed on monarch-login2-old'
         },
         width: 900,
         height: 500
