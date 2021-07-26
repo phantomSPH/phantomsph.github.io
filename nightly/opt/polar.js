@@ -7,7 +7,7 @@
       data.addColumn('date', 'Date');
       data.addColumn('number', 'time-ifort-4');
       data.addRows([
-    [new Date(2021,06,26,05,29,15),252.69],
+    [new Date(2021,06,26,06,40,45),253.30],
       ]);
 
       var options = {
