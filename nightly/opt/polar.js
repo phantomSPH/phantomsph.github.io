@@ -5,15 +5,16 @@
 
       var data = new google.visualization.DataTable();
       data.addColumn('date', 'Date');
+      data.addColumn('number', 'time-gfortran-4');
       data.addColumn('number', 'time-ifort-4');
       data.addRows([
-    [new Date(2021,06,26,06,40,45),253.30],
+    [new Date(2021,06,26,07,21,21),124.21,299.08],
       ]);
 
       var options = {
        chart: {
          title: 'Benchmark timings for polar test',
-         subtitle: 'Performed on phantom-runner-1'
+         subtitle: 'Performed on phantom-runner-3'
         },
         width: 900,
         height: 500
