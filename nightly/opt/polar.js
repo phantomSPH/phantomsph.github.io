@@ -8,13 +8,13 @@
       data.addColumn('number', 'time-gfortran-4');
       data.addColumn('number', 'time-ifort-4');
       data.addRows([
-    [new Date(2021,06,26,07,21,21),124.21,299.08],
+    [new Date(2021,06,26,07,27,47),137.62,290.49],
       ]);
 
       var options = {
        chart: {
          title: 'Benchmark timings for polar test',
-         subtitle: 'Performed on phantom-runner-3'
+         subtitle: 'Performed on phantom-runner-2'
         },
         width: 900,
         height: 500
