@@ -8,7 +8,8 @@
       data.addColumn('number', 'time-gfortran-4');
       data.addColumn('number', 'time-ifort-4');
       data.addRows([
-    [new Date(2021,06,26,07,27,47),137.62,290.49],
+    [new Date(2021,06,26,07,21,21),124.21,299.08],
+    [new Date(2021,06,26,08,00,53),206.24,322.01],
       ]);
 
       var options = {
