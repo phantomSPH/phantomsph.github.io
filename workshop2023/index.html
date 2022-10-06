@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<title>Phantom Users Workshop 2023, 13th-17th Feb 2023, Monash University, Melbourne, Australia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/png" href="images/phantom-sunglasses.png" />
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/imlupi-verrios.jpg");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 340px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s13">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s13">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s13">
+      <a href="#program" class="w3-button w3-block w3-black">PROGRAM</a>
+    </div>
+    <!--div class="w3-col s13">
+      <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div-->
+    <div class="w3-col s13">
+      <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+    </div>
+    <div class="w3-col s13">
+      <a href="#accommodation" class="w3-button w3-block w3-black">ACCOMMODATION</a>
+    </div>
+    <div class="w3-col s13">
+      <a href="#register" class="w3-button w3-block w3-black">REGISTER</a>
+    </div>
+    <div class="w3-col s13">
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag"><img src="images/phantom-sunglasses.png" width="150"><br/>13th-17th Feb 2023<br/>Monash University, Melbourne, Australia</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Phantom<br/>2023<br/>Users Workshop<br/></span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Image: Simulations of the Protoplanetary disc around IM Lupi<br/>Credit: Verrios+2022; Avenhaus+2018/DARTTS-S/ESO/SPHERE</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+
+
+
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"We showed how to use SPH, for flows in curved metrics of space. We captured the shocks, and adjusted the clocks. Our tests, they all worked in each case."</i></p>
+      <p>&mdash; Liptai & Price (2019)</p>
+    </div>
+
+    <p>How does this dust collect in protoplanetary discs to form planets like the Earth and people like us? How do stars feed black holes in tidal disruption events? How does the common envelope get ejected?</p>
+    <p>
+All of these questions can be answered using Phantom, a smoothed particle hydrodynamics code developed right here at Monash.
+</p>
+
+<p>It's been a couple of traumatic years since we last met, so it's time to gather the user community together, solve some problems and set some goals</p>
+
+<div id="aims" class="w3-container">
+    <h3 class="text-center">AIMS</h3>
+    <p class="text-center">1. To consolidate development efforts</p>
+    <p class="text-center">2. To set a roadmap for development priorities</p>
+    <p class="text-center">3. To grow the user community, and especially to encourage sideways interaction between users</p>
+    <p class="text-center"><em>We will set each afternoon of the workshop as a
+    hackfest, to collaboratively implement new features and tests</em></p>
+</div>
+    <p><strong>Dates:</strong> 13th-17th Feb 2022</p>
+    <p><strong>Venue:</strong> Monash University, Melbourne, Australia</p>
+  </div>
+</div>
+<!-- Presentations container -->
+<!--div class="w3-container" id="Presentations">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PROGRAM</span></h5>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Monday </strong></p>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>AM: TBA</strong></p>
+          <li><b>P. Sheehan </b><a class="dbs-ref" href="presents/day-1/sec-1/Sheehan.pdf">The Structures of Embedded Disks with ALMA/the VLA</a>.</li>
+          <li><b>S. Inutsuka </b><a class="dbs-ref" href="presents/day-1/sec-1/Inutsuka.pdf">The Formation and Angular Momentum Evolution of Protoplanetary Disks</a>.</li>
+          <li><b>J. Wurster </b><a class="dbs-ref" href="presents/day-1/sec-1/Wurster.pdf">Formation of protoplanetary discs in star cluster simulations</a>.</li>
+        </div>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>PM: hackfest</strong></p>
+        </div>
+
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Tuesday </strong></p>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>AM</strong></p>
+        </div>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>PM: hackfest</strong></p>
+        </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Wednesday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>PM: Hackfest</strong></p>
+      </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Thursday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Friday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>PM</strong></p>
+      </div>
+    </div>
+  </div>
+</div-->
+
+<!-- Menu Container -->
+<div class="w3-container" id="program">
+  <div class="w3-content" style="max-width:700px">
+
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONFERENCE PROGRAM</span></h5>
+
+    <p><strong>A detailed program will be announced after the registration deadline has closed. Each morning will be devoted to invited and contributed talks, with afternoons devoted to collaborative code efforts</strong></p>
+
+
+    <div class="w3-row w3-center w3-card w3-padding">
+
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Topics');" id="myLink">
+        <div class="w3-col s6 tablink">Topics</div>
+      </a>
+
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Speakers');">
+        <div class="w3-col s6 tablink">Speakers</div>
+      </a>
+
+    </div>
+
+    <div id="Topics" class="w3-container menu w3-padding-48 w3-card">
+      <h5>List of topics</h5>
+      <p class="w3-text-grey">
+Protoplanetary discs<br/>
+Planet formation<br/>
+Star formation<br/>
+Stellar flybys<br/>
+Black hole accretion<br/>
+Common envelope interaction<br/>
+Binary and triple stars<br/>
+Tidal disruption events<br/>
+Software development<br/>
+    </div>
+
+
+    <div id="Speakers" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Invited speakers</h5>
+      <p class="w3-text-grey">
+      Josh Calcino<br/>
+      Nicolás Cuello<br/>
+      Rebecca Nealon<br/>
+      James Wurster<br/>
+      </p>
+    </div>
+  </div>
+
+<div class="w3-container" id="participants" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+
+ <!--h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTERED PARTICIPANTS</span></h5>
+
+<div class="w3-row w3-center w3-card w3-padding-48">
+<p class="w3-text-grey">
+TBA<br/>
+</p>
+</div>
+
+</div>
+</div-->
+
+<!-- Menu Container -->
+<!--div class="w3-container" id="photos">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PHOTOS</span></h5>
+    <div class="gallery">
+      <div class="desc">Conference picture</div>
+      <a target="_blank" href="pictures/conf_pic.jpg">
+      <img src="pictures/conf_pic.jpg" alt="Conf pic" width="340px">
+      </a>
+    </div>
+    <div class="gallery">
+      <div class="desc">Snapshot survey of pp discs</div>
+      <a target="_blank" href="pictures/Snapshot_survey.jpg">
+      <img src="pictures/Snapshot_survey.jpg" alt="Snapshot survey of pp discs" width="340px">
+      </a>
+    </div>
+    <div class="gallery">
+      <div class="desc">Disc-ussions</div>
+      <a target="_blank" href="pictures/Disc-ussion_1.jpg">
+      <img src="pictures/Disc-ussion_1.jpg" alt="Disc-ussion_1" width="340px">
+      </a>
+      <a target="_blank" href="pictures/Disc-ussion_2.jpg">
+      <img src="pictures/Disc-ussion_2.jpg" alt="Disc-ussion_2" width="340px">
+      </a>
+      <a target="_blank" href="pictures/Disc-ussion_3.jpg">
+      <img src="pictures/Disc-ussion_3.jpg" alt="Disc-ussion_3" width="340px">
+      </a>
+      <a target="_blank" href="pictures/Disc-ussion_4.jpg">
+      <img src="pictures/Disc-ussion_4.jpg" alt="Disc-ussion_4" width="340px">
+      </a>
+      <a target="_blank" href="pictures/Disc-ussion_5.jpg">
+      <img src="pictures/Disc-ussion_5.jpg" alt="Disc-ussion_5" width="340px">
+      </a>
+    </div>
+  </div>
+</div-->
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOCATION</span></h5>
+    <img src="images/palmcove.jpg" style="width:100%;max-width:700px" class="w3-margin-top"></img>
+
+<p>The conference will be held in:
+Room 107 (first floor)<br/>
+School of Physics and Astronomy<br/>
+10 College Walk<br/>
+Monash University Clayton Campus<br/>
+Clayton, Victoria, Australia.
+</p>
+ <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;">
+</div>
+
+<p class="text-center">The cheapest way to get here is to take the Skybus from the airport to Southern Cross Station, jump on a train to Huntingdale
+(Pakenham/Cranbourne line) and then catch the 601 shuttle bus from Huntingdale station to the campus. Total cost around $25. Check the <a href="https://www.ptv.vic.gov.au/journey">ptv website</a> for
+details.</p>
+<p class="text-center">The fastest way to get here is in a taxi, but it will cost you around $120.</p>
+
+  </div>
+</div>
+
+<div class="w3-container" id="accommodation" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ACCOMMODATION</span></h5>
+
+<p class="text-center">Our recommmended accommodation option is <a href="https://mannix.monash.edu/gryphon-house/">Mannix college</a>.
+Otherwise you can check <a href="https://www.booking.com/searchresults.en-gb.html?sb=1&src=index&src_elem=sb&ss=Monash+University+-+Clayton+Campus%2C+Clayton+North%2C+Victoria%2C+Australia&checkin_monthday=13&checkin_month=2&checkin_year=2023&checkout_monthday=17&checkout_month=2&checkout_year=2023&group_adults=1&group_children=0&no_rooms=1&from_sf=1&ss_raw=monash+university&ac_position=0&ac_langcode=en&dest_id=900067662&dest_type=landmark&place_id_lat=-37.91304&place_id_lon=145.13218&search_selected=true&ac_suggestion_list_length=2&ac_suggestion_theme_list_length=0&airport_sel=0&map=1">hotels close to campus</a>. Staying
+<a href="https://www.booking.com/searchresults.en-gb.html?checkin_month=2;checkin_monthday=13;checkin_year=2023;checkout_month=2;checkout_monthday=17;checkout_year=2023;class_interval=1;dest_id=1592;dest_type=district;dtdisc=0;fe_new_tab=1;genius_rate=1;group_adults=1;group_children=0;inac=0;index_postcard=0;label_click=undef;no_rooms=1;offset=0;oos_flag=0;order=price;postcard=0;qrhpp=6dabe04ac337a50f78c98aaaa2bf1be5-district-0;room1=A;sb_price_type=total;search_selected=0;src=searchresults;src_elem=sb;ss=south+Yarra;ss_all=0;ssb=empty;sshis=0;srpos=1;origin=search">somewhere
+in South Yarra</a> is another option which is on the train line to Monash (30 mins to campus) but in a lively area closer to the centre of Melbourne.</p>
+
+  </div>
+</div>
+
+
+<!-- Registration details -->
+<div class="w3-container" id="register" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTRATION</span></h5>
+
+<p>Registration will open soon. Be quick! Early bird closes 1st December and numbers are limited. </p>
+
+<br/>If you do not wish to give a talk or poster, just enter "none" for the title and abstract.</p>
+    <p>1st December, 2022: Early bird registration deadline.</p></p>
+<p>31st January, 2023: Oral contribution selection.<br/></p>
+<p> Registration fee will includes conference related costs including all tea/coffee breaks, Monday to Friday lunches and the conference dinner /excursion.</p>
+
+    <p>Submit your title/abstract separately via the form below:</p>
+
+<!--iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkaUDB_hRJRlyD2SLbE7pgGRALd5q8fPMbbJcfFt3ufCPn4Q/viewform?embedded=true" width="640" height="1503" frameborder="0" marginheight="0" marginwidth="0">Title/abstract submission</iframe-->
+
+  </div>
+</div>
+
+<!-- Registration details -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center"><span class="w3-tag w3-wide">CONTACT</span></h5>
+    <p class="w3-center"><a href="mailto:daniel.price@monash.edu">daniel.price@monash.edu</a>
+    <br/>(please include "Phantom users workshop" in the title for email queries)</p>
+
+    <p class="w3-center"><span class="w3-tag">SCIENTIFIC ORGANISING COMMITTEE</span></p>
+      <p class="w3-text-grey w3-center">Daniel Price<br/>
+      Christophe Pinte<br/>
+      Rebecca Nealon<br/>
+      Terrence Tricco<br/>
+      James Wurster<br/>
+      Orsola de Marco<br/>
+      </p>
+
+    <p class="w3-center"><span class="w3-tag">LOCAL ORGANISING COMMITTEE</span></p>
+      <p class="w3-text-grey w3-center">Daniel Price (chair)<br/>
+      Christophe Pinte (co-chair)<br/>
+      Caitlyn Hardiman<br/>
+      Iain Hammond<br/>
+      Mike Lau<br/>
+      Megha Sharma<br/>
+      Spencer Magnall
+      </p>
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p class="w3-text-grey w3-center"><img src="images/dustbusters-logo-blue.png" width="150"></img></p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap() {
+          var myCenter = new google.maps.LatLng(-37.9101607,145.1310571);
+          var mapProp = {center:myCenter, zoom:14, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>
