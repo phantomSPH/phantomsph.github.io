@@ -4,7 +4,7 @@ body {
     font:15px/26px 'Open Sans', Verdana, sans-serif;
     color:#333333;
     font-weight:400;
-    background: #ffffff url('image/background.jpg') top center repeat fixed;
+    background: #ffffff url('image/background1.jpg') top center repeat fixed;
 }
 
 .clearfix:after {
@@ -165,8 +165,12 @@ table {
     padding:130px 0;
 }
 #about,
+#news,
+#values,
 #team,
 #download,
+#documentation,
+#contrib,
 #contact {
     background-color:#ffffff;
     box-shadow: 0px 0px 3px #000;
