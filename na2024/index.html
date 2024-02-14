@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<title>1st North American Phantom Users Workshop 2024, 8th-12th July 2024, Memorial University of Newfoundland, St. John's,
+  Canada</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/png" href="images/phantom-sunglasses.png" />
+<style>
+  body,
+  html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/tde-example.jpg");
+    min-height: 75%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 340px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s13">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+<!--      <div class="w3-col s13">-->
+<!--        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>-->
+<!--      </div>-->
+      <div class="w3-col s13">
+        <a href="#program" class="w3-button w3-block w3-black">PROGRAM</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#talks" class="w3-button w3-block w3-black">TALKS</a>
+      </div>
+      <!--div class="w3-col s13">
+      <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div-->
+      <div class="w3-col s13">
+        <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#register" class="w3-button w3-block w3-black">REGISTER</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#travel" class="w3-button w3-block w3-black">TRAVEL</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#conduct" class="w3-button w3-block w3-black">CODE OF CONDUCT</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag"><img src="../image/logo.png" width="150"><br />8th-12th July 2024<br />
+        Memorial University of Newfoundland, St. John's, Canada</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:70px">1st North American<br />Phantom Users
+        Workshop<br />2024<br /></span>
+    </div>
+    <div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Image: Outflow from the tidal disruption of a solar mass star around a supermassive
+        black hole<br />Credit: Hu, Price & Mandel 2023</span>
+    </div>
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale-min w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+
+        <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ABOUT</span></h4>
+
+
+        <p>How does this dust collect in protoplanetary discs to form planets like the Earth and people like us?</p>
+        <p>How do stars feed black holes in tidal disruption events?</p>
+        <p>How does the common envelope get ejected?</p>
+
+        <p>
+          All of these questions can be answered using <a href="https://github.com/danieljprice/phantom">Phantom</a>, a
+          smoothed particle hydrodynamics code developed to explore astrophysical phenonema, and <a
+            href="https://github.com/cpinte/mcfost">MCFOST</a>, a class-leading radiative transfer code.
+        </p>
+
+        <p>We are excited to host the <b><u>1st North American Phantom Users Workshop</u></b> in Canada at the
+          Memorial University of Newfoundland between 8-12 July, 2024,
+          which is the sixth workshop in our series of Phantom Users Workshops.</p>
+
+        <div id="aims" class="w3-container">
+          <p class="w3-center"><span class="w3-tag">AIMS</span></p>
+          <p class="text-center">1. To share results obtained using Phantom and MCFOST.</p>
+          <p class="text-center">2. To consolidate development efforts.</p>
+          <p class="text-center">3. To set a roadmap for development priorities.</p>
+          <p class="text-center">4. To grow the user community, and especially to encourage sideways interaction between
+            users</p>
+          <p class="text-center">Each afternoon of the workshop will be set aside for collaborative hack sessions
+            to foster interaction and implement new features and tests.</p>
+        </div>
+        <p><strong>Dates:</strong> 8th-12th July 2024</p>
+        <p><strong>Venue:</strong> Memorial University of Newfoundland, St. John's, Canada</p>
+      </div>
+    </div>
+
+
+    <!-- Conference Schedule -->
+    <div class="w3-container" id="program">
+      <div class="w3-content" style="max-width:700px">
+
+        <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONFERENCE PROGRAM</span></h4>
+
+        <p><strong>The Conference program will be finalized once registration closes.</strong></p>
+
+        <p>Each day will feature a series of science talks in the morning, with afternoons focused around collaborative hack sessions.</p>
+
+        <p>There will be a welcome event on the Monday night (July 8). A conference excursion and dinner will be held mid-week.
+        Excursion details are yet to be finalized, but most likely will be a whale / puffin / iceberg watching boat tour.</p>
+
+        <div class="w3-row w3-center w3-card w3-padding">
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Topics');" id="myLink">
+            <div class="w3-col s6 tablink">Topics</div>
+          </a>
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Speakers');">
+            <div class="w3-col s6 tablink">Speakers</div>
+          </a>
+
+        </div>
+
+        <div id="Topics" class="w3-container menu w3-padding-48 w3-card">
+          <h5>List of topics</h5>
+          <p class="w3-text-grey">
+            Protoplanetary discs<br />
+            Planet formation<br />
+            Star formation<br />
+            Stellar flybys<br />
+            Black hole accretion<br />
+            Common envelope interaction<br />
+            AGB star winds and dust formation<br />
+            Binary and triple stars<br />
+            Tidal disruption events<br />
+            Software development<br />
+        </div>
+
+
+        <div id="Speakers" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Invited speakers</h5>
+          <p class="w3-text-grey">
+            TBD
+          </p>
+        </div>
+      </div>
+
+      <!-- Table of talks -->
+      <div class="w3-container" id="talks" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TALKS</span></h4>
+
+          <p>Talk slides will be posted here after the workshop.</p>
+        </div>
+      </div>
+
+      <div class="w3-container" id="participants" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+
+          <p class="w3-center"><span class="w3-tag">REGISTERED PARTICIPANTS</span></p>
+
+          <div class="w3-row w3-center w3-card w3-padding-48">
+            <p class="w3-text-grey">
+              Daniel Price - Monash University<br />
+              Rebecca Nealon - University of Warwick<br />
+              Terrence Tricco - Memorial University of Newfoundland<br />
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Location -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOCATION</span></h4>
+            <img src="images/campus.png" style="width:100%;max-width:700px;filter:saturate(200%);"
+              class="w3-margin-top"></img>
+
+            <p>The conference will be held in:</p>
+            <p style="margin-left:16px;">
+              Emera Innovation Exchange Conference Centre<br />
+              Signal Hill Campus<br />
+              Memorial University of Newfoundland<br />
+              St. John's, NL, Canada
+            </p>
+
+            <p>Please note that the Signal Hill Campus is a satellite campus of Memorial University (not the main campus).
+              It is a newly renovated space for conference hosting that is nestled between the downtown core of St. John's
+              and the Signal Hill National Historic Site.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10767.227031542887!2d-52.70469305726249!3d47.57154815416295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b0ca3c4353c1d4d%3A0xdc6cedd6e1e477b9!2sMemorial%20University%20of%20Newfoundland%20-%20Signal%20Hill%20Campus!5e0!3m2!1sen!2sca!4v1707918749973!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;filter:saturate(200%)" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          </div>
+        </div>
+
+
+        <!-- Registration details -->
+        <div class="w3-container" id="register" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTRATION</span></h4>
+
+            <p>Registration will open in early April.</p>
+
+            <p>The in-person registration fee will be $225 CAD for students and $325 CAD for non-students.
+            The registration fee includes lunch + morning and afternoon coffee breaks for all 5 days,
+              the welcome event, the conference dinner and the conference excursion.</p>
+
+            <p>April, 2024: Registration opens.</p>
+            <p>June 10, 2024: Abstract submission deadline.</p>
+            <p>June 24, 2024: Registration deadline.</p>
+            <p>July 8, 2024: Workshop begins.</p>
+          </div>
+        </div>
+
+        <!-- Travel -->
+        <div class="w3-container" id="travel" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TRAVEL</span></h4>
+
+            <p class="w3-center"><span class="w3-tag">FLIGHTS</span></p>
+            <p class="text-center">The airport code for the St. John's International Airport is YYT.</p>
+
+            <p class="text-center">International visitors will most likely enter Canada through Toronto (YYZ) or Montreal (YUL).
+              Halifax (YHZ) is the closest airport to St. John's, which connects to several USA airports and to London Heathrow.</p>
+
+            </p class="text-center">There are multiple domestic flights each day to St. John's from Toronto (~3 hrs) and Montreal (~2.5 hrs),
+              as well as from Halifax (~2 hrs).</p>
+
+            <p class="text-center">Air Canada is the largest carrier that will service the highest number of international locations
+              and offer the largest number of connecting flights into St. John's.
+              This year, after a Covid hiatus, WestJet will begin offering direct flights three times per week between St. John's and London Gatwick (~6 hrs).</p>
+
+            <p>Newfoundland is a beautiful island, but traveling to St. John's over land (and water) from Halifax would entail
+              either 16 hours driving plus a 7 hour ferry ride (Port aux Basques) or 5 hours driving plus a 16 hour ferry (Argentia).</p>
+
+
+            <p class="w3-center"><span class="w3-tag">ACCOMMODATIONS</span></p>
+            <p class="text-center">Memorial University's Signal Hill Campus is adjacent to the downtown core.
+              There are a variety of accommodation options (hotels, airbnbs, traditional b&bs) within walking distance of campus (~20 min).</p>
+
+            <p class="text-center">There are many quality restaurants and cafes in downtown St. John's.
+              Many expand to provide outdoor sidewalk seating during Summer months (though weather dependent).</p>
+
+            <p class="w3-center"><span class="w3-tag">WEATHER</span></p>
+            <p class="text-center">Weather can be highly variable in St. John's.
+              A typical day in July would be sunny and a cool 20 degrees Celsius,
+              though weather during this time of year can range from 30 degrees with high humidity
+              to 15 degrees and dense fog (we are known for our fog!).
+              St. John's is situated in a temperature bath of the cold North Atlantic Ocean,
+              so cool ocean air can often come ashore and change weather rapidly.
+              We hope for warm, sunny days, but it is advisable to be prepared for cool, wet weather.
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">TOURISM</span></p>
+            <p>St. John's is the oldest city in North America and there are many attractions, such as
+              the Signal Hill National Historic Site (wonderful views of the city), The Rooms (provincial museum),
+              Quidi Vidi (quaint fishing village), and Cape Spear Lighthouse (most Easterly point in North America).
+              George Street is the lively entertainment centre of St. John's.
+              And the East Coast Trail offers several hundred km's of coastal hiking north/south of St. John's.
+              The Hop On Hop Off Bus is a convenient way to reach multiple sites within a day.<br/>
+            </p>
+            <p>Travel outside of St. John's typically requires a car. Newfoundland is a big place. Some key highlights to mention:<br />
+              - Saint Pierre et Miquelon are two French colonies off the South coast of Newfoundland (~4 hour drive outside of St. John's).
+              Wonderful European atmosphere, French cuisine and bakeries. This is international travel. You will need your passport and Euros (not CAD).<br/>
+              - The Bonavista peninsula (~4 hours) is beautiful rural Newfoundland. Great dining and attractions. Walk to the cliff's edge to view the puffins in Elliston.<br />
+              - Gros Morne National Park (West coast, ~8 hours) showcases Canadian nature. Go sea kayaking in the fjords, or do any number of short, day-long or multi-day hikes.
+              The Tablelands region is a spectacular display of rocks from the Earth's mantle, creating a Mars-like environment surrounded by lush green forest.<br />
+              - L'Anse aux Meadows is the site where the Vikings landed in North America in the 11th century (UNESCO World Heritage Site;
+               aprrox 1000 km and 12 hours from St. John's).<br />
+              - Gander (~4 hours) is well-known for housing nearly 7,000 airline passengers during the 9/11 attacks
+              (watch the Come From Away broadway musical, which is performing this Summer).<br/>
+              - Fogo Island (~6 hours) is home to one of the four corners of the Earth.<br />
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Code of conduct -->
+        <div class="w3-container" id="conduct" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODE OF CONDUCT</span></h4>
+
+                <p>Participation in the workshop is subject to the <a href="https://asa.astronomy.org.au/membership/conduct-and-ethics/">Astronomical Society of Australia code of conduct for scientific meetings</a>
+
+                <br /></p>
+
+            </div>
+        </div>
+
+        <!-- Registration details -->
+        <div class="w3-container" id="contact" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h4 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONTACT</span></h4>
+            <p class="w3-center"><a href="mailto:daniel.price@monash.edu">tstricco@mun.ca</a>
+              <br />(please include "Phantom Users Workshop" in the title for email queries)
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">SCIENTIFIC ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">Daniel Price<br />
+              Rebecca Nealon<br />
+              Terrence Tricco<br />
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">LOCAL ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">Terrence Tricco (chair)<br />
+              Narges Vadood<br />
+              Zach Hoyles<br />
+              David Felipe Bambague Sichaca<br />
+            </p>
+            <!-- End page content -->
+          </div>
+
+          <!-- Footer -->
+          <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+          </footer>
+
+          <!-- Add Google Maps -->
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(-37.9107462, 145.1325351);
+              var mapProp = { center: myCenter, zoom: 14, scrollwheel: true, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+              var marker = new google.maps.Marker({ position: myCenter });
+              marker.setMap(map);
+            }
+
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+
+          </script>
+
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
+          <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+
+</html>
