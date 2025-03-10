@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+<title>7th Phantom code family workshop and hackfest 2025, 2nd-6th June 2025, IPAG, Grenoble, France</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/png" href="images/phantom-sunglasses.png" />
+<style>
+  body,
+  html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("photos/background.jpg");
+    min-height: 75%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 340px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s13">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#program" class="w3-button w3-block w3-black">PROGRAM</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#talks" class="w3-button w3-block w3-black">TALKS</a>
+      </div>
+      <!--div class="w3-col s13">
+      <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
+    </div-->
+      <div class="w3-col s13">
+        <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+      </div>
+      <!--div class="w3-col s13">
+        <a href="#accommodation" class="w3-button w3-block w3-black">ACCOMMODATION</a>
+      </div-->
+      <div class="w3-col s13">
+        <a href="#register" class="w3-button w3-block w3-black">REGISTER</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#conduct" class="w3-button w3-block w3-black">CODE OF CONDUCT</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag"><img src="images/phantom-sunglasses.png" width="150" alt="Phantom sunglasses logo"><br />2nd-6th June 2025<br />IPAG, Grenoble, France</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:70px">2nd European Phantom + MCFOST + Shamrock users workshop<br />2025.<br /></span>
+    </div>
+    <!--div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Conference photo</span>
+    </div-->
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale-min w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+
+
+        <p>How do stars and planets form? How do black holes accrete? How does dust form in the winds of giant stars? How does the common envelope get ejected?</p>
+        <p>
+          All of these questions can be answered using <a href="https://github.com/danieljprice/phantom">Phantom</a>, a
+          smoothed particle hydrodynamics code, <a
+            href="https://github.com/cpinte/mcfost">MCFOST</a>, a class-leading radiative transfer code originally
+          developed at the University of Grenoble-Alpes, and <a href="https://github.com/tcleris/shamrock">Shamrock</a>, a GPU-first SPH code in the Phantom family.
+        </p>
+
+        <p>We are delighted to host the 2nd European Phantom code family users workshop in 2025, also known as the 7th Phantom users workshop</p>
+
+        <div id="aims" class="w3-container">
+          <h3 class="text-center">AIMS</h3>
+          <p class="text-center">1. To consolidate development efforts</p>
+          <p class="text-center">2. To set a roadmap for development priorities</p>
+          <p class="text-center">3. To grow the user community, and especially to encourage sideways interaction between
+            users</p>
+          <p class="text-center"><em>We will set each afternoon of the workshop as a
+              hackfest, to collaboratively implement new features and tests</em></p>
+        </div>
+        <p><strong>Dates:</strong> 2nd-6th June 2025</p>
+        <p><strong>Venue:</strong> IPAG, Grenoble, France</p>
+        <p class="w3-text-grey w3-center"><img src="images/afran.jpg" width="600" alt="AFRAN logo"></p>
+
+      </div>
+    </div>
+    <!-- Presentations container -->
+    <!--div class="w3-container" id="Presentations">
+  <div class="w3-content" style="max-width:800px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">PROGRAM</span></h5>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Monday </strong></p>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>AM: TBA</strong></p>
+          <li><b>D. Price </b><a class="dbs-ref" href="presents/day-1/sec-1/Wurster.pdf"> </a>.</li>
+        </div>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>PM: hackfest</strong></p>
+        </div>
+
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Tuesday </strong></p>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>AM</strong></p>
+        </div>
+        <div class="w3-row w3-left-align w3-card w3-padding">
+          <p><strong>PM: hackfest</strong></p>
+        </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Wednesday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>PM: Hackfest</strong></p>
+      </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Thursday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+    </div>
+    <div class="w3-content w3-card w3-padding" style="max-width:700px">
+      <p style="display:inline"><strong> Friday </strong></p>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>AM</strong></p>
+      </div>
+      <div class="w3-row w3-left-align w3-card w3-padding">
+        <p><strong>PM</strong></p>
+      </div>
+    </div>
+  </div>
+</div-->
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="program">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONFERENCE PROGRAM</span></h5>
+
+        <p><strong>A detailed program will appear after the abstract deadline</strong></p>
+        <!--iframe src="images/schedule_v3.1.pdf" width="100%" height="500px">
+        </iframe-->
+
+
+        <div class="w3-row w3-center w3-card w3-padding">
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Topics');" id="myLink">
+            <div class="w3-col s6 tablink">Topics</div>
+          </a>
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Speakers');">
+            <div class="w3-col s6 tablink">Speakers</div>
+          </a>
+
+        </div>
+
+        <div id="Topics" class="w3-container menu w3-padding-48 w3-card">
+          <h5>List of topics</h5>
+          <p class="w3-text-grey">
+            Star cluster formation<br />
+            Stellar flybys<br />
+            Protoplanetary discs<br />
+            Planet formation<br />
+            Black hole accretion<br />
+            Common envelope interaction<br />
+            AGB star winds and dust formation<br />
+            Binary and triple stars<br />
+            Tidal disruption events<br />
+            Software development<br />
+        </div>
+
+
+        <div id="Speakers" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Invited speakers</h5>
+          <p class="w3-text-grey">
+            Claudia Toci (ESO)<br />
+          </p>
+        </div>
+      </div>
+
+      <!-- Table of talks -->
+      <div class="w3-container" id="talks" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TALKS</span></h5>
+
+          <!--table>
+      <tr><th>Speaker</th><th>Title</th><th>Recordings</th></tr>
+      <tr><td>Daniel Price</td>
+          <td>Recent science highlights and new capabilities in PHANTOM</td>
+          <td><a href="slides/Price-lowres.pdf">Slides</a></tr>
+      <tr><td>Jean-François Gonzalez</td>
+          <td>Dust grain evolution in protoplanetary disks</td>
+          <td><a href="slides/Gonzalez-lowres.pdf">Slides</a></tr>
+      <tr><td>Rachel Harrison</td>
+          <td>Polarimetry as a probe of protoplanetary disk properties</td>
+          <td><a href="slides/Harrison-lowres.pdf">Slides</a></tr>
+      <tr><td>Cristiano Longarini</td>
+          <td>Self gravity in protostellar discs: Why (we must) care?</td>
+          <td><a href="slides/Longarini-lowres.pdf">Slides</a></tr>
+    <tr>
+        <td>Alison Young</td>
+        <td>Radiative cooling approximations and the beginning of planet formation</td>
+        <td><a href="slides/Young-lowres.pdf">Slides</a>
+    </tr>
+      <tr><td>Caitlyn Hardiman</td>
+          <td>No turbulence in DM Tau?</td>
+          <td><a href="slides/Hardiman-lowres.pdf">Slides</a></td>
+      </tr>
+      <tr>
+         <td>Sahl Rowther</td>
+         <td>Gravitational instability in irradiated discs</td>
+         <td><a href="slides/Rowther-lowres.pdf">Slides</a></td>
+      </tr>
+    <tr>
+        <td>Elli Borchert</td>
+        <td>The stellar flyby in RW Aur</td>
+        <td><a href="slides/Borchert-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Rebecca Nealon</td>
+        <td>Adaptive Particle Refinement in Phantom</td>
+        <td><a href="slides/Nealon-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Terry Tricco</td>
+        <td>Sarracen roadmap</td>
+        <td><a href="slides/Tricco-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Timothée David--Cleris</td>
+        <td>Shamrock: SPH on the GPU</td>
+        <td><a href="slides/David--Cleris-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Mike Lau</td>
+        <td>Common envelopes and planetary engulfment in SPH</td>
+        <td><a href="slides/Lau-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Megha Sharma</td>
+        <td>Timmy drinks the holy grail: Partial tidal disruption events as the elixir of life</td>
+        <td><a href="slides/Sharma-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Luis Bermudez-Bustamante</td>
+        <td>Dust formation in common envelopes</td>
+        <td><a href="slides/Bermudez-Bustamante-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Chunliang Mu</td>
+        <td>Photospheric evolution in common envelopes</td>
+        <td><a href="slides/Mu-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Iain Hammond</td>
+        <td>Direct Imaging of Protoplanets: Where Simulations and Observations Meet</td>
+        <td><a href="slides/Hammond-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Taïssa Danilovich</td>
+        <td>Beyond gravity: What can Phantom and MCFOST models tell us about observables in binary AGB systems</td>
+        <td><a href="slides/Danilovich-lowres.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Mats Esseldeurs</td>
+        <td>Enhancing AGB Outflow
+        Simulations: Implementing a
+        Ray-Tracing Algorithm in PHANTOM for Efficient Radiation Field Computation</td>
+        <td><a href="slides/Esseldeurs.pdf">Slides</a></td>
+    </tr>
+    <tr>
+        <td>Jacksen Narvaez</td>
+        <td>Building an SPH astrophysical simulation code in the Rust programming language</td>
+        <td><a href="slides/Narvaez-lowres.pdf">Slides</a></td>
+    </tr>
+  </table>
+
+        </div>
+      </div>
+
+      <div class="w3-container" id="participants" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTERED PARTICIPANTS</span></h5>
+
+          <div class="w3-row w3-center w3-card w3-padding-48">
+            <p class="w3-text-grey">
+              Alison Young - University of Edinburgh<br />
+              Ana Lourdes Juarez Garcia - Macquarie University (remote)<br />
+              Caitlyn Hardiman - Monash University<br />
+              Christophe Pinte - Monash University<br />
+              Chunliang Mu - Macquarie University<br />
+              Cristiano Longarini - Università degli Studi di Milano/Institute of Astronomy, Cambridge (remote)<br />
+              Daniel Price - Monash University<br />
+              Dimitri Veras - University of Warwick<br />
+              Elli Borchert - Monash University <br />
+              Fathima Manooja - Memorial University of Newfoundland<br />
+              Iain Hammond - Monash University<br />
+              Jack Nibbs - Macquarie University (remote)<br />
+              Jean-François Gonzalez - Centre de Recherche Astrophysique de Lyon<br />
+              Jeremy Smallwood - Academia Sinica<br />
+              Luis Bermudez-Bustamante - Macquarie Univeristy<br />
+              Mats Esseldeurs - KU Leuven<br />
+              Megha Sharma - Monash University<br />
+              Mike Lau - Heidelberg Institute of Theoretical Studies (remote)<br />
+              Narges Vadood - Memorial University of Newfoundland (remote)<br />
+              Nimantha Samaratunge Mudiyanselage - Monash Univeristy<br />
+              Nurul Bin Ibrahim - Memorial University of Newfoundland<br />
+              Piotr Łojko - University of Wrocław<br />
+              Pratishtha Rawat - University of Warwick<br />
+              Rachel Harrison - Monash University<br />
+              Rafael Martinez-Brunner - University of Warwick<br />
+              Rebecca Nealon - University of Warwick (remote)<br />
+              Sahl Rowther - University of Warwick<br />
+              Taïssa Danilovich - Monash University<br />
+              Terrence Tricco - Memorial University of Newfoundland<br />
+              Timothée David--Cléris - Centre de Recherche Astrophysique de Lyon<br />
+              Tom Hilder - Monash University<br />
+              Yona Lapeyre - Centre de Recherche Astrophysique de Lyon<br />
+            </p>
+
+          </div>
+        </div>
+
+        <!-- Menu Container -->
+        <div class="w3-container" id="photos">
+  <!--div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PHOTOS</span></h5>
+    <div class="gallery">
+      <div class="desc">Conference picture</div>
+      <a target="_blank" href="photos/phantomfest2024_42.jpg">
+      <img src="photos/phantomfest2024_42.jpg" alt="Conf pic" width="340px">
+      </a>
+    </div>
+
+    </div>
+        <div class="gallery">
+            <div class="desc">Photos from the workshop</div>
+            <a target="_blank" href="photos/phantomfest2024_11.jpg">
+                <img src="photos/phantomfest2024_11.jpg" alt="photos from the workshop" width="340px">
+            </a>
+        </div>
+
+        
+  </div>
+</div--> 
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOCATION</span></h5>
+
+            <p>The workshop will be held at:<br />
+              <a href="https://ipag.osug.fr/english/institute/contact-access/">Institut de Planétologie et d'Astrophysique de Grenoble</a><br/>
+              OSUG-A 414, Rue de la Piscine Domaine Universitaire<br/>
+              38400 St-Martin d'Hères<br />
+              France<br />
+            </p>
+            <!-- Add a div for the Google Map -->
+            <div id="googleMap" style="width:100%;height:450px;"></div>
+
+          </div>
+        </div>
+
+        <div class="w3-container" id="accommodation" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ACCOMMODATION</span></h5>
+
+            <p class="text-center">Our recommended accommodation option is TBC.
+            </p>
+
+          </div>
+        </div>
+
+
+        <!-- Registration details -->
+        <div class="w3-container" id="register" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTRATION</span></h5>
+
+            <p><a href="https://forms.gle/8zWxX7tb3uJDtnqcA">Click here to register and submit an abstract</a>. There may be a small registration fee to cover costs which will be via a separate form (TBC).</p>
+            <!--a href="https://shop.monash.edu/registration-for-phantom-2024-users-workshop.html">Click here for the
+                registration payment for in-person attendance</a-->
+
+            <br />If you do not wish to give a talk or poster, just enter "none" for the title and abstract.</p>
+            <p>22nd Apr 2025: Abstract deadline.</p>
+            <p>23rd May 2025: Registration deadline for catering.</p>
+
+          </div>
+        </div>
+
+        <!-- Code of conduct -->
+        <div class="w3-container" id="conduct" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODE OF CONDUCT</span></h5>
+        
+                <p>Participation in the workshop is subject to the <a href="https://asa.astronomy.org.au/membership/conduct-and-ethics/">Astronomical Society of Australia code of conduct for scientific meetings</a>
+          
+                <br /></p>
+        
+            </div>
+        </div>
+
+        <!-- Registration details -->
+        <div class="w3-container" id="contact" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center"><span class="w3-tag w3-wide">CONTACT</span></h5>
+            <p class="w3-center"><a href="mailto:daniel.price@monash.edu">daniel.price@monash.edu</a>
+              <br />(please include "Phantom users workshop" in the title for email queries)
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">SCIENTIFIC ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">Daniel Price<br />
+              Terrence Tricco<br />
+              Rebecca Nealon<br />
+              Nicolás Cuello<br />
+              Guillaume Laibe<br />
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">LOCAL ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">Daniel Price (chair)<br />
+              Nicolás Cuello<br />
+              Guillaume Laibe<br />
+            </p>
+            <!-- End page content -->
+          </div>
+
+          <!-- Footer -->
+          <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+            <p class="w3-text-grey w3-center"><img src="images/afran.jpg" width="600" alt="Conference image"></p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+          </footer>
+
+          <!-- Add Google Maps -->
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(45.19416667, 5.76160000);
+              var mapProp = { center: myCenter, zoom: 14, scrollwheel: true, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+              var marker = new google.maps.Marker({ position: myCenter });
+              marker.setMap(map);
+            }
+
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+
+          </script>
+
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
+          <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+
+</html>
