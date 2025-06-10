@@ -44,6 +44,21 @@
     padding: 15px;
     text-align: center;
   }
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 0 auto;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 </style>
 
 <body>
@@ -238,204 +253,204 @@
 
       <!-- Table of talks -->
       <div class="w3-container" id="talks" style="padding-bottom:32px;">
-        <div class="w3-content" style="max-width:700px">
+        <div class="w3-content" style="max-width:1024px">
           <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TALKS</span></h5>
 
           <table class="w3-table w3-text-grey" style="width:100%">
             <tr>
-              <th style="width:30%">Name</th>
-              <th style="width:40%">Affiliation</th>
-              <th style="width:30%">Talk Title</th>
+              <th style="width:30%">Name & Affiliation</th>
+              <th style="width:25%">Talk Title</th>
+              <th style="width:45%">Video</th>
             </tr>
             <tr>
-              <td><strong>Antoine Alaguero</strong></td>
-              <td>University of Grenoble-Alpes, France</td>
+              <td><strong>Antoine Alaguero</strong><br><span style="font-weight:normal">University of Grenoble-Alpes, France</span></td>
               <td><i>Planet formation in multiple stellar systems</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/-Kgalf-utQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Hossam Aly</strong></td>
-              <td>TU Delft, Netherlands</td>
+              <td><strong>Hossam Aly</strong><br><span style="font-weight:normal">TU Delft, Netherlands</span></td>
               <td><i>Free precession in undriven warps in protoplanetary discs: a cautionary tale</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/TnmsoDuM3Ag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Jose Barria</strong></td>
-              <td>University del Valparaiso, Chile</td>
+              <td><strong>Jose Barria</strong><br><span style="font-weight:normal">University del Valparaiso, Chile</span></td>
               <td><i>Mass accretion rate and radiative feedback in circumbinary disks around supermassive black hole binaries</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/C9Cmk3NZmgk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Yann Bernard</strong></td>
-              <td>University of Grenoble-Alpes, France</td>
+              <td><strong>Yann Bernard</strong><br><span style="font-weight:normal">University of Grenoble-Alpes, France</span></td>
               <td><i>Dawn : The childhood of stars and stellar clusters</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/GCH6yf09WpM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>George Blaylock-Squibbs</strong></td>
-              <td>University of Central Lancashire, UK</td>
+              <td><strong>George Blaylock-Squibbs</strong><br><span style="font-weight:normal">University of Central Lancashire, UK</span></td>
               <td><i>Chemistry of Gravitationally Unstable Disks</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/VlHhxuwL4xU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Josh Calcino</strong></td>
-              <td>Tsinghua University, China</td>
+              <td><strong>Josh Calcino</strong><br><span style="font-weight:normal">Tsinghua University, China</span></td>
               <td><i>Substructures in Planet-forming Discs: Companions, GI, or something else?</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/A6XoZGrmmT4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Ethan Carter</strong></td>
-              <td>University of Central Lancashire, UK</td>
+              <td><strong>Ethan Carter</strong><br><span style="font-weight:normal">University of Central Lancashire, UK</span></td>
               <td><i>The properties of disc-instability protoplanets</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/87KTHCYx2DI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Nicolás Cuello</strong></td>
-              <td>University of Grenoble-Alpes, France</td>
+              <td><strong>Nicolás Cuello</strong><br><span style="font-weight:normal">University of Grenoble-Alpes, France</span></td>
               <td><i>Setting discs on fire with stellar flybys</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/OoAzy7e8Odw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Timothée David--Cléris</strong></td>
-              <td>University of Grenoble-Alpes, France</td>
+              <td><strong>Timothée David--Cléris</strong><br><span style="font-weight:normal">University of Grenoble-Alpes, France</span></td>
               <td><i>Beyond a PhD Code: The Rise of the Shamrock</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/R4YIg5SaahE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>David Dionesse</strong></td>
-              <td>Universite libre de Bruxelles, Belgium</td>
+              <td><strong>David Dionesse</strong><br><span style="font-weight:normal">Universite libre de Bruxelles, Belgium</span></td>
               <td><i>Cooling routines for AGB winds</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/RjMvLNJ5Vrw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Mats Esseldeurs</strong></td>
-              <td>KU Leuven, Belgium</td>
+              <td><strong>Mats Esseldeurs</strong><br><span style="font-weight:normal">KU Leuven, Belgium</span></td>
+              <td></td>
               <td></td>
             </tr>
             <tr>
-              <td><strong>Jean-François Gonzalez</strong></td>
-              <td>CRAL, France</td>
+              <td><strong>Jean-François Gonzalez</strong><br><span style="font-weight:normal">CRAL, France</span></td>
               <td><i>Spirals in discs of binary systems: the temperature structure matters!</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/vopUjs1bA6c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Andrew Harris</strong></td>
-              <td>Memorial University of Newfoundland, Canada</td>
+              <td><strong>Andrew Harris</strong><br><span style="font-weight:normal">Memorial University of Newfoundland, Canada</span></td>
               <td><i>Broader Physics Capabilities for GPU-based SPH Codes</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/w3M29vldIqg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Fangyi (Fitz) Hu</strong></td>
-              <td>Monash University, Australia</td>
+              <td><strong>Fangyi (Fitz) Hu</strong><br><span style="font-weight:normal">Monash University, Australia</span></td>
               <td><i>How do tidal disruption events shine in optical and radio?</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/RCnS7scL-pg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Camille Landri</strong></td>
-              <td>KU Leuven, Belgium</td>
+              <td><strong>Camille Landri</strong><br><span style="font-weight:normal">KU Leuven, Belgium</span></td>
               <td><i>Chemistry Emulation in Phantom with MACE</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/cgINueJ5GHI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Guillaume Laibe</strong></td>
-              <td>ENS de Lyon, France</td>
+              <td><strong>Guillaume Laibe</strong><br><span style="font-weight:normal">ENS de Lyon, France</span></td>
               <td><i>The SHAMROCK moment</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/H3cu5JuJ3sA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Yona Lapeyre</strong></td>
-              <td>ENS de Lyon / CRAL, France</td>
+              <td><strong>Yona Lapeyre</strong><br><span style="font-weight:normal">ENS de Lyon / CRAL, France</span></td>
               <td><i>Towards exascale simulations of warped, magnetized discs with Shamrock</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/o3AEwFHmj50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Mike Lau</strong></td>
-              <td>HITS Heidelberg, Germany</td>
+              <td><strong>Mike Lau</strong><br><span style="font-weight:normal">HITS Heidelberg, Germany</span></td>
               <td><i>Updates on Phantom's common-envelope science</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/R_ImcNruHUk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Cheryl Lau</strong></td>
-              <td>University of St. Andrews, UK</td>
+              <td><strong>Cheryl Lau</strong><br><span style="font-weight:normal">University of St. Andrews, UK</span></td>
               <td><i>Semi-confined supernovae in HII region bubbles</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/h6UjYM4VOAw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Maxime Lombart</strong></td>
-              <td>CEA Paris-Saclay, France</td>
+              <td><strong>Maxime Lombart</strong><br><span style="font-weight:normal">CEA Paris-Saclay, France</span></td>
               <td><i>Dusty protostellar collapses simulations in 3D with dust growth</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/SEACGQ50XZM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Cristiano Longarini</strong></td>
-              <td>University of Cambridge, UK</td>
+              <td><strong>Cristiano Longarini</strong><br><span style="font-weight:normal">University of Cambridge, UK</span></td>
               <td><i>Gravitational instability with PHANTOM: from cooling to infall</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/DHTN50yANlo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Aryabrat Mahapatra</strong> (remote)</td>
-              <td>Indian Institute of Technology Kanpur, India</td>
+              <td><strong>Aryabrat Mahapatra</strong><br><span style="font-weight:normal">(remote)</span><br><span style="font-weight:normal">Indian Institute of Technology Kanpur, India</span></td>
               <td><i>Partial tidal disruption of White Dwarfs in off-equatorial planes around intermediate mass spinning black holes</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/0yDZG6kCLCc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Rafael Martinez-Brunner</strong></td>
-              <td>University of Warwick, UK</td>
+              <td><strong>Rafael Martinez-Brunner</strong><br><span style="font-weight:normal">University of Warwick, UK</span></td>
               <td><i>Exploring the Gas-Dust-Planetesimals Interplay in White Dwarf Debris Discs</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/yIQb5aVK3vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Thomas Miller</strong> (remote)</td>
-              <td>University of Warwick, UK</td>
+              <td><strong>Thomas Miller</strong><br><span style="font-weight:normal">(remote)</span><br><span style="font-weight:normal">University of Warwick, UK</span></td>
               <td><i>Machine Learning on the Hunt for Misaligned Planets</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/1pSeCXrZo9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Jacksen Narvaez Coral</strong></td>
-              <td>Memorial University of Newfoundland, Canada</td>
+              <td><strong>Jacksen Narvaez Coral</strong><br><span style="font-weight:normal">Memorial University of Newfoundland, Canada</span></td>
               <td><i>Magnetohydrodynamic Simulations of Accretion Discs</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/4Q6YLYm1Pyo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Rebecca Nealon</strong></td>
-              <td>University of Warwick, UK</td>
+              <td><strong>Rebecca Nealon</strong><br><span style="font-weight:normal">University of Warwick, UK</span></td>
               <td><i>APR in self gravitating discs</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/32Om3eZh7rk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Pedro Poblete</strong></td>
-              <td>University of Grenoble-Alpes, France</td>
+              <td><strong>Pedro Poblete</strong><br><span style="font-weight:normal">University of Grenoble-Alpes, France</span></td>
               <td><i>The Role of an Asymmetric Radiation Field in Shaping Protoplanetary Disc Chemistry and Dynamics in Stellar Binary Systems</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/o6mLnN1qmIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Vasundhara Prasad</strong></td>
-              <td>University of Cambridge, UK</td>
+              <td><strong>Vasundhara Prasad</strong><br><span style="font-weight:normal">University of Cambridge, UK</span></td>
               <td><i>Dust Dynamics in Protoplanetary Discs after Stellar Flybys</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/niZYyO4bylE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Daniel Price</strong></td>
-              <td>Monash University, Australia</td>
+              <td><strong>Daniel Price</strong><br><span style="font-weight:normal">Monash University, Australia</span></td>
               <td><i>Recent directions in Phantom development</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/Nfr_SOMLwcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Enrico Ragusa</strong></td>
-              <td>Università degli Studi di Milano, Italy</td>
+              <td><strong>Enrico Ragusa</strong><br><span style="font-weight:normal">Università degli Studi di Milano, Italy</span></td>
               <td><i>Setting up eccentric discs with Phantom</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/wa7Hp2QDYXI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Pratishtha Rawat</strong> (remote)</td>
-              <td>University of Warwick, UK</td>
+              <td><strong>Pratishtha Rawat</strong><br><span style="font-weight:normal">(remote)</span><br><span style="font-weight:normal">University of Warwick, UK</span></td>
               <td><i>Triggered Fragmentation in self-gravitating protoplanetary disks</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/8JocfyvSxP4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Louca Romain</strong></td>
-              <td>CRAL, France</td>
+              <td><strong>Louca Romain</strong><br><span style="font-weight:normal">CRAL, France</span></td>
               <td><i>Influence of the sticking properties of dust grains of different compositions on planetary formation models</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/WGUQ8Sbq9vw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Sahl Rowther</strong></td>
-              <td>University of Leicester, UK</td>
+              <td><strong>Sahl Rowther</strong><br><span style="font-weight:normal">University of Leicester, UK</span></td>
               <td><i>Leading Spiral Arms in a Nearly Broken Protoplanetary Disc</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/2PWYftAan7Y" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Megha Sharma</strong> (remote)</td>
-              <td>Monash University, Australia</td>
+              <td><strong>Megha Sharma</strong><br><span style="font-weight:normal">(remote)</span><br><span style="font-weight:normal">Monash University, Australia</span></td>
               <td><i>A benchmark for binary star interaction with a supermassive black hole</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/S8EVDJFnPgc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Lionel Siess</strong></td>
-              <td>University of Libre de Bruxelles, Belgium</td>
+              <td><strong>Lionel Siess</strong><br><span style="font-weight:normal">University of Libre de Bruxelles, Belgium</span></td>
+              <td></td>
               <td></td>
             </tr>
             <tr>
-              <td><strong>Terrence Tricco</strong></td>
-              <td>Memorial University of Newfoundland, Canada</td>
-              <td></td>
+              <td><strong>Terrence Tricco</strong><br><span style="font-weight:normal">Memorial University of Newfoundland, Canada</span></td>
+              <td><i>Parallelizing multi-physics SPH in Phantom</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/oSAe7QnNeJM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Claudia Toci</strong></td>
-              <td>European Southern Observatory, Germany</td>
+              <td><strong>Claudia Toci</strong><br><span style="font-weight:normal">European Southern Observatory, Germany</span></td>
               <td><i>Living the Phantom Dream: Simulating Protoplanetary Disks, Protoplanets, and Beyond</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/MNeLiqBW1Wk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
             <tr>
-              <td><strong>Owen Vermeulen</strong></td>
-              <td>KU Leuven, Belgium</td>
+              <td><strong>Owen Vermeulen</strong><br><span style="font-weight:normal">KU Leuven, Belgium</span></td>
               <td><i>Impact of a binary companion in AGB outflows on CO spectral lines</i></td>
+              <td><div class="video-container"><iframe src="https://www.youtube.com/embed/c8iLUG1yZYo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
             </tr>
           </table>
 
