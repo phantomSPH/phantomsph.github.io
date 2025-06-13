@@ -13,6 +13,8 @@
     <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/png" href="image/phantom-favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <title>PHANTOM: A smoothed particle hydrodynamics and magnetohydrodynamics code for astrophysics</title>
 </head>
 
@@ -98,7 +100,7 @@
         </div>
         <div class="wrap">
             <h2>Recordings from past users workshops</h2>
-            <p>Recordings from past users workshops are available on <a href="https://www.youtube.com/@phantom-sph-code">YouTube</a>:</p>
+            <p>Recordings from past users workshops are available on <a href="https://www.youtube.com/@phantom-sph-code">The Phantom YouTube channel</a>:</p>
             <div style="margin: 20px 0;">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=0So_UtLACuCQkzZt&amp;list=PL0pqH3HwcVe8ayOjctVfiO-VKa6Jx7Whb" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
@@ -297,7 +299,7 @@
                 <li><strong>Report Issues:</strong> If you encounter bugs or want to suggest improvements, please let us know by <a href="https://github.com/danieljprice/phantom/issues">opening a GitHub issue</a>.</li>
                 <li><strong>Submit Code:</strong> If you have a feature or fix to contribute, please <a href="https://github.com/danieljprice/phantom/fork">fork the repository</a>, make your changes, and submit a pull request. We review all contributions and appreciate your efforts!</li>
                 <li><strong><a href="https://phantomsph.readthedocs.org">Documentation:</a></strong> Help us improve our <a href="https://phantomsph.readthedocs.org">documentation</a>! If you notice gaps or have ideas for new content, please contribute.</li>
-                <li><strong>Spread the Word:</strong> Share Phantom with your colleagues and include some <a href="#merch">phantomojis</a> in your talks <img src="image/phantomojis/cute.png" width="50"></img><img src="image/phantomojis/angel.png" width="50"><img src="image/phantomojis/happy.png" width="50"></img></img></li>
+                <li><strong>Spread the Word:</strong> Share Phantom with your colleagues and include some <a href="#merch">phantomojis</a> in your talks <img src="image/phantomojis/cute.png" width="50"></img><img src="image/phantomojis/angel.png" width="50"><img src="image/phantomojis/happy.png" width="50"></img></li>
                 <li><strong>Join Discussions:</strong> Engage with other users <a href="https://phantomsph.slack.com/signup">on Slack</a>. Help grow a community of users sharing best practice.</li>
             </ul>
         </div>
@@ -313,7 +315,7 @@
     <section id="merch">
         <div class="wrap">
             <h2>Merch</h2>
-            <p>See below for phantom logos to use in your talks (phantomojis thanks to Arnaud Vericel). We can also post
+            <p>See below for phantom logos to use in your talks (phantomojis thanks to Arnaud Vericel, Sahl Rowther, Lionel Siess,Cristiano Longarini and Claudia Toci). We can also post
                 stickers!</p>
             <p><img src="image/phantom-spirals-transparent.png" width="100"></img>
                 <img src="image/phantom-sunglasses.png" width="100"></img>
@@ -324,6 +326,12 @@
                 <img src="image/phantomojis/surprised.png" width="100"></img>
                 <img src="image/phantomojis/thinking.png" width="100"></img>
                 <img src="image/logo.png" width="100"></img>
+                <img src="image/phantomojis/happy.png" width="100"></img>
+                <img src="image/phantom-spirals-sahl.gif" width="100"></img>
+                <img src="image/phantomojis/phantom-waves.png" width="100"></img>
+                <img src="image/phantomojis/phantom-of-the-opera1.png" width="100"></img>
+                <img src="image/phantomojis/phantom-of-the-opera2.png" width="100"></img>
+                <img src="image/phantomojis/phantom-of-the-opera3.png" width="100"></img>
             </p>
 
         </div>
@@ -350,6 +358,29 @@
             <p class="name">Phantom developers/contributors</p>
             <p class="title"><a href="https://github.com/danieljprice/phantom/blob/master/AUTHORS">Click here for the
                     list of phantom developers</a></p>
+
+            <h3 style="margin-top: 40px;">Phantom hubs</h3>
+            <p>Phantom is developed and supported by a network of institutions around the world. Hubs listed below are where significant Phantom development expertise exists with active contribution to the public code, and where user support is possible.</p>
+            <div id="map" style="height: 500px; margin: 20px 0; border: 1px solid #ddd; background: white;"></div>
+            <div class="institution-list">
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>Université Libre de Bruxelles</strong><br>
+                        Contact: Lionel Siess<br>
+                        <a href="mailto:lionel.siess@ulb.be">lionel.siess@ulb.be</a></li>
+                    <li style="margin-top: 15px;"><strong>University of Cambridge</strong><br>
+                        Contact: Cristiano Longarini<br>
+                        <a href="mailto:cl2000@cam.ac.uk">cl2000@cam.ac.uk</a></li>
+                    <li style="margin-top: 15px;"><strong>Memorial University of Newfoundland</strong><br>
+                        Contact: Terrence Tricco<br>
+                        <a href="mailto:tstricco@mun.ca">tstricco@mun.ca</a></li>
+                    <li style="margin-top: 15px;"><strong>Centre de Recherche Astrophysique de Lyon / École Normale Supérieure de Lyon</strong><br>
+                        Contact: Jean-François Gonzalez<br>
+                        <a href="mailto:Jean-Francois.Gonzalez@ens-lyon.fr">Jean-Francois.Gonzalez@ens-lyon.fr</a></li>
+                    <li style="margin-top: 15px;"><strong>Monash University</strong><br>
+                        Contact: Daniel Price<br>
+                        <a href="mailto:daniel.price@monash.edu">daniel.price@monash.edu</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -358,6 +389,62 @@
         <br />Template design by Veselka Dobreva for <a href="http://andreasviklund.com"
             target="_blank">andreasviklund.com</a>
     </footer>
+
+    <script>
+        // Initialize the map
+        const map = L.map('map').setView([20, 0], 2);  // Adjusted view to show all locations including Australia
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Define institution locations
+        const institutions = [
+            {
+                name: "Université Libre de Bruxelles",
+                contact: "Lionel Siess",
+                email: "lionel.siess@ulb.be",
+                lat: 50.8171,
+                lng: 4.3833
+            },
+            {
+                name: "University of Cambridge",
+                contact: "Cristiano Longarini",
+                email: "cl2000@cam.ac.uk",
+                lat: 52.2053,
+                lng: 0.1218
+            },
+            {
+                name: "Memorial University of Newfoundland",
+                contact: "Terrence Tricco",
+                email: "tstricco@mun.ca",
+                lat: 47.5725,
+                lng: -52.7364
+            },
+            {
+                name: "Centre de Recherche Astrophysique de Lyon",
+                contact: "Jean-François Gonzalez",
+                email: "Jean-Francois.Gonzalez@ens-lyon.fr",
+                lat: 45.7278,
+                lng: 4.8322
+            },
+            {
+                name: "Monash University",
+                contact: "Daniel Price",
+                email: "daniel.price@monash.edu",
+                lat: -37.9144,
+                lng: 145.1300
+            }
+        ];
+
+        // Add markers for each institution
+        institutions.forEach(inst => {
+            const marker = L.marker([inst.lat, inst.lng]).addTo(map);
+            marker.bindPopup(`<strong>${inst.name}</strong><br>Contact: ${inst.contact}<br><a href="mailto:${inst.email}">${inst.email}</a>`);
+        });
+    </script>
 </body>
 
 </html>
