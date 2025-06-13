@@ -5,6 +5,7 @@ body {
     color:#333333;
     font-weight:400;
     background: #ffffff url('image/background1.jpg') top center repeat fixed;
+    padding-top: 80px; /* matches header height */
 }
 
 .clearfix:after {
@@ -106,7 +107,7 @@ header {
     top:0;
     height:80px;
     width:100%;
-    z-index:100;
+    z-index:1001;
     box-shadow: 0px 0px 3px #000;
         -moz-box-shadow: 0px 0px 3px #000;
         -webkit-box-shadow: 0px 0px 3px #000;
@@ -361,4 +362,12 @@ footer a:hover {
         margin-top:40px;
         padding:100px 0;
     }
+}
+
+#map {
+    z-index: 1 !important;
+    position: relative;
+}
+.leaflet-control {
+    z-index: 2 !important;
 }
