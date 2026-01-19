@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<title>8th Phantom users workshop and hackfest 2026, 9th-12th June 2026, Macquarie University, Sydney, Australia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link rel="shortcut icon" type="image/png" href="images/phantom-waves.png" />
+<style>
+  body,
+  html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+  }
+
+  .bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/background-sydney.jpg");
+    min-height: 75%;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 340px;
+  }
+
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .video-container {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin: 0 auto;
+  }
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
+<body>
+
+  <!-- Links (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s13">
+        <a href="#" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#program" class="w3-button w3-block w3-black">PROGRAM</a>
+      </div>
+      <!--div class="w3-col s13">
+        <a href="#talks" class="w3-button w3-block w3-black">TALKS</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
+      </div-->
+      <div class="w3-col s13">
+        <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#register" class="w3-button w3-block w3-black">REGISTER</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#conduct" class="w3-button w3-block w3-black">CODE OF CONDUCT</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with image -->
+  <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+      <span class="w3-tag" style="background: transparent;"><img src="images/phantom-waves.png" width="150" alt="Phantom waves logo"><br />9th-12th June 2026<br />Macquarie University, Sydney, Australia</span>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <span class="w3-text-white" style="font-size:90px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5);">8th Phantom Users Workshop 2026<br /></span>
+    </div>
+    <!--div class="w3-display-bottomright w3-center w3-padding-large">
+      <span class="w3-text-white">Conference photo</span>
+    </div-->
+  </header>
+
+  <!-- Add a background color and large text to the whole page -->
+  <div class="w3-sand w3-grayscale-min w3-large">
+
+    <!-- About Container -->
+    <div class="w3-container" id="about">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT</span></h5>
+
+
+        <p>How do stars and planets form? How do black holes accrete? How does dust form in the winds of giant stars? How does the common envelope get ejected?</p>
+        <p>
+          All of these questions can be answered using <a href="https://github.com/danieljprice/phantom">Phantom</a>, a
+          smoothed particle hydrodynamics code, <a
+            href="https://github.com/cpinte/mcfost">MCFOST</a>, a class-leading radiative transfer code, and <a href="https://github.com/tcleris/shamrock">Shamrock</a>, a GPU-first SPH code in the Phantom family.
+        </p>
+
+        <p>We are delighted to host the 8th Phantom code family users workshop in 2026 at Macquarie University in Sydney, Australia.</p>
+
+        <!--p>Over the past year, Phantom has continued to evolve with exciting new developments, including enhanced
+           adaptive particle refinement for high-resolution modeling, a 4th-order symplectic integrator for improved long-term accuracy, 
+           new modules for porosity evolution in dust growth, stellar feedback prescriptions including expanding H II regions, 
+           and more realistic physics in setups for black-hole discs, star clusters, and dust-gas mixtures.</p-->
+
+        <p>The goal of a Phantom workshop is to bring together users to foster collaboration, help existing users learn how to use the code better,
+          explore how new features can be applied across astrophysical problems, 
+          extend the codebase to solve new physics or problems, and create new setups for mutual collaboration.</p>
+
+        <div id="aims" class="w3-container">
+          <h3 class="text-center">AIMS</h3>
+          <p class="text-center">1. To consolidate development efforts</p>
+          <p class="text-center">2. To set a roadmap for development priorities</p>
+          <p class="text-center">3. To grow the user community, and especially to encourage sideways interaction between
+            users</p>
+          <p class="text-center"><em>We will set each afternoon of the workshop as a
+              hackfest, to collaboratively implement new features and tests</em></p>
+        </div>
+        <p><strong>Dates:</strong> Tuesday 9th - Friday 12th June 2026</p>
+        <p><strong>Venue:</strong> Macquarie University, Sydney, Australia</p>
+        <p><strong>Sponsors:</strong> We are grateful to <a href="https://afran.org.au/">AFRAN</a> for sponsorship.</p>
+        <p class="w3-text-grey w3-center"><img src="images/afran.jpg" width="600" alt="AFRAN logo"></p>
+
+      </div>
+    </div>
+
+    <!-- Menu Container -->
+    <div class="w3-container" id="program">
+      <div class="w3-content" style="max-width:700px">
+
+        <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONFERENCE PROGRAM</span></h5>
+
+        <!--p><strong>The conference schedule will be available soon.</strong></p-->
+
+        <p>Each day will feature a series of science talks in the morning, with afternoons focused around collaborative hack sessions. A welcome event will be held on the evening of the first day (Tuesday, 9th June). The conference dinner will be held on Thursday 11th June.</p>
+        <!--iframe src="images/schedule_final.pdf" width="100%" height="500px"></iframe-->
+
+
+        <div class="w3-row w3-center w3-card w3-padding">
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Topics');" id="myLink">
+            <div class="w3-col s6 tablink">Topics</div>
+          </a>
+
+          <a href="javascript:void(0)" onclick="openMenu(event, 'Speakers');">
+            <div class="w3-col s6 tablink">Speakers</div>
+          </a>
+
+        </div>
+
+        <div id="Topics" class="w3-container menu w3-padding-48 w3-card">
+          <h5>List of topics</h5>
+          <p class="w3-text-grey">
+            Star cluster formation<br />
+            Stellar flybys<br />
+            Protoplanetary discs<br />
+            Planet formation<br />
+            Black hole accretion<br />
+            Common envelope interaction<br />
+            AGB star winds and dust formation<br />
+            Binary and triple stars<br />
+            Tidal disruption events<br />
+            Software development<br />
+        </div>
+
+
+        <div id="Speakers" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Invited speakers</h5>
+          <p class="w3-text-grey">
+            TBA<br />
+          </p>
+        </div>
+      </div>
+
+      <!-- Table of talks -->
+      <!--div class="w3-container" id="talks" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:1024px">
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TALKS</span></h5>
+
+          <p class="w3-text-grey">Talk details will be available after the workshop.</p>
+
+        </div>
+      </div-->
+
+      <div class="w3-container" id="participants" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+
+          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTERED PARTICIPANTS</span></h5>
+
+          <div class="w3-row w3-center w3-card w3-padding-48">
+            <p class="w3-text-grey">Registered participants will be listed here after registration opens.</p>
+          </div>
+        </div>
+
+        <!-- Menu Container -->
+        <!--div class="w3-container" id="photos">
+          <div class="w3-content" style="max-width:1024px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">PHOTOS</span></h5>
+            
+            <div class="w3-row-padding">
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025-confphoto.jpg">
+                    <img src="photos/phantom2025-confphoto.jpg" alt="Workshop group photo" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_01.jpg">
+                    <img src="photos/phantom2025_01.jpg" alt="Workshop photo 1" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_02.jpg">
+                    <img src="photos/phantom2025_02.jpg" alt="Workshop photo 2" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_03.jpg">
+                    <img src="photos/phantom2025_03.jpg" alt="Workshop photo 3" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_04.jpg">
+                    <img src="photos/phantom2025_04.jpg" alt="Workshop photo 4" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_05.jpg">
+                    <img src="photos/phantom2025_05.jpg" alt="Workshop photo 5" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_06.jpg">
+                    <img src="photos/phantom2025_06.jpg" alt="Workshop photo 6" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_07.jpg">
+                    <img src="photos/phantom2025_07.jpg" alt="Workshop photo 7" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_09.jpg">
+                    <img src="photos/phantom2025_09.jpg" alt="Workshop photo 9" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_10.jpg">
+                    <img src="photos/phantom2025_10.jpg" alt="Workshop photo 10" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_11.jpg">
+                    <img src="photos/phantom2025_11.jpg" alt="Workshop photo 11" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_12.jpg">
+                    <img src="photos/phantom2025_12.jpg" alt="Workshop photo 12" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_13.jpg">
+                    <img src="photos/phantom2025_13.jpg" alt="Workshop photo 13" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_14.jpg">
+                    <img src="photos/phantom2025_14.jpg" alt="Workshop photo 14" style="width:100%">
+                  </a>
+                </div>
+              </div>
+              <div class="w3-col m4 w3-margin-bottom">
+                <div class="gallery">
+                  <a target="_blank" href="photos/phantom2025_15.jpg">
+                    <img src="photos/phantom2025_15.jpg" alt="Workshop photo 15" style="width:100%">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div-->
+
+        <!-- Contact/Area Container -->
+        <div class="w3-container" id="where" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">LOCATION</span></h5>
+
+            <p>The workshop will be held at:<br />
+              <a href="https://www.mq.edu.au/">Macquarie University</a><br/>
+              Sydney, New South Wales<br />
+              Australia<br />
+            </p>
+            <!-- Add a div for the Google Map -->
+            <div id="googleMap" style="width:100%;height:450px;"></div>
+
+          </div>
+        </div>
+
+
+        <!-- Registration details -->
+        <div class="w3-container" id="register" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTRATION</span></h5>
+
+            <p>Registration and abstract submission will open in early March 2026.</p>
+
+            <p><strong>Important deadlines:</strong></p>
+            <ul>
+              <li><strong>28th April 2026:</strong> Abstract submission deadline</li>
+              <li><strong>5th May 2026:</strong> Registration deadline for catering</li>
+            </ul>
+
+            <p>If you do not wish to give a talk or poster, just enter "none" for the title and abstract.</p>
+
+            <p>The registration form will ask if you accept your presentation being recorded and publicly posted on the <a href="https://www.youtube.com/@phantom-sph-code" target="_blank" rel="noopener">Phantom YouTube page</a>.</p>
+
+          </div>
+        </div>
+
+        <!-- Code of conduct -->
+        <div class="w3-container" id="conduct" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CODE OF CONDUCT</span></h5>
+        
+                <p>Participation in the workshop is subject to the <a href="../resources/phantom-conduct-1.0.pdf" target="_blank">Phantom Workshop Code of Conduct</a></p>
+        
+            </div>
+        </div>
+
+        <!-- Registration details -->
+        <div class="w3-container" id="contact" style="padding-bottom:32px;">
+          <div class="w3-content" style="max-width:700px">
+            <h5 class="w3-center"><span class="w3-tag w3-wide">CONTACT</span></h5>
+            <p class="w3-center"><a href="mailto:daniel.price@monash.edu">daniel.price@monash.edu</a>
+              <br />(please include "Phantom users workshop" in the title for email queries)
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">SCIENTIFIC ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">Daniel Price<br />
+              Terrence Tricco<br />
+              Rebecca Nealon<br />
+            </p>
+
+            <p class="w3-center"><span class="w3-tag">LOCAL ORGANISING COMMITTEE</span></p>
+            <p class="w3-text-grey w3-center">
+              Orsola De Marco<br />
+              Rebecca Nealon<br />
+              Daniel Price<br />
+              Ali Pourmand<br />
+              Ana Juarez<br />
+              Chunliang Mu<br />
+              Jack Nibbs<br />
+              Kayla Martin<br />
+            </p>
+            <!-- End page content -->
+          </div>
+
+          <!-- Footer -->
+          <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+            <p class="w3-text-grey w3-center"><img src="images/afran.jpg" width="600" alt="Conference image"></p>
+            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+          </footer>
+
+          <!-- Add Google Maps -->
+          <script>
+            function myMap() {
+              var myCenter = new google.maps.LatLng(-33.7733, 151.1140);
+              var mapProp = { center: myCenter, zoom: 14, scrollwheel: true, draggable: true, mapTypeId: google.maps.MapTypeId.ROADMAP };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+              var marker = new google.maps.Marker({ position: myCenter });
+              marker.setMap(map);
+            }
+
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+
+          </script>
+
+          <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3k5pT1b322vd8SNTLCSW5TnvAm_3Tfdk&callback=myMap"></script>
+          <!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+
+</html>
