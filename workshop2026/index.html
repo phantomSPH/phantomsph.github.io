@@ -62,6 +62,35 @@
     width: 100%;
     height: 100%;
   }
+
+  .schedule-table th {
+    background-color: #616161;
+    color: white;
+  }
+
+  .schedule-table tr.schedule-break td {
+    font-style: italic;
+    color: #666;
+  }
+
+  .schedule-table tr.schedule-evening th {
+    background-color: #9e9e9e;
+    color: white;
+    text-align: center;
+  }
+
+  .talk-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.85em;
+    border-radius: 4px;
+  }
+
+  .talk-intro { background-color: #b3e5fc; color: #01579b; }
+  .talk-keynote { background-color: #fff9c4; color: #f57f17; }
+  .talk-invited { background-color: #c8e6c9; color: #1b5e20; }
+  .talk-contributed { background-color: #e1bee7; color: #4a148c; }
+  .talk-remote { background-color: #ffcdd2; color: #b71c1c; }
 </style>
 
 <body>
@@ -79,9 +108,6 @@
         <a href="#program" class="w3-button w3-block w3-black">PROGRAM</a>
       </div>
       <!--div class="w3-col s13">
-        <a href="#talks" class="w3-button w3-block w3-black">TALKS</a>
-      </div>
-      <div class="w3-col s13">
         <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
       </div-->
       <div class="w3-col s13">
@@ -166,17 +192,287 @@
 
     <!-- Menu Container -->
     <div class="w3-container" id="program">
-      <div class="w3-content" style="max-width:700px">
+      <div class="w3-content" style="max-width:1024px">
 
         <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">CONFERENCE PROGRAM</span></h5>
 
-        <!--p><strong>The conference schedule will be available soon.</strong></p-->
+        <p>Each day will feature science talks in the morning (from 9:00 am), with collaborative hack sessions from
+          1:00–5:00 pm. Coffee break 10:15–10:45; lunch 12:00–1:00. European remote talks are scheduled at 5:00 pm where
+          indicated. A welcome event will be held on the evening of the first day (Tuesday, 9th June). The conference
+          dinner will be held on Thursday 11th June (evening).</p>
 
-        <p>Each day will feature a series of science talks in the morning, with afternoons focused around collaborative
-          hack sessions. A welcome event will be held on the evening of the first day (Tuesday, 9th June). The
-          conference dinner will be held on Thursday 11th June.</p>
-        <!--iframe src="images/schedule_final.pdf" width="100%" height="500px"></iframe-->
+        <p><a href="phantom_workshop_schedule_v6.m.pdf" target="_blank">Download schedule (PDF)</a></p>
+        <p>Recorded talks will be posted on the <a href="https://www.youtube.com/@phantomsph" target="_blank" rel="noopener">Phantom YouTube channel</a> after the workshop. Slides and video links in the schedule will be added as they become available.</p>
 
+        <h6 class="w3-padding-16"><strong>Tuesday 9 June 2026</strong></h6>
+        <table class="w3-table w3-bordered w3-striped schedule-table w3-small">
+          <tr>
+            <th style="width:18%">Time</th>
+            <th style="width:28%">Speaker</th>
+            <th style="width:22%">Type</th>
+            <th style="width:32%">Video</th>
+          </tr>
+          <tr>
+            <td>9:00 – 9:30</td>
+            <td><strong>Daniel Price</strong><br><span style="font-weight:normal"><i>Phantom v2026: new developments and directions</i></span></td>
+            <td><span class="talk-tag talk-intro">Introduction · 30 min</span></td>
+            <td id="talk-price-intro">—</td>
+          </tr>
+          <tr>
+            <td>9:30 – 9:45</td>
+            <td><strong>Kayla Martin</strong><br><span style="font-weight:normal"><i>The Light Common Envelope: A New Channel for Post-Giant Binaries</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-martin">—</td>
+          </tr>
+          <tr>
+            <td>9:45 – 10:15</td>
+            <td><strong>Antoine Alaguero</strong><br><span style="font-weight:normal"><i>Dust Growth with Phantom</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-alaguero">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>10:15 – 10:45</td>
+            <td colspan="3">Coffee break</td>
+          </tr>
+          <tr>
+            <td>10:45 – 11:15</td>
+            <td><strong>Camille Landri</strong><br><span style="font-weight:normal"><i>Simulating chemistry in astrophysical environments</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-landri">—</td>
+          </tr>
+          <tr>
+            <td>11:15 – 11:30</td>
+            <td><strong>Jack Nibbs</strong><br><span style="font-weight:normal"><i>Title TBA</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-nibbs">—</td>
+          </tr>
+          <tr>
+            <td>11:30 – 11:45</td>
+            <td><strong>Rebecca Nealon</strong><br><span style="font-weight:normal"><i>Recent improvements in APR</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-nealon">—</td>
+          </tr>
+          <tr>
+            <td>11:45 – 12:00</td>
+            <td><strong>Chunliang Mu</strong><br><span style="font-weight:normal"><i>Title TBA</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-mu">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>12:00 – 13:00</td>
+            <td colspan="3">Lunch</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>13:00 – 17:00</td>
+            <td colspan="3"><strong>Afternoon hack session</strong></td>
+          </tr>
+          <tr class="schedule-evening">
+            <th colspan="4">Evening · remote session (Europe) · 5:00 pm</th>
+          </tr>
+          <tr>
+            <td>17:00 – 17:15</td>
+            <td><strong>Sam Beckers</strong><br><span style="font-weight:normal"><i>3D chemical modelling of AGB outflows</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-beckers">—</td>
+          </tr>
+          <tr>
+            <td>17:15 – 17:45</td>
+            <td><strong>Yann Bernard</strong><br><span style="font-weight:normal"><i>Title TBA</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-bernard">—</td>
+          </tr>
+          <tr>
+            <td>17:45 – 18:00</td>
+            <td><strong>Taj Jankovič</strong><br><span style="font-weight:normal"><i>Radiation-hydrodynamics of star-disc collisions for quasi-periodic eruptions</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-jankovic">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>18:30 onwards</td>
+            <td colspan="3"><strong>Welcome event</strong> (wine and cheese)</td>
+          </tr>
+        </table>
+
+        <h6 class="w3-padding-16"><strong>Wednesday 10 June 2026</strong></h6>
+        <table class="w3-table w3-bordered w3-striped schedule-table w3-small">
+          <tr>
+            <th style="width:18%">Time</th>
+            <th style="width:28%">Speaker</th>
+            <th style="width:22%">Type</th>
+            <th style="width:32%">Video</th>
+          </tr>
+          <tr>
+            <td>9:00 – 9:45</td>
+            <td><strong>Alison Young</strong><br><span style="font-weight:normal"><i>Emmy Noether prize lecture</i></span></td>
+            <td><span class="talk-tag talk-keynote">Emmy Noether prize · 45 min</span></td>
+            <td id="talk-young">—</td>
+          </tr>
+          <tr>
+            <td>9:45 – 10:00</td>
+            <td><strong>Ali Pourmand</strong><br><span style="font-weight:normal"><i>Second Generation Planet Formation</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-pourmand">—</td>
+          </tr>
+          <tr>
+            <td>10:00 – 10:15</td>
+            <td><strong>Ruiqi Yang</strong><br><span style="font-weight:normal"><i>Dynamics and Accretion Variability of Misaligned Circumbinary Discs around Eccentric Binaries</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-yang">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>10:15 – 10:45</td>
+            <td colspan="3">Coffee break</td>
+          </tr>
+          <tr>
+            <td>10:45 – 11:15</td>
+            <td><strong>Josh Calcino</strong><br><span style="font-weight:normal"><i>The messy left-overs of star formation: Morphological, kinematic, and chemical signatures of infall</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-calcino">—</td>
+          </tr>
+          <tr>
+            <td>11:15 – 11:30</td>
+            <td><strong>Owen Vermeulen</strong><br><span style="font-weight:normal"><i>AGB star outflows: Implementing pulsations</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-vermeulen">—</td>
+          </tr>
+          <tr>
+            <td>11:30 – 12:00</td>
+            <td><strong>Ariel Chitan</strong><br><span style="font-weight:normal"><i>A Case Study of Disc Disruption and Accretion Dynamics in Supermassive Black Hole Binaries: Hydrodynamic Simulations of the Blazar OJ 287</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-chitan">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>12:00 – 13:00</td>
+            <td colspan="3">Lunch</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>13:00 – 17:00</td>
+            <td colspan="3"><strong>Afternoon hack session</strong></td>
+          </tr>
+        </table>
+
+        <h6 class="w3-padding-16"><strong>Thursday 11 June 2026</strong></h6>
+        <table class="w3-table w3-bordered w3-striped schedule-table w3-small">
+          <tr>
+            <th style="width:18%">Time</th>
+            <th style="width:28%">Speaker</th>
+            <th style="width:22%">Type</th>
+            <th style="width:32%">Video</th>
+          </tr>
+          <tr>
+            <td>9:00 – 9:30</td>
+            <td><strong>Timothée David-Cléris</strong><br><span style="font-weight:normal"><i>Title TBA</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-davidcleris">—</td>
+          </tr>
+          <tr>
+            <td>9:30 – 9:45</td>
+            <td><strong>Ana Juarez</strong><br><span style="font-weight:normal"><i>3D hydrodynamic simulations of accretion disks, new Phantom setup</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-juarez">—</td>
+          </tr>
+          <tr>
+            <td>9:45 – 10:00</td>
+            <td><strong>Angelos Karakonstantakis</strong><br><span style="font-weight:normal"><i>General Relativistic hydrodynamic modelling of tidal disruption by Naked Singularities</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-karakonstantakis">—</td>
+          </tr>
+          <tr>
+            <td>10:00 – 10:15</td>
+            <td><strong>Davide Dionese</strong><br><span style="font-weight:normal"><i>The LSP Puzzle: Cooling and Dust in Binary AGB Winds</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-dionese">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>10:15 – 10:45</td>
+            <td colspan="3">Coffee break</td>
+          </tr>
+          <tr>
+            <td>10:45 – 11:15</td>
+            <td><strong>Christophe Pinte</strong><br><span style="font-weight:normal"><i>Title TBA</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-pinte">—</td>
+          </tr>
+          <tr>
+            <td>11:15 – 11:30</td>
+            <td><strong>Arcelia Hermosillo Ruiz</strong><br><span style="font-weight:normal"><i>A Stellar Flyby in Action: Untangling the Dynamics of HD141569's Hybrid Disc</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span></td>
+            <td id="talk-hermosillo">—</td>
+          </tr>
+          <tr>
+            <td>11:30 – 12:00</td>
+            <td><strong>Sahl Rowther</strong><br><span style="font-weight:normal"><i>The impact of stars and the star-forming environment</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-rowther">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>12:00 – 13:00</td>
+            <td colspan="3">Lunch</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>13:00 – 17:00</td>
+            <td colspan="3"><strong>Afternoon hack session</strong></td>
+          </tr>
+          <tr class="schedule-evening">
+            <th colspan="4">Evening · remote session (Europe) · 5:00 pm</th>
+          </tr>
+          <tr>
+            <td>17:00 – 17:15</td>
+            <td><strong>Pratishtha Rawat</strong><br><span style="font-weight:normal"><i>From Spirals to Rings: Warps in dusty, self-gravitating protoplanetary discs</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-rawat">—</td>
+          </tr>
+          <tr>
+            <td>17:15 – 17:30</td>
+            <td><strong>Rafael Martinez-Brunner</strong><br><span style="font-weight:normal"><i>Exploring the Gas-Dust-Planetesimals Interplay in White Dwarf Debris Discs</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-martinezbrunner">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>19:00 onwards</td>
+            <td colspan="3"><strong>Conference dinner</strong></td>
+          </tr>
+        </table>
+
+        <h6 class="w3-padding-16"><strong>Friday 12 June 2026</strong></h6>
+        <table class="w3-table w3-bordered w3-striped schedule-table w3-small">
+          <tr>
+            <th style="width:18%">Time</th>
+            <th style="width:28%">Speaker</th>
+            <th style="width:22%">Type</th>
+            <th style="width:32%">Video</th>
+          </tr>
+          <tr>
+            <td>9:00 – 9:30</td>
+            <td><strong>Jeremy Smallwood</strong><br><span style="font-weight:normal"><i>Determining the Origin of Rogue Planets: Born Free or Kicked Out?</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-smallwood">—</td>
+          </tr>
+          <tr>
+            <td>9:30 – 9:45</td>
+            <td><strong>Jacksen Narvaez Coral</strong><br><span style="font-weight:normal"><i>Magnetorotational Instability in Global Disc Simulations using the Smoothed Particle Magnetohydrodynamics Method</i></span></td>
+            <td><span class="talk-tag talk-contributed">Contributed · 15 min</span> <span class="talk-tag talk-remote">Remote</span></td>
+            <td id="talk-narvaez">—</td>
+          </tr>
+          <tr>
+            <td>9:45 – 10:15</td>
+            <td><strong>Orsola De Marco</strong><br><span style="font-weight:normal"><i>Stellar Interactions</i></span></td>
+            <td><span class="talk-tag talk-invited">Invited · 30 min</span></td>
+            <td id="talk-demarco">—</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>10:15 – 10:45</td>
+            <td colspan="3">Coffee break</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>12:00 – 13:00</td>
+            <td colspan="3">Lunch</td>
+          </tr>
+          <tr class="schedule-break">
+            <td>13:00 – 17:00</td>
+            <td colspan="3"><strong>Afternoon hack session</strong></td>
+          </tr>
+        </table>
 
         <div class="w3-row w3-center w3-card w3-padding">
 
@@ -224,23 +520,54 @@
         </div>
       </div>
 
-      <!-- Table of talks -->
-      <!--div class="w3-container" id="talks" style="padding-bottom:32px;">
-        <div class="w3-content" style="max-width:1024px">
-          <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">TALKS</span></h5>
-
-          <p class="w3-text-grey">Talk details will be available after the workshop.</p>
-
-        </div>
-      </div-->
-
       <div class="w3-container" id="participants" style="padding-bottom:32px;">
         <div class="w3-content" style="max-width:700px">
 
           <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">REGISTERED PARTICIPANTS</span></h5>
 
           <div class="w3-row w3-center w3-card w3-padding-48">
-            <p class="w3-text-grey">Registered participants will be listed here after registration opens.</p>
+            <p class="w3-text-grey">
+              Antoine Alaguero - IPAG<br />
+              Lachlan Barnes - Macquarie University<br />
+              Sam Beckers (remote) - Leiden Observatory<br />
+              Yann Bernard (remote) - IPAG, CNRS<br />
+              Tanmoy Bhowmik (remote) - Shahjalal University of Science and Technology<br />
+              Josh Calcino - Tsinghua University<br />
+              Ariel Chitan - University of Western Ontario<br />
+              Jacksen Narvaez Coral (remote) - Memorial University of Newfoundland<br />
+              Cameron Davidson - The University of Sydney<br />
+              Davide Dionese - Institut d'Astronomie et d'Astrophysique - ULB<br />
+              Vardan Elbakyan (remote) - University of Duisburg-Essen<br />
+              Marzieh Faraji (remote) - IPM<br />
+              Ana Lourdes Juarez Garcia - Macquarie University<br />
+              Fangyi (Fitz) Hu - Monash University<br />
+              Taj Jankovič - Institute of Physics of the Czech Academy of Sciences<br />
+              Manogna D K (remote) - NTHU<br />
+              Angelos Karakonstantakis - Nicolaus Copernicus Astronomical Center, CAMK-PAN<br />
+              Camille Landri - Institute of Astronomy, KU Leuven<br />
+              Sanja Lazarevic - WSU<br />
+              Orsola De Marco - Macquarie University<br />
+              Kayla Martin - Macquarie University<br />
+              Rafael Martinez-Brunner (remote) - University of Warwick<br />
+              Jaime Andres Alvarado Montes - Macquarie University<br />
+              Chunliang Mu - Macquarie University<br />
+              Michael Munnelly (remote) - University of Oklahoma / Baylor University<br />
+              Rebecca Nealon - Monash University<br />
+              Stephen Neilson - Macquarie University<br />
+              Jack Nibbs - Macquarie University<br />
+              Alia Pollard (remote) - Monash University<br />
+              Ali Pourmand - Macquarie University<br />
+              Daniel Price - Monash University<br />
+              Toon De Prins - Macquarie University &amp; KU Leuven<br />
+              Pratishtha Rawat (remote) - University of Warwick<br />
+              Sahl Rowther - University of Warwick<br />
+              Arcelia Hermosillo Ruiz - University of Exeter<br />
+              Megha Sharma (remote) - Monash University<br />
+              Lionel Siess (remote) - Universite Libre de Bruxelles<br />
+              Jeremy Smallwood (remote) - University of Oklahoma<br />
+              Owen Vermeulen - KU Leuven<br />
+              Ruiqi Yang - Sun Yat-sen University<br />
+            </p>
           </div>
         </div>
 
