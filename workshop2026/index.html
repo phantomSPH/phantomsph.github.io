@@ -91,6 +91,32 @@
   .talk-invited { background-color: #c8e6c9; color: #1b5e20; }
   .talk-contributed { background-color: #e1bee7; color: #4a148c; }
   .talk-remote { background-color: #ffcdd2; color: #b71c1c; }
+
+  .movie-card {
+    border: 1px solid #ccc;
+    padding: 12px;
+    margin-bottom: 16px;
+    background-color: #fff;
+  }
+
+  .movie-card.movie-winner {
+    border: 3px solid #f57f17;
+  }
+
+  .movie-card.movie-runner-up {
+    border: 2px solid #78909c;
+  }
+
+  .movie-award {
+    display: inline-block;
+    padding: 2px 8px;
+    font-size: 0.85em;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .movie-award-winner { background-color: #fff9c4; color: #f57f17; }
+  .movie-award-runner { background-color: #eceff1; color: #37474f; }
 </style>
 
 <body>
@@ -109,6 +135,9 @@
       </div>
       <div class="w3-col s13">
         <a href="#photos" class="w3-button w3-block w3-black">PHOTOS</a>
+      </div>
+      <div class="w3-col s13">
+        <a href="#movies" class="w3-button w3-block w3-black">MOVIES</a>
       </div>
       <div class="w3-col s13">
         <a href="#where" class="w3-button w3-block w3-black">LOCATION</a>
@@ -604,6 +633,121 @@
                   <a target="_blank" href="photos/phantom2026_03.jpg">
                     <img src="photos/phantom2026_03.jpg" alt="Workshop photo" style="width:100%">
                   </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-container" id="movies">
+          <div class="w3-content" style="max-width:1024px">
+            <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MOVIE COMPETITION</span></h5>
+
+            <p>Workshop participants entered short movies showcasing their Phantom simulations. All entries are on the
+              <a href="https://www.youtube.com/playlist?list=PL0pqH3HwcVe9pJvQGlrXI-sSjlghhhXbA" target="_blank" rel="noopener">Phantom Workshop Movie Competition 2026 playlist</a>.</p>
+
+            <p><strong>Winner:</strong> Davide Dionese — <em>Dust In The Wind</em><br />
+              <strong>Runners up:</strong> Sahl Rowther — <em>Impact of the star forming environment on gravitationally unstable discs</em>;
+              Owen Vermeulen — <em>Pulsating AGB Star</em></p>
+
+            <div class="w3-row-padding">
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card movie-winner">
+                  <span class="movie-award movie-award-winner">Winner</span>
+                  <p><strong>Dust In The Wind</strong><br>Davide Dionese</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/NpjwYPYu93s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card movie-runner-up">
+                  <span class="movie-award movie-award-runner">Runner up</span>
+                  <p><strong>Impact of the star forming environment on gravitationally unstable discs</strong><br>Sahl Rowther</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/zZu90TAlORo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card movie-runner-up">
+                  <span class="movie-award movie-award-runner">Runner up</span>
+                  <p><strong>Pulsating AGB Star</strong><br>Owen Vermeulen</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/QICbw7k_7jw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>A Latte Stage Binary Interaction</strong><br>Kayla Martin</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/XUu1guLJM7o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Warped disc</strong><br>Pratishtha Rawat</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/RNSvlntb0tw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Protostellar flyby with gas and dust</strong><br>Antoine Alaguero</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/_P9E5KiECgA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>MHD Simulation of an Accretion Disc</strong><br>Jacksen Narvaez</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/QjRzcn2W-vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Accretion disks</strong><br>Ana Juarez</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/29hiJ_-siAY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Tidal Disruption Event around a Naked Singularity</strong><br>Angelos Karakonstantakis</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/4ZbQ45g8dbY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Growing Supermassive Black Holes</strong><br>Ariel Chitan</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/KFKYBbjPWCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>White dwarf merger</strong><br>Ali Pourmand</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/VVRU3SVql1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Formation of a Star Cluster</strong><br>Yann Bernard</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/mHuFbu5El7A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Infall onto a protoplanetary disc</strong><br>Josh Calcino</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/B6w50kAahkE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Circumbinary punk rock</strong><br>Jack Nibbs</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/9HjdbnzBrJw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Planet engulfment</strong><br>Stephen Neilson</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/8hZ-GyR45Yg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                </div>
+              </div>
+              <div class="w3-col m6 w3-margin-bottom">
+                <div class="movie-card">
+                  <p><strong>Black hole disc with Shamrock</strong><br>Timothée David-Cléris</p>
+                  <div class="video-container"><iframe src="https://www.youtube.com/embed/tU7Et_GTq6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                 </div>
               </div>
             </div>
